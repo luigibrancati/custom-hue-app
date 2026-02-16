@@ -1,0 +1,35 @@
+name: Build Release
+
+on:
+  release:
+    types: [created]
+
+env:
+  FLUTTER_VERSION: "3.38.5"
+  WORKING_DIR: .
+
+jobs:
+  build-apk:
+    name: Build Android APK
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ env.WORKING_DIR }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          cache: true
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Build APK
+        run: flutter build apk --release --no-tree-shake-icons
+
+      - name: Upload APK to release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: ${{ env.WORKING_DIR }}/build/app/outputs/flutter-apk/app-release.apk
