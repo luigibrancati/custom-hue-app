@@ -12,6 +12,7 @@ jobs:
   build-apk:
     name: Build Android APK
     runs-on: ubuntu-latest
+    permissions: write-all
     defaults:
       run:
         working-directory: ${{ env.WORKING_DIR }}
