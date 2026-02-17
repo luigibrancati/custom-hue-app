@@ -29,14 +29,18 @@ void main() async {
   final connectionService = BleConnectionService(ble);
   final lightControlService = BleLightControlService(ble);
 
+  final lightControlProvider = LightControlProvider(lightControlService);
+  final bleConnectionProvider = BleConnectionProvider(
+    connectionService,
+    onDeviceConnected: (id) => lightControlProvider.readState(id),
+  );
+
   runApp(
     MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (_) => BleScanProvider(scannerService)),
-        ChangeNotifierProvider(
-            create: (_) => BleConnectionProvider(connectionService)),
-        ChangeNotifierProvider(
-            create: (_) => LightControlProvider(lightControlService)),
+        ChangeNotifierProvider.value(value: bleConnectionProvider),
+        ChangeNotifierProvider.value(value: lightControlProvider),
         ChangeNotifierProvider(create: (_) => RoomProvider(LightStorage())),
         ChangeNotifierProvider(create: (_) => SceneProvider(SceneStorage())),
         ChangeNotifierProvider(
