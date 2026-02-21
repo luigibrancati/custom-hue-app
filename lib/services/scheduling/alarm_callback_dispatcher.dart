@@ -19,11 +19,11 @@ void alarmCallback() async {
 
   // Initialize Hive in the isolate
   await Hive.initFlutter();
-  Hive.registerAdapter(HueLightAdapter());
-  Hive.registerAdapter(RoomAdapter());
-  Hive.registerAdapter(SceneAdapter());
-  Hive.registerAdapter(ScheduleAdapter());
-  Hive.registerAdapter(FavoriteColorAdapter());
+  if (!Hive.isAdapterRegistered(0)) Hive.registerAdapter(HueLightAdapter());
+  if (!Hive.isAdapterRegistered(1)) Hive.registerAdapter(RoomAdapter());
+  if (!Hive.isAdapterRegistered(2)) Hive.registerAdapter(SceneAdapter());
+  if (!Hive.isAdapterRegistered(3)) Hive.registerAdapter(ScheduleAdapter());
+  if (!Hive.isAdapterRegistered(4)) Hive.registerAdapter(FavoriteColorAdapter());
 
   final schedulesBox = await Hive.openBox<Schedule>(AppConstants.schedulesBox);
   final lightsBox = await Hive.openBox<HueLight>(AppConstants.lightsBox);
@@ -39,7 +39,7 @@ void alarmCallback() async {
     if (!schedule.isEnabled) continue;
     if (schedule.daysOfWeek.isNotEmpty && !schedule.daysOfWeek.contains(currentDay)) continue;
     if (schedule.hour != now.hour) continue;
-    if ((schedule.minute - now.minute).abs() > 2) continue;
+    if ((schedule.minute - now.minute).abs() > 1) continue;
 
     debugPrint('[AlarmCallback] executing "${schedule.name}" (turnOn=${schedule.turnOn})');
     // Execute the schedule
