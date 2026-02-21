@@ -84,10 +84,8 @@ class LightControlProvider extends ChangeNotifier {
   void startFadeIn(String deviceId, {Duration? duration}) {
     final current = getState(deviceId);
     _fadeService.startFade(
-      startBrightness: AppConstants.minBrightness,
-      endBrightness: current.brightness > AppConstants.minBrightness
-          ? current.brightness
-          : AppConstants.maxBrightness,
+      startBrightness: current.brightness,
+      endBrightness: AppConstants.maxBrightness,
       duration: duration ?? AppConstants.defaultFadeDuration,
       onStep: (b) => setBrightness(deviceId, b),
       onComplete: () => notifyListeners(),
