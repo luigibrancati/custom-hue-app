@@ -1,6 +1,7 @@
 import 'package:android_alarm_manager_plus/android_alarm_manager_plus.dart';
 import '../../models/schedule.dart';
 import 'alarm_callback_dispatcher.dart';
+import 'package:flutter/widgets.dart';
 
 class AlarmSchedulerService {
   static Future<void> init() async {
@@ -8,7 +9,11 @@ class AlarmSchedulerService {
   }
 
   Future<void> scheduleAlarm(Schedule schedule) async {
-    if (!schedule.isEnabled || schedule.daysOfWeek.isEmpty) return;
+    debugPrint('Scheduling alarm for schedule: ${schedule.id}, day of week: ${schedule.daysOfWeek}, time: ${schedule.hour}:${schedule.minute.toString().padLeft(2, '0')}');
+    if (!schedule.isEnabled || schedule.daysOfWeek.isEmpty) {
+      debugPrint('Schedule is disabled or has no days selected, skipping alarm setup.');
+      return;
+    }
 
     // Cancel existing alarms for this schedule
     await cancelAlarm(schedule);

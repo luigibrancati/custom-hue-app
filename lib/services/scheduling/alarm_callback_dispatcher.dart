@@ -30,6 +30,8 @@ void alarmCallback() async {
   final now = DateTime.now();
   final currentDay = now.weekday;
 
+  debugPrint('[AlarmCallback] fired at $now, checking ${schedulesBox.length} schedules');
+
   // Find matching schedules
   for (final schedule in schedulesBox.values) {
     if (!schedule.isEnabled) continue;
@@ -37,6 +39,7 @@ void alarmCallback() async {
     if (schedule.hour != now.hour) continue;
     if ((schedule.minute - now.minute).abs() > 2) continue;
 
+    debugPrint('[AlarmCallback] executing "${schedule.name}" (turnOn=${schedule.turnOn})');
     // Execute the schedule
     final ble = FlutterReactiveBle();
     for (final lightId in schedule.lightIds) {
@@ -82,8 +85,8 @@ void alarmCallback() async {
           ),
           value: data,
         );
-      } catch (_) {
-        // Best effort - light may be out of range
+      } catch (e) {
+        debugPrint('[AlarmCallback] BLE write failed for ${light.name}: $e');
       } finally {
         await subscription?.cancel();
       }
