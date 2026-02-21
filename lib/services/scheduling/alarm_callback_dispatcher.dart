@@ -34,86 +34,92 @@ void alarmCallback() async {
 
   debugPrint('[AlarmCallback] fired at $now, checking ${schedulesBox.length} schedules');
 
-  // Find matching schedules
-  for (final schedule in schedulesBox.values) {
-    debugPrint('[AlarmCallback] checking schedule "${schedule.name}" (enabled=${schedule.isEnabled}, days=${schedule.daysOfWeek}, time=${schedule.hour}:${schedule.minute.toString().padLeft(2, '0')})');
-    if (!schedule.isEnabled) continue;
-    if (schedule.daysOfWeek.isNotEmpty && !schedule.daysOfWeek.contains(currentDay)) continue;
-    if (schedule.hour != now.hour) continue;
-    if ((schedule.minute - now.minute).abs() > 1) continue;
+  try {
+    // Find matching schedules
+    for (final schedule in schedulesBox.values) {
+      debugPrint('[AlarmCallback] checking schedule "${schedule.name}" (enabled=${schedule.isEnabled}, days=${schedule.daysOfWeek}, time=${schedule.hour}:${schedule.minute.toString().padLeft(2, '0')})');
+      if (!schedule.isEnabled) continue;
+      if (schedule.daysOfWeek.isNotEmpty && !schedule.daysOfWeek.contains(currentDay)) continue;
+      if (schedule.hour != now.hour) continue;
+      if ((schedule.minute - now.minute).abs() > 1) continue;
 
-    debugPrint('[AlarmCallback] executing "${schedule.name}" (turnOn=${schedule.turnOn})');
-    // Execute the schedule
-    final ble = FlutterReactiveBle();
-    for (final lightId in schedule.lightIds) {
-      final light = lightsBox.get(lightId);
-      if (light == null) continue;
+      debugPrint('[AlarmCallback] executing "${schedule.name}" (turnOn=${schedule.turnOn})');
+      // Execute the schedule
+      final ble = FlutterReactiveBle();
+      for (final lightId in schedule.lightIds) {
+        final light = lightsBox.get(lightId);
+        if (light == null) continue;
 
-      // Hold the subscription open — canceling it disconnects the device.
-      StreamSubscription<ConnectionStateUpdate>? subscription;
-      try {
-        final connectedCompleter = Completer<void>();
-        subscription = ble
-            .connectToDevice(
-              id: light.macAddress,
-              connectionTimeout: AppConstants.bleConnectionTimeout,
-            )
-            .listen((update) {
-          if (update.connectionState == DeviceConnectionState.connected &&
-              !connectedCompleter.isCompleted) {
-            connectedCompleter.complete();
-          }
-        });
+        // Hold the subscription open — canceling it disconnects the device.
+        StreamSubscription<ConnectionStateUpdate>? subscription;
+        try {
+          final connectedCompleter = Completer<void>();
+          subscription = ble
+              .connectToDevice(
+                id: light.macAddress,
+                connectionTimeout: AppConstants.bleConnectionTimeout,
+              )
+              .listen((update) {
+            if (update.connectionState == DeviceConnectionState.connected &&
+                !connectedCompleter.isCompleted) {
+              connectedCompleter.complete();
+            }
+          });
 
-        await connectedCompleter.future.timeout(AppConstants.bleConnectionTimeout);
+          await connectedCompleter.future.timeout(AppConstants.bleConnectionTimeout);
 
-        // Build command
-        final data = TlvEncoder.encodeCombined(
-          on: schedule.turnOn,
-          brightness: schedule.brightness,
-          colorTempMireds: schedule.colorTempMireds,
-          cieX: schedule.colorX != null
-              ? (schedule.colorX! * 65535).round().clamp(0, 65535)
-              : null,
-          cieY: schedule.colorY != null
-              ? (schedule.colorY! * 65535).round().clamp(0, 65535)
-              : null,
-        );
+          // Build command
+          final data = TlvEncoder.encodeCombined(
+            on: schedule.turnOn,
+            brightness: schedule.brightness,
+            colorTempMireds: schedule.colorTempMireds,
+            cieX: schedule.colorX != null
+                ? (schedule.colorX! * 65535).round().clamp(0, 65535)
+                : null,
+            cieY: schedule.colorY != null
+                ? (schedule.colorY! * 65535).round().clamp(0, 65535)
+                : null,
+          );
 
-        await ble.writeCharacteristicWithResponse(
-          QualifiedCharacteristic(
-            characteristicId: BleUuids.combinedControlChar,
-            serviceId: BleUuids.lightControlService,
-            deviceId: light.macAddress,
-          ),
-          value: data,
-        );
-      } catch (e) {
-        debugPrint('[AlarmCallback] BLE write failed for ${light.name}: $e');
-      } finally {
-        await subscription?.cancel();
+          await ble.writeCharacteristicWithResponse(
+            QualifiedCharacteristic(
+              characteristicId: BleUuids.combinedControlChar,
+              serviceId: BleUuids.lightControlService,
+              deviceId: light.macAddress,
+            ),
+            value: data,
+          );
+        } catch (e) {
+          debugPrint('[AlarmCallback] BLE write failed for ${light.name}: $e');
+        } finally {
+          await subscription?.cancel();
+        }
       }
     }
-  }
-
-  // Reschedule all enabled weekly schedules as fresh one-shots.
-  // periodic() uses setRepeating() which Android Doze mode defers; oneShotAt()
-  // with allowWhileIdle uses setExactAndAllowWhileIdle() which is Doze-safe.
-  await AndroidAlarmManager.initialize();
-  for (final schedule in schedulesBox.values) {
-    if (!schedule.isEnabled || schedule.daysOfWeek.isEmpty) continue;
-    for (final day in schedule.daysOfWeek) {
-      final id = _alarmId(schedule.id, day);
-      final next = _nextOccurrence(schedule.hour, schedule.minute, day);
-      await AndroidAlarmManager.oneShotAt(
-        next,
-        id,
-        alarmCallback,
-        exact: true,
-        wakeup: true,
-        allowWhileIdle: true,
-        rescheduleOnReboot: true,
-      );
+  } catch (e) {
+    debugPrint('[AlarmCallback] Error during schedule execution: $e');
+  } finally {
+    // Reschedule all enabled weekly schedules as fresh one-shots.
+    // periodic() uses setRepeating() which Android Doze mode defers; oneShotAt()
+    // with allowWhileIdle uses setExactAndAllowWhileIdle() which is Doze-safe.
+    // This always runs, even if BLE commands failed, so the next occurrence is
+    // never missed due to a transient failure (e.g. light out of BLE range).
+    await AndroidAlarmManager.initialize();
+    for (final schedule in schedulesBox.values) {
+      if (!schedule.isEnabled || schedule.daysOfWeek.isEmpty) continue;
+      for (final day in schedule.daysOfWeek) {
+        final id = _alarmId(schedule.id, day);
+        final next = _nextOccurrence(schedule.hour, schedule.minute, day);
+        await AndroidAlarmManager.oneShotAt(
+          next,
+          id,
+          alarmCallback,
+          exact: true,
+          wakeup: true,
+          allowWhileIdle: true,
+          rescheduleOnReboot: true,
+        );
+      }
     }
   }
 
