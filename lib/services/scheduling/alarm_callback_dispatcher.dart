@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:flutter/widgets.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:flutter_reactive_ble/flutter_reactive_ble.dart';
@@ -42,17 +43,23 @@ void alarmCallback() async {
       final light = lightsBox.get(lightId);
       if (light == null) continue;
 
+      // Hold the subscription open — canceling it disconnects the device.
+      StreamSubscription<ConnectionStateUpdate>? subscription;
       try {
-        // Connect
-        await ble
+        final connectedCompleter = Completer<void>();
+        subscription = ble
             .connectToDevice(
               id: light.macAddress,
               connectionTimeout: AppConstants.bleConnectionTimeout,
             )
-            .firstWhere(
-              (u) => u.connectionState == DeviceConnectionState.connected,
-            )
-            .timeout(AppConstants.bleConnectionTimeout);
+            .listen((update) {
+          if (update.connectionState == DeviceConnectionState.connected &&
+              !connectedCompleter.isCompleted) {
+            connectedCompleter.complete();
+          }
+        });
+
+        await connectedCompleter.future.timeout(AppConstants.bleConnectionTimeout);
 
         // Build command
         final data = TlvEncoder.encodeCombined(
@@ -77,6 +84,8 @@ void alarmCallback() async {
         );
       } catch (_) {
         // Best effort - light may be out of range
+      } finally {
+        await subscription?.cancel();
       }
     }
   }
