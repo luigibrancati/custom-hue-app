@@ -178,7 +178,7 @@ class _ScheduleEditorScreenState extends State<ScheduleEditorScreen> {
     }
   }
 
-  void _saveSchedule() {
+  Future<void> _saveSchedule() async {
     widget.schedule.name = _nameController.text.trim();
     widget.schedule.hour = _hour;
     widget.schedule.minute = _minute;
@@ -189,8 +189,15 @@ class _ScheduleEditorScreenState extends State<ScheduleEditorScreen> {
     widget.schedule.lightIds = _selectedLightIds;
     widget.schedule.fadeDurationSeconds = _fadeDuration;
 
-    context.read<ScheduleProvider>().createSchedule(widget.schedule);
-    Navigator.pop(context);
+    final provider = context.read<ScheduleProvider>();
+    final isExisting =
+        provider.schedules.any((s) => s.id == widget.schedule.id);
+    if (isExisting) {
+      await provider.updateSchedule(widget.schedule);
+    } else {
+      await provider.createSchedule(widget.schedule);
+    }
+    if (mounted) Navigator.pop(context);
   }
 
   void _deleteSchedule() {

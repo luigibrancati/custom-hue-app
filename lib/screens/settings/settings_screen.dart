@@ -84,11 +84,11 @@ class SettingsScreen extends StatelessWidget {
           ListTile(
             leading: const Icon(Icons.info),
             title: const Text('About'),
-            subtitle: const Text('Custom Hue v1.0.0'),
+            subtitle: const Text('Custom Hue v1.0.2'),
             onTap: () => showAboutDialog(
               context: context,
               applicationName: 'Custom Hue',
-              applicationVersion: '1.0.0',
+              applicationVersion: '1.0.2',
               applicationLegalese: 'Philips Hue BLE Control App',
             ),
           ),

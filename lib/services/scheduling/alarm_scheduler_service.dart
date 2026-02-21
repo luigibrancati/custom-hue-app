@@ -18,13 +18,15 @@ class AlarmSchedulerService {
       final alarmId = _alarmId(schedule.id, day);
       final nextOccurrence = _nextOccurrence(schedule.hour, schedule.minute, day);
 
-      await AndroidAlarmManager.oneShotAt(
-        nextOccurrence,
+      await AndroidAlarmManager.periodic(
+        const Duration(days: 7),
         alarmId,
         alarmCallback,
+        startAt: nextOccurrence,
         exact: true,
         wakeup: true,
         rescheduleOnReboot: true,
+        allowWhileIdle: true,
       );
     }
   }
@@ -36,7 +38,10 @@ class AlarmSchedulerService {
   }
 
   static int _alarmId(String scheduleId, int day) {
-    return scheduleId.hashCode.abs() * 10 + day;
+    // Constrain to stay within Java int32 range (max 2,147,483,647).
+    // Without the modulo, hashCode * 10 can exceed 2^31-1 on 64-bit Dart,
+    // causing truncation/overflow when passed to Android's AlarmManager.
+    return (scheduleId.hashCode.abs() % 100000000) * 10 + day;
   }
 
   static DateTime _nextOccurrence(int hour, int minute, int dayOfWeek) {

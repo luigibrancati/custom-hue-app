@@ -24,18 +24,26 @@ class ScheduleProvider extends ChangeNotifier {
 
   Future<void> createSchedule(Schedule schedule) async {
     await _storage.saveSchedule(schedule);
-    if (schedule.isEnabled) {
-      await _alarmService.scheduleAlarm(schedule);
+    try {
+      if (schedule.isEnabled) {
+        await _alarmService.scheduleAlarm(schedule);
+      }
+    } catch (e) {
+      debugPrint('Failed to schedule alarm: $e');
     }
     refresh();
   }
 
   Future<void> updateSchedule(Schedule schedule) async {
     await _storage.saveSchedule(schedule);
-    if (schedule.isEnabled) {
-      await _alarmService.scheduleAlarm(schedule);
-    } else {
-      await _alarmService.cancelAlarm(schedule);
+    try {
+      if (schedule.isEnabled) {
+        await _alarmService.scheduleAlarm(schedule);
+      } else {
+        await _alarmService.cancelAlarm(schedule);
+      }
+    } catch (e) {
+      debugPrint('Failed to update alarm: $e');
     }
     refresh();
   }
@@ -45,10 +53,14 @@ class ScheduleProvider extends ChangeNotifier {
     if (schedule != null) {
       schedule.isEnabled = !schedule.isEnabled;
       await schedule.save();
-      if (schedule.isEnabled) {
-        await _alarmService.scheduleAlarm(schedule);
-      } else {
-        await _alarmService.cancelAlarm(schedule);
+      try {
+        if (schedule.isEnabled) {
+          await _alarmService.scheduleAlarm(schedule);
+        } else {
+          await _alarmService.cancelAlarm(schedule);
+        }
+      } catch (e) {
+        debugPrint('Failed to toggle alarm: $e');
       }
       refresh();
     }
@@ -57,7 +69,11 @@ class ScheduleProvider extends ChangeNotifier {
   Future<void> deleteSchedule(String id) async {
     final schedule = _storage.getSchedule(id);
     if (schedule != null) {
-      await _alarmService.cancelAlarm(schedule);
+      try {
+        await _alarmService.cancelAlarm(schedule);
+      } catch (e) {
+        debugPrint('Failed to cancel alarm: $e');
+      }
     }
     await _storage.deleteSchedule(id);
     refresh();
