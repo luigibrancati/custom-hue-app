@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:android_alarm_manager_plus/android_alarm_manager_plus.dart';
 import 'package:flutter/widgets.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:flutter_reactive_ble/flutter_reactive_ble.dart';
@@ -95,5 +96,41 @@ void alarmCallback() async {
     }
   }
 
+  // Reschedule all enabled weekly schedules as fresh one-shots.
+  // periodic() uses setRepeating() which Android Doze mode defers; oneShotAt()
+  // with allowWhileIdle uses setExactAndAllowWhileIdle() which is Doze-safe.
+  await AndroidAlarmManager.initialize();
+  for (final schedule in schedulesBox.values) {
+    if (!schedule.isEnabled || schedule.daysOfWeek.isEmpty) continue;
+    for (final day in schedule.daysOfWeek) {
+      final id = _alarmId(schedule.id, day);
+      final next = _nextOccurrence(schedule.hour, schedule.minute, day);
+      await AndroidAlarmManager.oneShotAt(
+        next,
+        id,
+        alarmCallback,
+        exact: true,
+        wakeup: true,
+        allowWhileIdle: true,
+        rescheduleOnReboot: true,
+      );
+    }
+  }
+
   await Hive.close();
+}
+
+int _alarmId(String scheduleId, int day) {
+  return (scheduleId.hashCode.abs() % 100000000) * 10 + day;
+}
+
+DateTime _nextOccurrence(int hour, int minute, int dayOfWeek) {
+  final now = DateTime.now();
+  var date = DateTime(now.year, now.month, now.day, hour, minute);
+  final currentDay = now.weekday;
+  var daysUntil = dayOfWeek - currentDay;
+  if (daysUntil < 0 || (daysUntil == 0 && date.isBefore(now))) {
+    daysUntil += 7;
+  }
+  return date.add(Duration(days: daysUntil));
 }

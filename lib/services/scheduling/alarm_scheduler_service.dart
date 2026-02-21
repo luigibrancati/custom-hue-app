@@ -38,15 +38,14 @@ class AlarmSchedulerService {
       final alarmId = _alarmId(schedule.id, day);
       final nextOccurrence = _nextOccurrence(schedule.hour, schedule.minute, day);
 
-      await AndroidAlarmManager.periodic(
-        const Duration(days: 7),
+      await AndroidAlarmManager.oneShotAt(
+        nextOccurrence,
         alarmId,
         alarmCallback,
-        startAt: nextOccurrence,
         exact: true,
         wakeup: true,
-        rescheduleOnReboot: true,
         allowWhileIdle: true,
+        rescheduleOnReboot: true,
       );
     }
   }
