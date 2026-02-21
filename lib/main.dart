@@ -35,6 +35,11 @@ void main() async {
     onDeviceConnected: (id) => lightControlProvider.readState(id),
   );
 
+  // Auto-reconnect to all previously paired lights
+  for (final light in HiveService.lightsBox.values) {
+    connectionService.connect(light.id);
+  }
+
   runApp(
     MultiProvider(
       providers: [
