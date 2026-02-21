@@ -114,6 +114,17 @@ class _LightSettingsScreenState extends State<LightSettingsScreen> {
               }
             },
           ),
+          const SizedBox(height: 16),
+          // Color support
+          SwitchListTile(
+            title: const Text('Color light'),
+            subtitle: const Text('Enable color and temperature controls'),
+            value: widget.light.supportsColor,
+            onChanged: (value) {
+              roomProvider.setLightSupportsColor(widget.light.id, value);
+            },
+            contentPadding: EdgeInsets.zero,
+          ),
           const SizedBox(height: 32),
           // Unpair / Delete
           OutlinedButton.icon(

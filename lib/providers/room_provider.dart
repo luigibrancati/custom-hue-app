@@ -85,6 +85,11 @@ class RoomProvider extends ChangeNotifier {
     refresh();
   }
 
+  Future<void> setLightSupportsColor(String id, bool supportsColor) async {
+    await _storage.setSupportsColor(id, supportsColor);
+    refresh();
+  }
+
   Future<void> deleteLight(String id) async {
     await _storage.deleteLight(id);
     refresh();

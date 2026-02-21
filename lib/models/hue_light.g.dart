@@ -21,13 +21,14 @@ class HueLightAdapter extends TypeAdapter<HueLight> {
       name: fields[1] as String,
       macAddress: fields[2] as String,
       roomId: fields[3] as String?,
+      supportsColor: fields[4] as bool? ?? true,
     );
   }
 
   @override
   void write(BinaryWriter writer, HueLight obj) {
     writer
-      ..writeByte(4)
+      ..writeByte(5)
       ..writeByte(0)
       ..write(obj.id)
       ..writeByte(1)
@@ -35,7 +36,9 @@ class HueLightAdapter extends TypeAdapter<HueLight> {
       ..writeByte(2)
       ..write(obj.macAddress)
       ..writeByte(3)
-      ..write(obj.roomId);
+      ..write(obj.roomId)
+      ..writeByte(4)
+      ..write(obj.supportsColor);
   }
 
   @override

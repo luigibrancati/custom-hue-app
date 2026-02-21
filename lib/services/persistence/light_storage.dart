@@ -29,6 +29,14 @@ class LightStorage {
     }
   }
 
+  Future<void> setSupportsColor(String id, bool supportsColor) async {
+    final light = HiveService.lightsBox.get(id);
+    if (light != null) {
+      light.supportsColor = supportsColor;
+      await light.save();
+    }
+  }
+
   // Room operations
   List<Room> getAllRooms() => HiveService.roomsBox.values.toList();
 

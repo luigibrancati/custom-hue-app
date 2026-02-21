@@ -76,50 +76,52 @@ class _LightControlScreenState extends State<LightControlScreen> {
                           lightProvider.setBrightness(_deviceId, v),
                     ),
                   ),
-                  const SizedBox(height: 16),
-                  // Color mode toggle
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 16),
-                    child: SegmentedButton<bool>(
-                      segments: const [
-                        ButtonSegment(
-                            value: true, label: Text('Color'), icon: Icon(Icons.palette)),
-                        ButtonSegment(
-                            value: false, label: Text('Temperature'), icon: Icon(Icons.thermostat)),
-                      ],
-                      selected: {_showColorWheel},
-                      onSelectionChanged: (v) =>
-                          setState(() => _showColorWheel = v.first),
+                  if (widget.light.supportsColor) ...[
+                    const SizedBox(height: 16),
+                    // Color mode toggle
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      child: SegmentedButton<bool>(
+                        segments: const [
+                          ButtonSegment(
+                              value: true, label: Text('Color'), icon: Icon(Icons.palette)),
+                          ButtonSegment(
+                              value: false, label: Text('Temperature'), icon: Icon(Icons.thermostat)),
+                        ],
+                        selected: {_showColorWheel},
+                        onSelectionChanged: (v) =>
+                            setState(() => _showColorWheel = v.first),
+                      ),
                     ),
-                  ),
-                  const SizedBox(height: 16),
-                  if (_showColorWheel)
-                    ColorWheelPicker(
-                      currentColor: state.displayColor,
-                      onColorChanged: (c) =>
-                          lightProvider.setColor(_deviceId, c),
-                    )
-                  else
-                    ColorTempSlider(
-                      mireds: state.colorTempMireds ?? 300,
-                      onChanged: (v) =>
-                          lightProvider.setColorTemp(_deviceId, v),
+                    const SizedBox(height: 16),
+                    if (_showColorWheel)
+                      ColorWheelPicker(
+                        currentColor: state.displayColor,
+                        onColorChanged: (c) =>
+                            lightProvider.setColor(_deviceId, c),
+                      )
+                    else
+                      ColorTempSlider(
+                        mireds: state.colorTempMireds ?? 300,
+                        onChanged: (v) =>
+                            lightProvider.setColorTemp(_deviceId, v),
+                      ),
+                    const SizedBox(height: 16),
+                    // Favorites
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      child: Align(
+                        alignment: Alignment.centerLeft,
+                        child: Text('Favorites',
+                            style: Theme.of(context).textTheme.titleSmall),
+                      ),
                     ),
-                  const SizedBox(height: 16),
-                  // Favorites
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 16),
-                    child: Align(
-                      alignment: Alignment.centerLeft,
-                      child: Text('Favorites',
-                          style: Theme.of(context).textTheme.titleSmall),
+                    const SizedBox(height: 8),
+                    FavoritesStrip(
+                      onSelect: (fav) => _applyFavorite(fav, lightProvider),
+                      onAdd: () => _addFavorite(state.displayColor),
                     ),
-                  ),
-                  const SizedBox(height: 8),
-                  FavoritesStrip(
-                    onSelect: (fav) => _applyFavorite(fav, lightProvider),
-                    onAdd: () => _addFavorite(state.displayColor),
-                  ),
+                  ],
                   const SizedBox(height: 24),
                   // Fade controls
                   FadeControls(
