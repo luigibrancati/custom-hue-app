@@ -14,6 +14,7 @@ import '../ble/tlv_encoder.dart';
 /// Top-level function for alarm callback. Runs in a separate isolate.
 @pragma('vm:entry-point')
 void alarmCallback() async {
+  debugPrint('[AlarmCallback] invoked');
   WidgetsFlutterBinding.ensureInitialized();
 
   // Initialize Hive in the isolate
@@ -34,8 +35,9 @@ void alarmCallback() async {
 
   // Find matching schedules
   for (final schedule in schedulesBox.values) {
+    debugPrint('[AlarmCallback] checking schedule "${schedule.name}" (enabled=${schedule.isEnabled}, days=${schedule.daysOfWeek}, time=${schedule.hour}:${schedule.minute.toString().padLeft(2, '0')})');
     if (!schedule.isEnabled) continue;
-    if (!schedule.daysOfWeek.contains(currentDay)) continue;
+    if (schedule.daysOfWeek.isNotEmpty && !schedule.daysOfWeek.contains(currentDay)) continue;
     if (schedule.hour != now.hour) continue;
     if ((schedule.minute - now.minute).abs() > 2) continue;
 

@@ -10,13 +10,28 @@ class AlarmSchedulerService {
 
   Future<void> scheduleAlarm(Schedule schedule) async {
     debugPrint('Scheduling alarm for schedule: ${schedule.id}, day of week: ${schedule.daysOfWeek}, time: ${schedule.hour}:${schedule.minute.toString().padLeft(2, '0')}');
-    if (!schedule.isEnabled || schedule.daysOfWeek.isEmpty) {
-      debugPrint('Schedule is disabled or has no days selected, skipping alarm setup.');
+    if (!schedule.isEnabled) {
+      debugPrint('Schedule is disabled, skipping alarm setup.');
       return;
     }
 
     // Cancel existing alarms for this schedule
     await cancelAlarm(schedule);
+
+    if (schedule.daysOfWeek.isEmpty) {
+      // No days specified: fire once today only
+      final now = DateTime.now();
+      final todayOccurrence = DateTime(now.year, now.month, now.day, schedule.hour, schedule.minute);
+      await AndroidAlarmManager.oneShotAt(
+        todayOccurrence,
+        _alarmId(schedule.id, 0),
+        alarmCallback,
+        exact: true,
+        wakeup: true,
+        allowWhileIdle: true,
+      );
+      return;
+    }
 
     // Schedule for each day of the week
     for (final day in schedule.daysOfWeek) {
@@ -37,7 +52,7 @@ class AlarmSchedulerService {
   }
 
   Future<void> cancelAlarm(Schedule schedule) async {
-    for (var day = 1; day <= 7; day++) {
+    for (var day = 0; day <= 7; day++) {
       await AndroidAlarmManager.cancel(_alarmId(schedule.id, day));
     }
   }
