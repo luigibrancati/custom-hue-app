@@ -1,0 +1,18 @@
+{
+  "behavior.wakeup.edit.brightnessItem.title": "Maximální jasnost",
+  "behavior.wakeup.edit.styleItem.subtitle": "U gradientních světel doporučujeme styl východu slunce.",
+  "behavior.wakeup.edit.styleItem.title": "Styl",
+  "behavior.wakeup.experience.title": "Vyberte nastavení",
+  "behavior.wakeup.generalStep.title": "Obecné",
+  "behavior.wakeup.nameStep.defaultName": "Probouzení",
+  "behavior.wakeup.nameStep.label": "Název",
+  "behavior.wakeup.nameStep.title": "<emph>Pojmenujte</emph> svoji automatizaci",
+  "behavior.wakeup.overview.description": "Postupně ráno zjasňovat vybraná světla.",
+  "behavior.wakeup.overview.name": "Probouzení se světlem",
+  "behavior.wakeup.selectLights.title": "<emph>Vyberte</emph> svoje světla",
+  "behavior.wakeup.style.basic.subtitle": "Zpočátku ztlumené bílé světlo se rozjasní do plné jasnosti.",
+  "behavior.wakeup.style.basic.title": "Přechod do jasu",
+  "behavior.wakeup.style.sunrise.subtitle": "Změny a prolínání barev napodobují ranní oblohu – doporučujeme u gradientových světel.",
+  "behavior.wakeup.style.sunrise.title": "Východ slunce",
+  "behavior.wakeup.timeAndRecurrence.title": "V <emph>jakou dobu</emph> se chcete <emph>probouzet</emph>?"
+}

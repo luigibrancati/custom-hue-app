@@ -1,0 +1,18 @@
+{
+  "behavior.wakeup.edit.brightnessItem.title": "Máxima luminosidad",
+  "behavior.wakeup.edit.styleItem.subtitle": "Amanecer se recomienda para luces Gradient.",
+  "behavior.wakeup.edit.styleItem.title": "Estilo",
+  "behavior.wakeup.experience.title": "Elige tu configuración",
+  "behavior.wakeup.generalStep.title": "General",
+  "behavior.wakeup.nameStep.defaultName": "Despertar",
+  "behavior.wakeup.nameStep.label": "Nombre",
+  "behavior.wakeup.nameStep.title": "<emph>Nombrar</emph> tu automatismo",
+  "behavior.wakeup.overview.description": "Aumenta gradualmente las luces seleccionadas por la mañana.",
+  "behavior.wakeup.overview.name": "Despertar con luz",
+  "behavior.wakeup.selectLights.title": "<emph>Elige</emph> tus luces",
+  "behavior.wakeup.style.basic.subtitle": "La luz blanca comienza atenuada y después aumenta hasta la luminosidad máxima.",
+  "behavior.wakeup.style.basic.title": "Transición a luz brillante",
+  "behavior.wakeup.style.sunrise.subtitle": "Los colores cambian y se mezclan para simular el cielo matinal. Recomendado para luces Gradient.",
+  "behavior.wakeup.style.sunrise.title": "Amanecer",
+  "behavior.wakeup.timeAndRecurrence.title": "¿A <emph>qué hora</emph> quieres <emph>despertarte</emph>?"
+}

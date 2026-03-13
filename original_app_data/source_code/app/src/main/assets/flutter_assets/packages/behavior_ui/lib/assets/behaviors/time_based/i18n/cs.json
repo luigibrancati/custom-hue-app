@@ -1,0 +1,9 @@
+{
+  "behavior.timeBased.nameStep.label": "Název",
+  "behavior.timeBased.nameStep.title": "<emph>Pojmenujte</emph> svoji automatizaci",
+  "behavior.timeBased.overview.description": "Vytvořte svoji vlastní automatizaci.",
+  "behavior.timeBased.overview.name": "Na přání",
+  "behavior.timeBased.selectLights.title": "<emph>Vyberte</emph> svoje světla",
+  "behavior.timeBased.selectScenes.title": "<emph>Co</emph> by měla udělat světla?",
+  "behavior.timeBased.whenExtendedStep.title": "<emph>Na kdy</emph> chcete tuto automatizaci naplánovat?"
+}

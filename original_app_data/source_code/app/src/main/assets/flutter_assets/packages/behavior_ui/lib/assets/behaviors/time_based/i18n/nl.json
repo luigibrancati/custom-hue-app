@@ -1,0 +1,9 @@
+{
+  "behavior.timeBased.nameStep.label": "Naam",
+  "behavior.timeBased.nameStep.title": "Geef je automatisering een <emph>naam</emph>",
+  "behavior.timeBased.overview.description": "Maak je eigen aangepaste automatisering.",
+  "behavior.timeBased.overview.name": "Aangepast",
+  "behavior.timeBased.selectLights.title": "<emph>Kies</emph> je lampen",
+  "behavior.timeBased.selectScenes.title": "<emph>Wat</emph> moeten je lampen doen?",
+  "behavior.timeBased.whenExtendedStep.title": "<emph>Wanneer</emph> wil je deze automatisering plannen?"
+}

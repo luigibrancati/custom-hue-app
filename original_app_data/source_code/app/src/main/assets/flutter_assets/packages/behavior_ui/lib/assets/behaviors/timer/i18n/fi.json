@@ -1,0 +1,13 @@
+{
+  "behavior.timer.card.subtitle": "Ota käyttöön $lights$",
+  "behavior.timer.controllingDevicesStep.title": "Ohjaava laite",
+  "behavior.timer.nameStep.defaultName": "Ajastin",
+  "behavior.timer.nameStep.label": "Nimi",
+  "behavior.timer.nameStep.title": "<emph>Nimeä</emph> automaatio",
+  "behavior.timer.overview.description": "Kertoo valon avulla ennalta määritetyn ajanjakson kuluneen loppuun.",
+  "behavior.timer.overview.name": "Ajastin",
+  "behavior.timer.selectDuration.invalid.errorMessage": "Varmista, että ajastin on asetettu tulevaan aikaan.",
+  "behavior.timer.selectDuration.title": "<emph>Kuinka pitkän ajan</emph> haluat määrittää ajastimeen?",
+  "behavior.timer.selectLights.title": "<emph>Valitse</emph> valot",
+  "behavior.timer.selectScenes.title": "<emph>Mitä</emph> valojen tulisi tehdä?"
+}

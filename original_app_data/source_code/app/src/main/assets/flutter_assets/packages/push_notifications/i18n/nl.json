@@ -1,0 +1,13 @@
+{
+  "pushnotification.mainScreen.noAccount.error": "Je bent niet aangemeld of je hebt geen Hue Bridge",
+  "pushnotification.mainScreen.overlay.subscribingToNotifications": "Abonneren op de meldingen",
+  "pushnotification.mainScreen.overlay.subscriptionStatus": "Abonnementsstatus controleren",
+  "pushnotification.mainScreen.overlay.unSubscribingToNotifications": "Afmelden voor de meldingen",
+  "pushnotification.mainScreen.refresh.option": "Vernieuwen",
+  "pushnotification.mainScreen.refreshStatus.title": "Status vernieuwen",
+  "pushnotification.mainScreen.status": "Status",
+  "pushnotification.mainScreen.subscribeOption": "Abonneren",
+  "pushnotification.mainScreen.subscribeToPushNotifications.title": "Abonneren op pushmeldingen",
+  "pushnotification.mainScreen.title": "Pushmeldingen",
+  "pushnotification.mainScreen.unSubscribeOption": "Uitschrijven"
+}

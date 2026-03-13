@@ -1,0 +1,18 @@
+{
+  "tvSyncController.controlScreen.areaSelection.empty.create.entertainment.area": "建立休閒娛樂區",
+  "tvSyncController.controlScreen.areaSelection.empty.subtitle": "建立休閒娛樂區，定義哪些燈光應該加入同步作業。",
+  "tvSyncController.controlScreen.areaSelection.missing": "選取...",
+  "tvSyncController.controlScreen.areaSelection.subtitle": "您希望使用哪個娛樂區？",
+  "tvSyncController.controlScreen.areaSelection.title": "休閒娛樂區",
+  "tvSyncController.controlScreen.controls.brightness.title": "亮度",
+  "tvSyncController.controlScreen.controls.intensity.title": "強度",
+  "tvSyncController.controlScreen.controls.mode.game": "遊戲",
+  "tvSyncController.controlScreen.controls.mode.music": "音樂",
+  "tvSyncController.controlScreen.controls.mode.title": "模式",
+  "tvSyncController.controlScreen.controls.mode.video": "影像",
+  "tvSyncController.controlScreen.message.connecting": "連線中...",
+  "tvSyncController.productName": "Hue Sync 電視",
+  "tvSyncController.settings.device.removePairing.action": "移除電視",
+  "tvSyncController.settings.device.removePairing.confirm": "移除",
+  "tvSyncController.settings.device.removePairing.disclaimer": "這將從應用程式中刪除電視。"
+}

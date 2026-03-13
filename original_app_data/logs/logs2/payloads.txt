@@ -1,0 +1,64 @@
+No.     Time           Source                Destination           Protocol Length Info
+   3635 722.708977     Google_4f:e4:2d (Pixel 8) cc:37:2f:a3:e5:f7 (Hue white lamp) ATT      70     Sent Write Request, Handle: 0x0072 (Unknown)
+
+Frame 3635: Packet, 70 bytes on wire (560 bits), 70 bytes captured (560 bits)
+
+Hex payload with ascii dump
+0000   02 41 00 41 00 3d 00 04 00 12 72 00 01 ff ff 00   .A.A.=....r.....
+0010   01 00 88 a5 b3 69 00 0e 01 01 01 02 01 fe 03 02   .....i..........
+0020   bf 01 05 02 70 17 1f 01 88 7e 01 c6 52 e6 4b a8   ....p....~..R.K.
+0030   b4 58 69 b9 09 64 6f 37 00 ff ff ff ff 07 57 61   .Xi..do7......Wa
+0040   6b 65 20 75 70 01                                 ke up.
+
+
+No.     Time           Source                Destination           Protocol Length Info
+   3688 730.554694     Google_4f:e4:2d (Pixel 8) cc:37:2f:a3:e5:f7 (Hue white lamp) ATT      70     Sent Write Request, Handle: 0x0072 (Unknown)
+
+Frame 3688: Packet, 70 bytes on wire (560 bits), 70 bytes captured (560 bits)
+
+Hex payload with ascii dump
+0000   02 41 00 41 00 3d 00 04 00 12 72 00 01 ff ff 00   .A.A.=....r.....
+0010   01 00 88 a5 b3 69 00 0e 01 01 01 02 01 fe 03 02   .....i..........
+0020   bf 01 05 02 70 17 1f 01 c3 1c 25 31 e7 eb 48 2d   ....p.....%1..H-
+0030   94 a4 60 01 f4 f9 d0 1d 00 ff ff ff ff 07 57 61   ..`...........Wa
+0040   6b 65 20 75 70 01                                 ke up.
+
+
+No.     Time           Source                Destination           Protocol Length Info
+   3726 737.006603     Google_4f:e4:2d (Pixel 8) cc:37:2f:a3:e5:f7 (Hue white lamp) ATT      70     Sent Write Request, Handle: 0x0072 (Unknown)
+
+Frame 3726: Packet, 70 bytes on wire (560 bits), 70 bytes captured (560 bits)
+
+Hex payload with ascii dump
+0000   02 41 00 41 00 3d 00 04 00 12 72 00 01 ff ff 00   .A.A.=....r.....
+0010   01 00 88 a5 b3 69 00 0e 01 01 01 02 01 fe 03 02   .....i..........
+0020   bf 01 05 02 70 17 1f 01 22 de a5 ac f3 4d 41 8e   ....p..."....MA.
+0030   a5 66 73 bc 28 87 fb 9a 00 ff ff ff ff 07 57 61   .fs.(.........Wa
+0040   6b 65 20 75 70 01                                 ke up.
+
+
+No.     Time           Source                Destination           Protocol Length Info
+   3759 744.505521     Google_4f:e4:2d (Pixel 8) cc:37:2f:a3:e5:f7 (Hue white lamp) ATT      70     Sent Write Request, Handle: 0x0072 (Unknown)
+
+Frame 3759: Packet, 70 bytes on wire (560 bits), 70 bytes captured (560 bits)
+
+Hex payload with ascii dump
+0000   02 41 00 41 00 3d 00 04 00 12 72 00 01 ff ff 00   .A.A.=....r.....
+0010   01 00 30 a3 b3 69 00 0e 01 01 01 02 01 fe 03 02   ..0..i..........
+0020   bf 01 05 02 e0 2e 1f 01 31 1e 68 36 07 b7 48 5e   ........1.h6..H^
+0030   a8 f5 21 63 51 e1 ff 0d 00 ff ff ff ff 07 57 61   ..!cQ.........Wa
+0040   6b 65 20 75 70 01                                 ke up.
+
+
+No.     Time           Source                Destination           Protocol Length Info
+   3789 751.123881     Google_4f:e4:2d (Pixel 8) cc:37:2f:a3:e5:f7 (Hue white lamp) ATT      70     Sent Write Request, Handle: 0x0072 (Unknown)
+
+Frame 3789: Packet, 70 bytes on wire (560 bits), 70 bytes captured (560 bits)
+
+Hex payload with ascii dump
+0000   02 41 00 41 00 3d 00 04 00 12 72 00 01 ff ff 00   .A.A.=....r.....
+0010   01 00 d8 a0 b3 69 00 0e 01 01 01 02 01 fe 03 02   .....i..........
+0020   bf 01 05 02 50 46 1f 01 5a a3 f9 95 c1 ed 4b 1a   ....PF..Z.....K.
+0030   8d 06 fe bd ce 40 ce 49 00 ff ff ff ff 07 57 61   .....@.I......Wa
+0040   6b 65 20 75 70 01                                 ke up.
+

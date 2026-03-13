@@ -1,0 +1,40 @@
+supported_accessories:
+- SOC001
+
+edit_steps:
+  - step_type: name_selection
+  - step_type: location_selection
+  - step_type: light_selection
+    light_selection_translations:
+      - control:
+          type: contact_sensor
+        translation: accessory.behavior.stork.edit.lightSelection.description.text
+
+  - step_type: action_selection
+    action_edit_definitions:
+      - control:
+          type: contact_sensor
+        action_edit_configurations:
+          - header_text: accessory.behavior.stork.edit.onOpen.header.text
+            edit_configuration_type: configurable
+            requires_full_screen: true
+            allow_group_scenes_selection: true
+            allow_selecting_smart_scenes_for_action_archetypes:
+              - scene_per_group
+            selectable_action_archetypes:
+              - archetype: scene_per_group
+                control_action_key: on_open
+          - edit_configuration_type: configurable
+            requires_full_screen: true
+            allow_group_scenes_selection: false
+            selectable_action_archetypes:
+              - archetype: scene_per_group_timer
+                control_action_key: on_close
+
+  - step_type: security
+    header: accessory.behavior.stork.edit.security.header
+    arm_when_home_title: accessory.behavior.stork.edit.security.armWhenHome.title
+    arm_when_away_title: accessory.behavior.stork.edit.security.armWhenAway.title
+    arm_disarm_subtitle: accessory.behavior.stork.edit.security.armDisarm.subtitle
+    security_center_setup_message: accessory.behavior.stork.edit.security.securityCenterSetup
+    no_permission_message: accessory.behavior.stork.edit.security.noAdminRights  

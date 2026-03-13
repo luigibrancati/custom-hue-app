@@ -1,0 +1,98 @@
+nRF Connect, 2026-03-13
+Hue white lamp (E5:B7:DE:6F:B2:68)
+V	17:17:17.170	Connecting to E5:B7:DE:6F:B2:68...
+D	17:17:17.170	gatt = device.connectGatt(autoConnect = false, TRANSPORT_LE, preferred PHY = LE 1M)
+D	17:17:17.183	[Callback] Connection state changed with status: 0 and new state: CONNECTED (2)
+I	17:17:17.183	Connected to E5:B7:DE:6F:B2:68
+D	17:17:17.183	wait(1600ms)
+V	17:17:19.000	Discovering services...
+D	17:17:19.000	gatt.discoverServices()
+D	17:17:19.026	[Callback] Services discovered with status: 0
+I	17:17:19.026	Services discovered
+V	17:17:19.041	Generic Attribute (0x1801)
+- Service Changed [I] (0x2A05)
+   Client Characteristic Configuration (0x2902)
+- Database Hash [R] (0x2B2A)
+- Client Supported Features [R W] (0x2B29)
+Generic Access (0x1800)
+- Device Name [R] (0x2A00)
+- Appearance [R] (0x2A01)
+Device Information (0x180A)
+- Manufacturer Name String [R] (0x2A29)
+- Model Number String [R] (0x2A24)
+- Software Revision String [R] (0x2A28)
+Device Config Service (0000fe0f-0000-1000-8000-00805f9b34fb)
+- Unknown Characteristic [R] (97fe6561-0001-4f62-86e9-b71ee2da3d22)
+- Device Name Characteristics [R W WNR] (97fe6561-0003-4f62-86e9-b71ee2da3d22)
+- Unknown Characteristic [W WNR] (97fe6561-0004-4f62-86e9-b71ee2da3d22)
+- Unknown Characteristic [I W WNR] (97fe6561-0005-4f62-86e9-b71ee2da3d22)
+   Client Characteristic Configuration (0x2902)
+- Unknown Characteristic [R W WNR] (97fe6561-0006-4f62-86e9-b71ee2da3d22)
+- Unknown Characteristic [I N W WNR] (97fe6561-0008-4f62-86e9-b71ee2da3d22)
+   Client Characteristic Configuration (0x2902)
+- Unknown Characteristic [I N R W WNR] (97fe6561-1001-4f62-86e9-b71ee2da3d22)
+   Client Characteristic Configuration (0x2902)
+- Unknown Characteristic [R W WNR] (97fe6561-2001-4f62-86e9-b71ee2da3d22)
+- Unknown Characteristic [W WNR] (97fe6561-2002-4f62-86e9-b71ee2da3d22)
+- Unknown Characteristic [W WNR] (97fe6561-2004-4f62-86e9-b71ee2da3d22)
+- Unknown Characteristic [W WNR] (97fe6561-a001-4f62-86e9-b71ee2da3d22)
+- Unknown Characteristic [R] (97fe6561-a002-4f62-86e9-b71ee2da3d22)
+- Unknown Characteristic [R W WNR] (97fe6561-a003-4f62-86e9-b71ee2da3d22)
+- Unknown Characteristic [R W WNR] (97fe6561-2005-4f62-86e9-b71ee2da3d22)
+Unknown Service (0000fff6-0000-1000-8000-00805f9b34fb)
+- Unknown Characteristic [W] (18ee2ef5-263d-4559-959f-4f9c429f9d11)
+- Unknown Characteristic [I] (18ee2ef5-263d-4559-959f-4f9c429f9d12)
+   Client Characteristic Configuration (0x2902)
+- Unknown Characteristic [R] (64630238-8772-45f2-b87d-748a83218f04)
+Light Control Service (932c32bd-0000-47a2-835a-a8d455b859dd)
+- Unknown Characteristic [R] (932c32bd-0001-47a2-835a-a8d455b859dd)
+- On/Off Characteristics [N R W WNR] (932c32bd-0002-47a2-835a-a8d455b859dd)
+   Client Characteristic Configuration (0x2902)
+- Brightness Characteristics [N R W WNR] (932c32bd-0003-47a2-835a-a8d455b859dd)
+   Client Characteristic Configuration (0x2902)
+- Unknown Characteristic [W WNR] (932c32bd-0006-47a2-835a-a8d455b859dd)
+- Combined Control Characteristics [N R W WNR] (932c32bd-0007-47a2-835a-a8d455b859dd)
+   Client Characteristic Configuration (0x2902)
+- Unknown Characteristic [R W WNR] (932c32bd-1005-47a2-835a-a8d455b859dd)
+Unknown Service (b8843add-0000-4aa1-8794-c3f462030bda)
+- Unknown Characteristic [R] (b8843add-0001-4aa1-8794-c3f462030bda)
+- Unknown Characteristic [I N W WNR] (b8843add-0002-4aa1-8794-c3f462030bda)
+   Client Characteristic Configuration (0x2902)
+- Unknown Characteristic [W WNR] (b8843add-0003-4aa1-8794-c3f462030bda)
+- Unknown Characteristic [R] (b8843add-0004-4aa1-8794-c3f462030bda)
+Unknown Service (9da2ddf1-0000-44d0-909c-3f3d3cb34a7b)
+- Suspected Schedule [N W WNR] (9da2ddf1-0001-44d0-909c-3f3d3cb34a7b)
+   Client Characteristic Configuration (0x2902)
+Unknown Service (29144af4-0000-4481-bfe9-6d0299b429e3)
+- Unknown Characteristic [I W WNR] (89e6c2bd-0001-4f1e-aee0-2fa77c87cf7c)
+   Client Characteristic Configuration (0x2902)
+- Unknown Characteristic [I W WNR] (29144af4-0002-4481-bfe9-6d0299b429e3)
+   Client Characteristic Configuration (0x2902)
+D	17:17:19.041	gatt.setCharacteristicNotification(00002a05-0000-1000-8000-00805f9b34fb, true)
+D	17:17:19.043	gatt.setCharacteristicNotification(97fe6561-0005-4f62-86e9-b71ee2da3d22, true)
+D	17:17:19.045	gatt.setCharacteristicNotification(97fe6561-0008-4f62-86e9-b71ee2da3d22, true)
+D	17:17:19.046	gatt.setCharacteristicNotification(97fe6561-1001-4f62-86e9-b71ee2da3d22, true)
+D	17:17:19.047	gatt.setCharacteristicNotification(18ee2ef5-263d-4559-959f-4f9c429f9d12, true)
+D	17:17:19.049	gatt.setCharacteristicNotification(932c32bd-0002-47a2-835a-a8d455b859dd, true)
+D	17:17:19.050	gatt.setCharacteristicNotification(932c32bd-0003-47a2-835a-a8d455b859dd, true)
+D	17:17:19.053	gatt.setCharacteristicNotification(932c32bd-0007-47a2-835a-a8d455b859dd, true)
+D	17:17:19.056	gatt.setCharacteristicNotification(b8843add-0002-4aa1-8794-c3f462030bda, true)
+D	17:17:19.058	gatt.setCharacteristicNotification(9da2ddf1-0001-44d0-909c-3f3d3cb34a7b, true)
+D	17:17:19.060	gatt.setCharacteristicNotification(89e6c2bd-0001-4f1e-aee0-2fa77c87cf7c, true)
+D	17:17:19.062	gatt.setCharacteristicNotification(29144af4-0002-4481-bfe9-6d0299b429e3, true)
+V	17:17:26.727	Writing request to characteristic 932c32bd-0002-47a2-835a-a8d455b859dd
+D	17:17:26.727	gatt.writeCharacteristic(932c32bd-0002-47a2-835a-a8d455b859dd, value=0x00)
+I	17:17:26.798	Data written to 932c32bd-0002-47a2-835a-a8d455b859dd, value: (0x) 00
+A	17:17:26.798	"(0x) 00" sent
+I	17:17:26.902	Notification received from 932c32bd-0007-47a2-835a-a8d455b859dd, value: (0x) 01-01-00-02-01-B0
+A	17:17:26.902	"(0x) 01-01-00-02-01-B0" received
+I	17:17:27.291	Notification received from 932c32bd-0007-47a2-835a-a8d455b859dd, value: (0x) 01-01-00-02-01-FE
+A	17:17:27.291	"(0x) 01-01-00-02-01-FE" received
+I	17:18:36.911	Notification received from 9da2ddf1-0001-44d0-909c-3f3d3cb34a7b, value: (0x) 01-00-FF-FF-05-00
+A	17:18:36.911	"(0x) 01-00-FF-FF-05-00" received
+I	17:18:36.912	Notification received from 9da2ddf1-0001-44d0-909c-3f3d3cb34a7b, value: (0x) 04-FF-FF-05-00
+A	17:18:36.912	"(0x) 04-FF-FF-05-00" received
+I	17:18:42.610	Notification received from 9da2ddf1-0001-44d0-909c-3f3d3cb34a7b, value: (0x) 03-00-05-00
+A	17:18:42.610	"(0x) 03-00-05-00" received
+I	17:18:42.611	Notification received from 9da2ddf1-0001-44d0-909c-3f3d3cb34a7b, value: (0x) 04-05-00-FF-FF
+A	17:18:42.611	"(0x) 04-05-00-FF-FF" received

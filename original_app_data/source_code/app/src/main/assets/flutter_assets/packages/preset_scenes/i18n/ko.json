@@ -1,0 +1,17 @@
+{
+  "scenes.categories.defaults": "기본값",
+  "scenes.new": "새 장면 설정",
+  "scenes.recipe.bright": "밝게",
+  "scenes.recipe.concentrate": "집중",
+  "scenes.recipe.coolBright": "시원하고 밝은 느낌",
+  "scenes.recipe.dimmed": "어둡게",
+  "scenes.recipe.doze": "휴지",
+  "scenes.recipe.energize": "활력",
+  "scenes.recipe.nightLight": "야간 조명",
+  "scenes.recipe.read": "독서",
+  "scenes.recipe.relax": "휴식",
+  "smartScenes.goldenHours": "골든 아워",
+  "smartScenes.naturalLight": "자연광",
+  "smartScenes.natureColors": "자연의 색상",
+  "smartScenes.tag24Hours": "24H"
+}

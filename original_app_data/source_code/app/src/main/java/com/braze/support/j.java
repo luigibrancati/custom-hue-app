@@ -1,0 +1,21 @@
+package com.braze.support;
+
+import vc.InterfaceC6082a;
+
+/* JADX INFO: compiled from: r8-map-id-866bacc38531af0a81fcd8a9574e1e22709cd7ce6d67b69fe3714c2addafcb5c */
+/* JADX INFO: loaded from: classes.dex */
+public final class j implements InterfaceC6082a {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    public final /* synthetic */ String f28639a;
+
+    public j(String str) {
+        this.f28639a = str;
+    }
+
+    @Override // vc.InterfaceC6082a
+    /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
+    public final String invoke() {
+        return "Failed to create valid enum from string: " + this.f28639a;
+    }
+}

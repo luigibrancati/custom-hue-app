@@ -1,0 +1,5 @@
+id: 0x00000003
+name: Ding dong classic
+api_name: ding_dong_classic
+type: chime
+products: all

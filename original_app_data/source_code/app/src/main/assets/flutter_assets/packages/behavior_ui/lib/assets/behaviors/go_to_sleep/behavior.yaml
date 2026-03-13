@@ -1,0 +1,196 @@
+id: aafacb16-3872-11ea-a137-2e728ce88126
+script_id: 7e571ac6-f363-42e1-809a-4cbf6523ed72
+revision: '123'
+category: go_to_sleep
+priority: 1
+
+overview:
+  translation_keys:
+    name: behavior.gotosleep.overview.name
+    description: behavior.gotosleep.overview.description
+  image: images/go_to_sleep.webp
+
+dashboard:
+  comparators:
+    - sort_by: display_time
+      value_name: when
+    - sort_by: creation_time
+  card:
+    title:
+      - value_name: when
+        value_formatter: display_time
+        active_for_states: [enabled]
+      - value_name: fade_out_duration
+        value_formatter: fade_duration
+        active_for_states: [disabled]
+      - value_name: name
+        value_formatter: plain_text
+    subtitle:
+      value_name: when
+      value_formatter: recurrence
+      active_for_states: [enabled]
+
+configuration:
+  light_capabilities: [any]
+  recommended_light_capability: sunset
+
+creation:
+  - step_type: lights_selection
+    result_name: where
+    configuration:
+      allow_home: true
+      allow_individual_lights: true
+      max_groups: 4
+      warn_plugs_selected: true
+    translation_keys:
+      title: behavior.gotosleep.selectLights.title
+  # this step sets the "enabled" step result value
+  - step_type: action
+    action_type: choose_automation_activation_type
+  - step_type: time_and_recurrence_selection
+    result_name: when
+    is_hidden_conditions:
+      conditions:
+        - condition_type: step_result
+          key: enabled
+          value: false
+    default_value:
+      time:
+        hour: 23
+        minute: 0
+      recurrence_days: ["Mon","Tue","Wed","Thu","Fri"]
+    translation_keys:
+      title: behavior.gotosleep.timeAndRecurrence.title
+    configuration:
+      fade_result_name: fade_out_duration
+      end_state_result_name: end_state
+      fade_selection_step:
+        is_hidden_conditions:
+          conditions:
+            - condition_type: step_result
+              key: enabled
+              value: true
+        result_name: fade_out_duration
+        default_value: 900
+        configuration:
+          time_result_name: when
+          duration_type: fade_start_out
+  - step_type: state_selection
+    is_hidden: true
+    default_value: enabled
+  - step_type: composite
+    steps:
+      - step_type: option_selection_step
+        result_name: style
+        translation_keys:
+          title: behavior.gotosleep.edit.styleItem.title
+          subtitle: behavior.gotosleep.edit.styleItem.subtitle
+        options:
+          - value: sunset
+            translation_keys:
+              title: behavior.gotosleep.style.sunset.title
+              subtitle: behavior.gotosleep.style.sunset.subtitle
+            thumbnail:
+              colors: [ "#FFDAA0", "#FFC263", "#FFA556", "#E68B3C", "#C96F21", "#8B4E19" ]
+            required_feature: style_sunset_gts
+          - value: basic
+            translation_keys:
+              title: behavior.gotosleep.style.basic.title
+              subtitle: behavior.gotosleep.style.basic.subtitle
+            thumbnail:
+              colors: [ "#FFEFCA", "#3F2F0A" ]
+            omit_if_only_supported_option: true
+        default_value_when_creating: sunset
+        default_value_when_missing: basic
+      - step_type: fade_selection
+        is_hidden_conditions:
+          conditions:
+            - condition_type: step_result
+              key: enabled
+              value: true
+        result_name: fade_out_duration
+        default_value: 900
+        configuration:
+          time_result_name: when
+          duration_type: fade_start_out
+      - step_type: end_state_selection
+        result_name: end_state
+        default_value: turn_off
+    translation_keys:
+      title: behavior.gotosleep.experience.title
+  - step_type: name_setting
+    translation_keys:
+      title: behavior.gotosleep.nameStep.title
+      label: behavior.gotosleep.nameStep.label
+      default_name: behavior.gotosleep.nameStep.defaultName
+    should_save: true
+  - step_type: trigger_explanation
+
+editing:
+  - step_type: name_setting
+  - step_type: time_and_recurrence_selection
+    result_name: when
+    translation_keys:
+      title: behavior.gotosleep.timeAndRecurrence.title
+    configuration:
+      fade_result_name: fade_out_duration
+      end_state_result_name: end_state
+      fade_selection_step:
+        step_type: fade_selection
+        result_name: fade_out_duration
+        configuration:
+          time_result_name: when
+          duration_type: fade_start_out
+  - step_type: lights_selection
+    result_name: where
+    configuration:
+      allow_home: true
+      allow_individual_lights: true
+      max_groups: 4
+      warn_plugs_selected: true
+    translation_keys:
+      title: behavior.gotosleep.selectLights.title
+  - step_type: composite
+    steps:
+    - step_type: option_selection_step
+      result_name: style
+      translation_keys:
+        title: behavior.gotosleep.edit.styleItem.title
+        subtitle: behavior.gotosleep.edit.styleItem.subtitle
+      options:
+        - value: sunset
+          translation_keys:
+            title: behavior.gotosleep.style.sunset.title
+            subtitle: behavior.gotosleep.style.sunset.subtitle
+          thumbnail:
+            colors: [ "#FFDAA0", "#FFC263", "#FFA556", "#E68B3C", "#C96F21", "#8B4E19" ]
+          required_feature: style_sunset_gts
+        - value: basic
+          translation_keys:
+            title: behavior.gotosleep.style.basic.title
+            subtitle: behavior.gotosleep.style.basic.subtitle
+          thumbnail:
+            colors: [ "#FFEFCA", "#3F2F0A" ]
+          omit_if_only_supported_option: true
+    - step_type: fade_selection
+      result_name: fade_out_duration
+      is_hidden_conditions:
+        conditions:
+          - condition_type: step_result
+            key: enabled
+            value: false
+        equal: false
+      configuration:
+        time_result_name: when
+        duration_type: fade_start_out
+    - step_type: end_state_selection
+      result_name: end_state
+    translation_keys:
+      title: behavior.gotosleep.generalStep.title
+  - step_type: state_selection
+    default_value: enabled
+  - step_type: composite
+    steps:
+      - step_type: controlling_devices
+    translation_keys:
+      title: behavior.gotosleep.controllingDevicesStep.title

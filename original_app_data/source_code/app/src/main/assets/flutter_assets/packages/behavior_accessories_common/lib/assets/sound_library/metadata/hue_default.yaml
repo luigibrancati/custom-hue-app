@@ -1,0 +1,5 @@
+id: 0x0000000A
+name: Hue default
+api_name: hue_default
+type: chime
+products: all

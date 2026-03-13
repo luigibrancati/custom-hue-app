@@ -1,0 +1,18 @@
+{
+  "behavior.wakeup.edit.brightnessItem.title": "Maksimum parlaklık",
+  "behavior.wakeup.edit.styleItem.subtitle": "Gradient ışıklar için gün doğumu önerilir.",
+  "behavior.wakeup.edit.styleItem.title": "Stil",
+  "behavior.wakeup.experience.title": "Ayarlarınızı seçin",
+  "behavior.wakeup.generalStep.title": "Genel",
+  "behavior.wakeup.nameStep.defaultName": "Uyandırma",
+  "behavior.wakeup.nameStep.label": "İsim",
+  "behavior.wakeup.nameStep.title": "Otomasyonunuzu <emph>adlandırın</emph>",
+  "behavior.wakeup.overview.description": "Sabahları seçili ışığın parlaklığını kademeli olarak artırın.",
+  "behavior.wakeup.overview.name": "Uykudan ışık yardımıyla uyanın",
+  "behavior.wakeup.selectLights.title": "Işıklarınızı <emph>seçin</emph>",
+  "behavior.wakeup.style.basic.subtitle": "Beyaz ışık dimlenmiş olarak başlar, daha sonra tam parlaklığa geçer.",
+  "behavior.wakeup.style.basic.title": "Parlaklığa geçiş",
+  "behavior.wakeup.style.sunrise.subtitle": "Renkler değişir ve birbirlerine karışarak sabah gökyüzü görüntüsü oluşturur. Gradient ışıklar için önerilir.",
+  "behavior.wakeup.style.sunrise.title": "Gün doğumu",
+  "behavior.wakeup.timeAndRecurrence.title": "<emph>Ne zaman</emph> <emph>uyandırılmak</emph> istiyorsunuz?"
+}

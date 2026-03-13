@@ -1,0 +1,18 @@
+{
+  "behavior.wakeup.edit.brightnessItem.title": "Luminosité maximale",
+  "behavior.wakeup.edit.styleItem.subtitle": "Le lever du soleil est recommandé pour l'éclairage à intensité progressive.",
+  "behavior.wakeup.edit.styleItem.title": "Style",
+  "behavior.wakeup.experience.title": "Choisissez vos paramètres",
+  "behavior.wakeup.generalStep.title": "Dispositions diverses",
+  "behavior.wakeup.nameStep.defaultName": "Réveil",
+  "behavior.wakeup.nameStep.label": "Nom",
+  "behavior.wakeup.nameStep.title": "<emph>Nommez</emph> vos automatisations",
+  "behavior.wakeup.overview.description": "Augmentez graduellement la luminosité des lampes sélectionnées le matin.",
+  "behavior.wakeup.overview.name": "Réveil avec lumière",
+  "behavior.wakeup.selectLights.title": "<emph>Choisissez</emph> vos lumières",
+  "behavior.wakeup.style.basic.subtitle": "La lumière blanche commence par être atténuée, puis s’estompe pour atteindre la pleine luminosité.",
+  "behavior.wakeup.style.basic.title": "Transition vers une lumière vive",
+  "behavior.wakeup.style.sunrise.subtitle": "Les couleurs changent et se mélangent pour imiter le ciel du matin. Recommandé pour les lumières dégradées.",
+  "behavior.wakeup.style.sunrise.title": "Lever du soleil",
+  "behavior.wakeup.timeAndRecurrence.title": "À <emph>quelle heure</emph> souhaitez-vous <emph>vous réveiller</emph>?"
+}

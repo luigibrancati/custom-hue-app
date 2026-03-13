@@ -1,0 +1,18 @@
+{
+  "tvSyncController.controlScreen.areaSelection.empty.create.entertainment.area": "Crear un área de entretenimiento",
+  "tvSyncController.controlScreen.areaSelection.empty.subtitle": "Crea un área de Entretenimiento para definir las luces que deben añadirse a la sincronización.",
+  "tvSyncController.controlScreen.areaSelection.missing": "Seleccionar...",
+  "tvSyncController.controlScreen.areaSelection.subtitle": "¿Qué área de entretenimiento deseas usar?",
+  "tvSyncController.controlScreen.areaSelection.title": "Área de entretenimiento",
+  "tvSyncController.controlScreen.controls.brightness.title": "Brillo",
+  "tvSyncController.controlScreen.controls.intensity.title": "Intensidad",
+  "tvSyncController.controlScreen.controls.mode.game": "Juego",
+  "tvSyncController.controlScreen.controls.mode.music": "Música",
+  "tvSyncController.controlScreen.controls.mode.title": "Modo",
+  "tvSyncController.controlScreen.controls.mode.video": "Video",
+  "tvSyncController.controlScreen.message.connecting": "Conectando...",
+  "tvSyncController.productName": "Hue Sync TV",
+  "tvSyncController.settings.device.removePairing.action": "Quitar TV",
+  "tvSyncController.settings.device.removePairing.confirm": "Quitar",
+  "tvSyncController.settings.device.removePairing.disclaimer": "Esto eliminará el televisor de la aplicación."
+}

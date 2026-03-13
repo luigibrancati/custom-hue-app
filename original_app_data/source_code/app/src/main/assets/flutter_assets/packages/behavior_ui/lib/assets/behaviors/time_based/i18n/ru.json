@@ -1,0 +1,9 @@
+{
+  "behavior.timeBased.nameStep.label": "Имя",
+  "behavior.timeBased.nameStep.title": "<emph>Присвойте имя</emph> вашему автоматическому режиму работы",
+  "behavior.timeBased.overview.description": "Создайте свой первый автоматический режим.",
+  "behavior.timeBased.overview.name": "Настройка",
+  "behavior.timeBased.selectLights.title": "<emph>Выберите</emph> лампы",
+  "behavior.timeBased.selectScenes.title": "<emph>В каком режиме</emph> должны работать ваши светильники?",
+  "behavior.timeBased.whenExtendedStep.title": "<emph>На какое время</emph> вы хотите назначить эту настройку автоматизации?"
+}

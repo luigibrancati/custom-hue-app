@@ -1,0 +1,16 @@
+{
+  "iosWidgetsGuidance.add.subtitle": "iPhone'unuzda veya iPad'inizde Ana ekrana dokunup basılı tutun. Ardından sol üst köşedeki + simgesine dokunun. Bir sonraki ekranda Hue'yu seçin ve kısayol boyutu tercihinizi yapın.",
+  "iosWidgetsGuidance.add.title": "Widget'ı ekleyin",
+  "iosWidgetsGuidance.main.actionFooterMessage": "Widget'lar hakkında daha fazla bilgi için <link:apple_support>Apple'ın destek sayfasını</link:apple_support> ziyaret edin.",
+  "iosWidgetsGuidance.main.headerTitle": "Kısayollar",
+  "iosWidgetsGuidance.main.learnMoreButton.title": "Daha fazla bilgi",
+  "iosWidgetsGuidance.main.subtitle": "Sahneleri, uygulamayı açmadan doğrudan Ana Ekranınızdan, Kilit Ekranınızdan ve Bekleme Modu ekranından ayarlayın.",
+  "iosWidgetsGuidance.main.title": "Işıkları kısayollarla kontrol edin",
+  "iosWidgetsGuidance.selectAction.title": "Eylemlerinizi seçin",
+  "iosWidgetsGuidance.selectionAction.subtitle": "Düzenleme modundayken, widget'in ışıklarınızı nasıl kontrol edeceğini seçmek için widget'a dokunun.\n\nİpucu: Kilit Ekranınıza bir kısayol ekleyebileceğinizi biliyor muydunuz? Bu ekrandayken, basılı tutun ve ardından Özelleştir'e dokunun.",
+  "siriShortcutsGuidance.createSiriShortcutsButton.title": "Kısayol oluştur",
+  "siriShortcutsGuidance.header.title": "Kısayollar",
+  "siriShortcutsGuidance.learnMoreButton.title": "Kısayollar hakkında daha fazla bilgi edinin",
+  "siriShortcutsGuidance.subtitle": "Apple Watch'ınızda veya Ana Ekranınızda bulunan kısayollarda kullanmak için sesli özel komutlar veya kısayollar oluşturun. \n \n Shortcuts uygulamasındaki kısayollara, kısayol ekleyin. \"Hue\"yu arayın ve kendi eylemlerinizi oluşturun.",
+  "siriShortcutsGuidance.title": "Hue için kısayol oluşturun"
+}

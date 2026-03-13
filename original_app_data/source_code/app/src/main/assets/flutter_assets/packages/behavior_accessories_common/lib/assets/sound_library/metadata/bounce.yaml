@@ -1,0 +1,5 @@
+id: 0x0000000F
+name: Bounce
+api_name: bounce
+type: chime # can be chime, alarm, alert, other (for things like onboarding voices)
+products: all # can be 'all' or one/many of: camera, chime, etc

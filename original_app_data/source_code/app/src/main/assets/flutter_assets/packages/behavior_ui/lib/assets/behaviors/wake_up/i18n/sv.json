@@ -1,0 +1,18 @@
+{
+  "behavior.wakeup.edit.brightnessItem.title": "Maximal ljusstyrka",
+  "behavior.wakeup.edit.styleItem.subtitle": "Sunrise rekommenderas för gradientlampor.",
+  "behavior.wakeup.edit.styleItem.title": "Stil",
+  "behavior.wakeup.experience.title": "Välj dina inställningar",
+  "behavior.wakeup.generalStep.title": "Allmänt",
+  "behavior.wakeup.nameStep.defaultName": "Vakna",
+  "behavior.wakeup.nameStep.label": "Namn",
+  "behavior.wakeup.nameStep.title": "<emph>Namnge</emph> din automatisering",
+  "behavior.wakeup.overview.description": "Öka ljusstyrkan långsamt på utvalda lampor när det blir morgon.",
+  "behavior.wakeup.overview.name": "Väckning med ljus",
+  "behavior.wakeup.selectLights.title": "<emph>Välj</emph> dina lampor",
+  "behavior.wakeup.style.basic.subtitle": "Vitt ljus börjar dämpat och övergår sedan till full ljusstyrka.",
+  "behavior.wakeup.style.basic.title": "Övergång till ljust",
+  "behavior.wakeup.style.sunrise.subtitle": "Färger ändras och blandas samman för att efterlikna morgonhimlen. Rekommenderas för gradientlampor.",
+  "behavior.wakeup.style.sunrise.title": "Soluppgång",
+  "behavior.wakeup.timeAndRecurrence.title": "Vid <emph>vilken tid</emph> vill du <emph>vakna</emph>?"
+}

@@ -1,0 +1,13 @@
+{
+  "pushnotification.mainScreen.noAccount.error": "No has iniciado sesión o no tienes un Hue Bridge",
+  "pushnotification.mainScreen.overlay.subscribingToNotifications": "Suscripción a las notificaciones",
+  "pushnotification.mainScreen.overlay.subscriptionStatus": "Comprobación del estado de suscripción",
+  "pushnotification.mainScreen.overlay.unSubscribingToNotifications": "Anulando la suscripción a las notificaciones",
+  "pushnotification.mainScreen.refresh.option": "Refrescar",
+  "pushnotification.mainScreen.refreshStatus.title": "Actualizar estado",
+  "pushnotification.mainScreen.status": "Estado",
+  "pushnotification.mainScreen.subscribeOption": "Suscribirme",
+  "pushnotification.mainScreen.subscribeToPushNotifications.title": "Suscribirse a las notificaciones automáticas",
+  "pushnotification.mainScreen.title": "Notificaciones push",
+  "pushnotification.mainScreen.unSubscribeOption": "Anular la suscripción"
+}

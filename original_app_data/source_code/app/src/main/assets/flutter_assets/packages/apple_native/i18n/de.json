@@ -1,0 +1,16 @@
+{
+  "iosWidgetsGuidance.add.subtitle": "Tippe auf Deinem iPhone oder iPad auf den Startbildschirm und halte ihn gedrückt. Tippe dann auf das + Symbol in der oberen linken Ecke. Wähle auf dem nächsten Bildschirm „Hue“ und wähle die Widget-Größe aus.",
+  "iosWidgetsGuidance.add.title": "Das Widget hinzufügen",
+  "iosWidgetsGuidance.main.actionFooterMessage": "Weitere Informationen über Widgets findest Du auf der <link:apple_support>Apple-Supportseite</link:apple_support>.",
+  "iosWidgetsGuidance.main.headerTitle": "Widgets",
+  "iosWidgetsGuidance.main.learnMoreButton.title": "Mehr erfahren",
+  "iosWidgetsGuidance.main.subtitle": "Stelle Szenen direkt von Deinem Startbildschirm, Sperrbildschirm und aus dem Standby-Modus ein – ohne die App zu öffnen.",
+  "iosWidgetsGuidance.main.title": "Lichter mit Widgets steuern",
+  "iosWidgetsGuidance.selectAction.title": "Wählen Sie Ihre Aktionen",
+  "iosWidgetsGuidance.selectionAction.subtitle": "Tippe im Bearbeitungsmodus auf das Widget, um auszuwählen, wie das Widget Deine Beleuchtung steuern soll.\n\nTipp: Wusstest Du, dass Du ein Widget zu Deinem Sperrbildschirm hinzufügen kannst? Tippe und halte auf dem jeweiligen Bildschirm und tippe dann auf Anpassen.",
+  "siriShortcutsGuidance.createSiriShortcutsButton.title": "Shortcuts erstellen",
+  "siriShortcutsGuidance.header.title": "Shortcuts",
+  "siriShortcutsGuidance.learnMoreButton.title": "Erfahre mehr über Shortcuts",
+  "siriShortcutsGuidance.subtitle": "Erstelle Deine eigenen Sprachbefehle oder Shortcuts, um die Widgets auf dem Startbildschirm Deines mobilen Geräts oder auf Deiner Apple Watch zu verwenden. \n \n Füge Shortcuts zu Deinen Widgets in der Shortcuts App hinzu. Suche nach \"Hue\" und erstelle Deine eigenen Aktionen.",
+  "siriShortcutsGuidance.title": "Shortcuts für Hue erstellen"
+}

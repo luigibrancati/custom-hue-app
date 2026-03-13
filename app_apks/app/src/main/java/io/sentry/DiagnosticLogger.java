@@ -1,0 +1,48 @@
+package io.sentry;
+
+import io.sentry.util.Objects;
+
+/* JADX INFO: compiled from: r8-map-id-866bacc38531af0a81fcd8a9574e1e22709cd7ce6d67b69fe3714c2addafcb5c */
+/* JADX INFO: loaded from: classes4.dex */
+public final class DiagnosticLogger implements ILogger {
+    private final ILogger logger;
+    private final SentryOptions options;
+
+    public DiagnosticLogger(SentryOptions sentryOptions, ILogger iLogger) {
+        this.options = (SentryOptions) Objects.requireNonNull(sentryOptions, "SentryOptions is required.");
+        this.logger = iLogger;
+    }
+
+    public ILogger getLogger() {
+        return this.logger;
+    }
+
+    @Override // io.sentry.ILogger
+    public boolean isEnabled(SentryLevel sentryLevel) {
+        return sentryLevel != null && this.options.isDebug() && sentryLevel.ordinal() >= this.options.getDiagnosticLevel().ordinal();
+    }
+
+    @Override // io.sentry.ILogger
+    public void log(SentryLevel sentryLevel, String str, Object... objArr) {
+        if (this.logger == null || !isEnabled(sentryLevel)) {
+            return;
+        }
+        this.logger.log(sentryLevel, str, objArr);
+    }
+
+    @Override // io.sentry.ILogger
+    public void log(SentryLevel sentryLevel, String str, Throwable th) {
+        if (this.logger == null || !isEnabled(sentryLevel)) {
+            return;
+        }
+        this.logger.log(sentryLevel, str, th);
+    }
+
+    @Override // io.sentry.ILogger
+    public void log(SentryLevel sentryLevel, Throwable th, String str, Object... objArr) {
+        if (this.logger == null || !isEnabled(sentryLevel)) {
+            return;
+        }
+        this.logger.log(sentryLevel, th, str, objArr);
+    }
+}

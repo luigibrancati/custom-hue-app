@@ -1,0 +1,16 @@
+{
+  "iosWidgetsGuidance.add.subtitle": "Na iPhonu nebo iPadu klepněte a podržte hlavní obrazovku. Pak v levém horním rohu klepněte na ikonu +. Na další obrazovce vyberte Hue a velikost widgetu.",
+  "iosWidgetsGuidance.add.title": "Přidejte widget",
+  "iosWidgetsGuidance.main.actionFooterMessage": "Pro víc informací o widgetech navštivte <link:apple_support>stránku podpory společnosti Apple</link:apple_support>.",
+  "iosWidgetsGuidance.main.headerTitle": "Widgety",
+  "iosWidgetsGuidance.main.learnMoreButton.title": "Zjistěte více",
+  "iosWidgetsGuidance.main.subtitle": "Nastavujte scény rovnou z hlavní obrazovky, uzamykací obrazovky nebo pohotovostního režimu, aniž byste aplikaci museli spouštět.",
+  "iosWidgetsGuidance.main.title": "Ovládejte světla pomocí widgetů",
+  "iosWidgetsGuidance.selectAction.title": "Vyberte své akce",
+  "iosWidgetsGuidance.selectionAction.subtitle": "V režimu úprav klepněte na widget a vyberte, jak má widget ovládat vaše světla.\n\nTip: Věděli jste, že si na zamykací obrazovku můžete přidat widget? Na této obrazovce klepněte a podržte a poté klepněte na Přizpůsobit.",
+  "siriShortcutsGuidance.createSiriShortcutsButton.title": "Vytvořit zkratky",
+  "siriShortcutsGuidance.header.title": "Zkratky",
+  "siriShortcutsGuidance.learnMoreButton.title": "Další informace o zkratkách",
+  "siriShortcutsGuidance.subtitle": "Vytvořte si vlastní hlasové příkazy nebo zkratky, které se budou používat ve widgetech na hlavní obrazovce nebo v Apple Watch. \n \n Přidejte zkratky do widgetů v aplikaci Zkratky. Vyhledejte \"Hue\" a vytvořte si vlastní akce.",
+  "siriShortcutsGuidance.title": "Vytvořte si zkratky pro Hue"
+}

@@ -1,0 +1,18 @@
+{
+  "behavior.wakeup.edit.brightnessItem.title": "最大輝度",
+  "behavior.wakeup.edit.styleItem.subtitle": "グラデーションライトには [日の出] が推奨されます。",
+  "behavior.wakeup.edit.styleItem.title": "スタイル",
+  "behavior.wakeup.experience.title": "設定を選択してください",
+  "behavior.wakeup.generalStep.title": "概要",
+  "behavior.wakeup.nameStep.defaultName": "起床",
+  "behavior.wakeup.nameStep.label": "名前",
+  "behavior.wakeup.nameStep.title": "オートメーションに<emph>名前</emph>をつける",
+  "behavior.wakeup.overview.description": "朝、選択したライトを徐々に明るくしていきます。",
+  "behavior.wakeup.overview.name": "ライトで起床する",
+  "behavior.wakeup.selectLights.title": "照明を<emph>選択する</emph>",
+  "behavior.wakeup.style.basic.subtitle": "白色光は最初は薄暗く、最高の明るさまでフェードインします。",
+  "behavior.wakeup.style.basic.title": "明るい状態への移行",
+  "behavior.wakeup.style.sunrise.subtitle": "色が変化し混ざり合うことで朝の空を模した色彩を表現。グラデーションライトにおすすめです。",
+  "behavior.wakeup.style.sunrise.title": "日の出",
+  "behavior.wakeup.timeAndRecurrence.title": "<emph>何時</emph>に<emph>起床</emph>しますか?"
+}

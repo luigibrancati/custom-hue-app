@@ -1,0 +1,9 @@
+{
+  "behavior.comingHome.card.subtitle": "啟動 $lights$",
+  "behavior.comingHome.name": "回家",
+  "behavior.comingHome.overview.description": "將燈光設定為在您接近自家房屋時自動開啟。",
+  "behavior.comingHome.overview.name": "回家",
+  "behavior.comingHome.selectLights.title": "<emph>選擇</emph>您的燈具",
+  "behavior.comingHome.selectScenes.title": "<emph>當您回到家中時</emph>這些燈光將執行<emph>哪些動作</emph>？",
+  "behavior.comingHome.when.title": "您希望您的燈光<emph>何時</emph><emph>開啟</emph>？"
+}

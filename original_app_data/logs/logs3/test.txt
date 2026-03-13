@@ -1,0 +1,119 @@
+No.     Time           Source                Destination           Protocol Length Info
+    428 11.228919      Google_4f:e4:2d (Pixel 8) cc:37:2f:a3:e5:f7 (Hue white lamp) ATT      13     Sent Write Request, Handle: 0x0072 (Unknown)
+
+Frame 428: Packet, 13 bytes on wire (104 bits), 13 bytes captured (104 bits)
+Bluetooth
+Bluetooth HCI H4
+Bluetooth HCI ACL Packet
+Bluetooth L2CAP Protocol
+Bluetooth Attribute Protocol
+
+No.     Time           Source                Destination           Protocol Length Info
+    432 11.328337      Google_4f:e4:2d (Pixel 8) cc:37:2f:a3:e5:f7 (Hue white lamp) ATT      17     Sent Write Request, Handle: 0x0072 (Unknown)
+
+Frame 432: Packet, 17 bytes on wire (136 bits), 17 bytes captured (136 bits)
+Bluetooth
+Bluetooth HCI H4
+Bluetooth HCI ACL Packet
+Bluetooth L2CAP Protocol
+Bluetooth Attribute Protocol
+
+No.     Time           Source                Destination           Protocol Length Info
+    436 11.426720      Google_4f:e4:2d (Pixel 8) cc:37:2f:a3:e5:f7 (Hue white lamp) ATT      17     Sent Write Request, Handle: 0x0072 (Unknown)
+
+Frame 436: Packet, 17 bytes on wire (136 bits), 17 bytes captured (136 bits)
+Bluetooth
+Bluetooth HCI H4
+Bluetooth HCI ACL Packet
+Bluetooth L2CAP Protocol
+Bluetooth Attribute Protocol
+
+No.     Time           Source                Destination           Protocol Length Info
+    439 11.521625      Google_4f:e4:2d (Pixel 8) cc:37:2f:a3:e5:f7 (Hue white lamp) ATT      17     Sent Write Request, Handle: 0x0072 (Unknown)
+
+Frame 439: Packet, 17 bytes on wire (136 bits), 17 bytes captured (136 bits)
+Bluetooth
+Bluetooth HCI H4
+Bluetooth HCI ACL Packet
+Bluetooth L2CAP Protocol
+Bluetooth Attribute Protocol
+
+No.     Time           Source                Destination           Protocol Length Info
+    447 11.700243      Google_4f:e4:2d (Pixel 8) cc:37:2f:a3:e5:f7 (Hue white lamp) ATT      17     Sent Write Request, Handle: 0x0072 (Unknown)
+
+Frame 447: Packet, 17 bytes on wire (136 bits), 17 bytes captured (136 bits)
+Bluetooth
+Bluetooth HCI H4
+Bluetooth HCI ACL Packet
+Bluetooth L2CAP Protocol
+Bluetooth Attribute Protocol
+
+No.     Time           Source                Destination           Protocol Length Info
+    453 11.897075      Google_4f:e4:2d (Pixel 8) cc:37:2f:a3:e5:f7 (Hue white lamp) ATT      17     Sent Write Request, Handle: 0x0072 (Unknown)
+
+Frame 453: Packet, 17 bytes on wire (136 bits), 17 bytes captured (136 bits)
+Bluetooth
+Bluetooth HCI H4
+Bluetooth HCI ACL Packet
+Bluetooth L2CAP Protocol
+Bluetooth Attribute Protocol
+
+No.     Time           Source                Destination           Protocol Length Info
+    458 31.520888      Google_4f:e4:2d (Pixel 8) cc:37:2f:a3:e5:f7 (Hue white lamp) ATT      74     Sent Write Request, Handle: 0x0072 (Unknown)
+
+Frame 458: Packet, 74 bytes on wire (592 bits), 74 bytes captured (592 bits)
+Bluetooth
+Bluetooth HCI H4
+Bluetooth HCI ACL Packet
+Bluetooth L2CAP Protocol
+Bluetooth Attribute Protocol
+
+No.     Time           Source                Destination           Protocol Length Info
+    463 42.327801      Google_4f:e4:2d (Pixel 8) cc:37:2f:a3:e5:f7 (Hue white lamp) ATT      74     Sent Write Request, Handle: 0x0072 (Unknown)
+
+Frame 463: Packet, 74 bytes on wire (592 bits), 74 bytes captured (592 bits)
+Bluetooth
+Bluetooth HCI H4
+Bluetooth HCI ACL Packet
+Bluetooth L2CAP Protocol
+Bluetooth Attribute Protocol
+
+No.     Time           Source                Destination           Protocol Length Info
+    468 54.484438      Google_4f:e4:2d (Pixel 8) cc:37:2f:a3:e5:f7 (Hue white lamp) ATT      74     Sent Write Request, Handle: 0x0072 (Unknown)
+
+Frame 468: Packet, 74 bytes on wire (592 bits), 74 bytes captured (592 bits)
+Bluetooth
+Bluetooth HCI H4
+Bluetooth HCI ACL Packet
+Bluetooth L2CAP Protocol
+Bluetooth Attribute Protocol
+
+No.     Time           Source                Destination           Protocol Length Info
+    473 62.883342      Google_4f:e4:2d (Pixel 8) cc:37:2f:a3:e5:f7 (Hue white lamp) ATT      74     Sent Write Request, Handle: 0x0072 (Unknown)
+
+Frame 473: Packet, 74 bytes on wire (592 bits), 74 bytes captured (592 bits)
+Bluetooth
+Bluetooth HCI H4
+Bluetooth HCI ACL Packet
+Bluetooth L2CAP Protocol
+Bluetooth Attribute Protocol
+
+No.     Time           Source                Destination           Protocol Length Info
+    479 75.935532      Google_4f:e4:2d (Pixel 8) cc:37:2f:a3:e5:f7 (Hue white lamp) ATT      15     Sent Write Request, Handle: 0x0072 (Unknown)
+
+Frame 479: Packet, 15 bytes on wire (120 bits), 15 bytes captured (120 bits)
+Bluetooth
+Bluetooth HCI H4
+Bluetooth HCI ACL Packet
+Bluetooth L2CAP Protocol
+Bluetooth Attribute Protocol
+
+No.     Time           Source                Destination           Protocol Length Info
+    484 83.949954      Google_4f:e4:2d (Pixel 8) cc:37:2f:a3:e5:f7 (Hue white lamp) ATT      74     Sent Write Request, Handle: 0x0072 (Unknown)
+
+Frame 484: Packet, 74 bytes on wire (592 bits), 74 bytes captured (592 bits)
+Bluetooth
+Bluetooth HCI H4
+Bluetooth HCI ACL Packet
+Bluetooth L2CAP Protocol
+Bluetooth Attribute Protocol

@@ -1,0 +1,25 @@
+package com.google.android.gms.internal.play_billing;
+
+/* JADX INFO: compiled from: r8-map-id-866bacc38531af0a81fcd8a9574e1e22709cd7ce6d67b69fe3714c2addafcb5c */
+/* JADX INFO: loaded from: classes3.dex */
+public final class Y1 implements Q2 {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    public static final Q2 f30112a = new Y1();
+
+    @Override // com.google.android.gms.internal.play_billing.Q2
+    public final boolean o(int i10) {
+        switch (i10) {
+            case 0:
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            case 6:
+                return true;
+            default:
+                return false;
+        }
+    }
+}

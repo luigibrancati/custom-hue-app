@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="com_braze_content_card_background">#555555</color>
+    <color name="com_braze_content_card_background_border">#555555</color>
+    <color name="com_braze_content_card_background_shadow">#555555</color>
+    <color name="com_braze_content_card_empty_text_color">@android:color/white</color>
+    <color name="com_braze_content_cards_action_hint_text_color">#8ac7ff</color>
+    <color name="com_braze_content_cards_description">@android:color/white</color>
+    <color name="com_braze_content_cards_display_background_color">#1e1e1e</color>
+    <color name="com_braze_content_cards_title">@android:color/white</color>
+    <color name="com_braze_content_cards_unread_bar_color">#8ac7ff</color>
+</resources>

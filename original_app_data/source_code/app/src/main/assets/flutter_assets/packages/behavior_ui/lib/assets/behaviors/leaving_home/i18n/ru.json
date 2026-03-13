@@ -1,0 +1,8 @@
+{
+  "behavior.leavingHome.card.subtitle": "Выключить $lights$",
+  "behavior.leavingHome.name": "Уход из дома",
+  "behavior.leavingHome.overview.description": "Настройте автоматическое выключение светильников при уходе из дома.",
+  "behavior.leavingHome.overview.name": "Уход из дома",
+  "behavior.leavingHome.selectLights.title": "<emph>Выберите</emph> лампы",
+  "behavior.leavingHome.selectScenes.title": "Эти светильники будут выключены <emph>после вашего ухода</emph>"
+}

@@ -1,0 +1,18 @@
+{
+  "behavior.gotosleep.controllingDevicesStep.title": "Controlled by",
+  "behavior.gotosleep.edit.styleItem.subtitle": "Sunset is recommended for gradient lights.",
+  "behavior.gotosleep.edit.styleItem.title": "Style",
+  "behavior.gotosleep.experience.title": "Choose your settings",
+  "behavior.gotosleep.generalStep.title": "General",
+  "behavior.gotosleep.nameStep.defaultName": "Go to sleep",
+  "behavior.gotosleep.nameStep.label": "Name",
+  "behavior.gotosleep.nameStep.title": "<emph>Name</emph> your automation",
+  "behavior.gotosleep.overview.description": "Let selected lights slowly dim until they turn off.",
+  "behavior.gotosleep.overview.name": "Go to sleep",
+  "behavior.gotosleep.selectLights.title": "Which lights should dim?",
+  "behavior.gotosleep.style.basic.subtitle": "White light starts out on, and then fades into full off.",
+  "behavior.gotosleep.style.basic.title": "Transition to dark",
+  "behavior.gotosleep.style.sunset.subtitle": "Colors change and blend together to mimic the evening sky. Recommended for gradient lights.",
+  "behavior.gotosleep.style.sunset.title": "Sunset",
+  "behavior.gotosleep.timeAndRecurrence.title": "<emph>When</emph> do you want to start <emph>dimming</emph> your lights?"
+}

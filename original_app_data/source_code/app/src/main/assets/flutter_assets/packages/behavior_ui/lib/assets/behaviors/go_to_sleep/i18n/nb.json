@@ -1,0 +1,18 @@
+{
+  "behavior.gotosleep.controllingDevicesStep.title": "Kontrollert av",
+  "behavior.gotosleep.edit.styleItem.subtitle": "Solnedgang anbefales for gradientlys.",
+  "behavior.gotosleep.edit.styleItem.title": "Stil",
+  "behavior.gotosleep.experience.title": "Velg innstillingene dine",
+  "behavior.gotosleep.generalStep.title": "Generelt",
+  "behavior.gotosleep.nameStep.defaultName": "Fall i søvn",
+  "behavior.gotosleep.nameStep.label": "Navn",
+  "behavior.gotosleep.nameStep.title": "<emph>Navngi</emph> automatiseringen din",
+  "behavior.gotosleep.overview.description": "La de valgte lysene dimmes langsomt til de slås av.",
+  "behavior.gotosleep.overview.name": "Fall i søvn",
+  "behavior.gotosleep.selectLights.title": "<emph>Velg</emph> lysene dine",
+  "behavior.gotosleep.style.basic.subtitle": "Det hvite lyset begynner å lyse, for så å dimmes til det går helt av.",
+  "behavior.gotosleep.style.basic.title": "Overgang til mørkt",
+  "behavior.gotosleep.style.sunset.subtitle": "Fargene skifter og smelter sammen for å etterligne kveldshimmelen. Anbefales for gradientlys.",
+  "behavior.gotosleep.style.sunset.title": "Solnedgang",
+  "behavior.gotosleep.timeAndRecurrence.title": "<emph>Når</emph> vil du begynne å <emph>dimme</emph> lysene?"
+}

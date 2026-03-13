@@ -1,0 +1,18 @@
+{
+  "behavior.wakeup.edit.brightnessItem.title": "Maximale Helligkeit",
+  "behavior.wakeup.edit.styleItem.subtitle": "Für Philips Hue Gradient Leuchten empfehlen wir „Sonnenaufgang”.",
+  "behavior.wakeup.edit.styleItem.title": "Stil",
+  "behavior.wakeup.experience.title": "Wähle Deine Einstellungen",
+  "behavior.wakeup.generalStep.title": "Allgemeines",
+  "behavior.wakeup.nameStep.defaultName": "Natürlich Aufwachen",
+  "behavior.wakeup.nameStep.label": "Name",
+  "behavior.wakeup.nameStep.title": "<emph>Benenne</emph> Deine Automatisierungen",
+  "behavior.wakeup.overview.description": "Erhelle ausgewählte Lampen morgens schrittweise.",
+  "behavior.wakeup.overview.name": "Mit Licht aufwachen",
+  "behavior.wakeup.selectLights.title": "<emph>Wähle</emph> Deine Lampen aus",
+  "behavior.wakeup.style.basic.subtitle": "Am Anfang ist das weiße Licht gedimmt, es steigert sich nach und nach bis zur vollen Helligkeit.",
+  "behavior.wakeup.style.basic.title": "Übergang zu heller Beleuchtung",
+  "behavior.wakeup.style.sunrise.subtitle": "Die Farben ändern und vermischen sich ähnlich wie der Morgenhimmel. Empfohlen für Lampen mit Farbverlauf.",
+  "behavior.wakeup.style.sunrise.title": "Sonnenaufgang",
+  "behavior.wakeup.timeAndRecurrence.title": "Wann <emph>möchtest</emph> Du <emph>aufwachen</emph>?"
+}

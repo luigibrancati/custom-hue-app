@@ -1,0 +1,9 @@
+{
+  "behavior.timeBased.nameStep.label": "Navn",
+  "behavior.timeBased.nameStep.title": "<emph>Navngi</emph> automatiseringen din",
+  "behavior.timeBased.overview.description": "Opprett din første tilpassede automatisering",
+  "behavior.timeBased.overview.name": "Egendefinert",
+  "behavior.timeBased.selectLights.title": "<emph>Velg</emph> lysene dine",
+  "behavior.timeBased.selectScenes.title": "<emph>Hva</emph> skal lysene gjøre?",
+  "behavior.timeBased.whenExtendedStep.title": "<emph>Når</emph> vil du innstille denne automatiseringen?"
+}

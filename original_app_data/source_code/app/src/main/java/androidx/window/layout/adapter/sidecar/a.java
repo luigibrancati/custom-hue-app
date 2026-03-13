@@ -1,0 +1,21 @@
+package androidx.window.layout.adapter.sidecar;
+
+import C3.s;
+import android.app.Activity;
+
+/* JADX INFO: compiled from: r8-map-id-866bacc38531af0a81fcd8a9574e1e22709cd7ce6d67b69fe3714c2addafcb5c */
+/* JADX INFO: loaded from: classes.dex */
+public interface a {
+
+    /* JADX INFO: renamed from: androidx.window.layout.adapter.sidecar.a$a, reason: collision with other inner class name */
+    /* JADX INFO: compiled from: r8-map-id-866bacc38531af0a81fcd8a9574e1e22709cd7ce6d67b69fe3714c2addafcb5c */
+    public interface InterfaceC0316a {
+        void a(Activity activity, s sVar);
+    }
+
+    void a(InterfaceC0316a interfaceC0316a);
+
+    void b(Activity activity);
+
+    void c(Activity activity);
+}

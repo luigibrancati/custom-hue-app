@@ -1,0 +1,143 @@
+# Go to sleep at 11:00PM (GMT+1) with a 10 minutes fade time
+No.     Time           Source                Destination           Protocol Length Info
+    458 31.520888      Google_4f:e4:2d (Pixel 8) cc:37:2f:a3:e5:f7 (Hue white lamp) ATT      74     Sent Write Request, Handle: 0x0072 (Unknown)
+
+Frame 458: Packet, 74 bytes on wire (592 bits), 74 bytes captured (592 bits)
+
+Hex payload with ascii dump
+0000   02 40 00 45 00 41 00 04 00 12 72 00 01 ff ff 00   .@.E.A....r.....
+0010   01 00 60 37 b3 69 00 0e 01 01 00 02 01 01 03 02   ..`7.i..........
+0020   4c 02 05 02 70 17 23 01 80 b1 84 75 33 83 44 29   L...p.#....u3.D)
+0030   9f a2 60 83 44 0c 4a 50 01 ff ff ff ff 0b 47 6f   ..`.D.JP......Go
+0040   20 74 6f 20 73 6c 65 65 70 01                      to sleep.
+
+# Go to sleep at 11:00PM (GMT+1) with a 10 minutes fade time
+No.     Time           Source                Destination           Protocol Length Info
+    463 42.327801      Google_4f:e4:2d (Pixel 8) cc:37:2f:a3:e5:f7 (Hue white lamp) ATT      74     Sent Write Request, Handle: 0x0072 (Unknown)
+
+Frame 463: Packet, 74 bytes on wire (592 bits), 74 bytes captured (592 bits)
+
+Hex payload with ascii dump
+0000   02 40 00 45 00 41 00 04 00 12 72 00 01 ff ff 00   .@.E.A....r.....
+0010   01 00 60 37 b3 69 00 0e 01 01 00 02 01 01 03 02   ..`7.i..........
+0020   4c 02 05 02 70 17 23 01 a1 92 e7 5d aa a6 4d 96   L...p.#....]..M.
+0030   93 15 f2 ed 79 9a 99 ab 01 ff ff ff ff 0b 47 6f   ....y.........Go
+0040   20 74 6f 20 73 6c 65 65 70 01                      to sleep.
+
+# Go to sleep at 11:00PM (GMT+1) with a 10 minutes fade time
+No.     Time           Source                Destination           Protocol Length Info
+    468 54.484438      Google_4f:e4:2d (Pixel 8) cc:37:2f:a3:e5:f7 (Hue white lamp) ATT      74     Sent Write Request, Handle: 0x0072 (Unknown)
+
+Frame 468: Packet, 74 bytes on wire (592 bits), 74 bytes captured (592 bits)
+
+Hex payload with ascii dump
+0000   02 40 00 45 00 41 00 04 00 12 72 00 01 ff ff 00   .@.E.A....r.....
+0010   01 00 60 37 b3 69 00 0e 01 01 00 02 01 01 03 02   ..`7.i..........
+0020   4c 02 05 02 70 17 23 01 ab 52 6f b4 35 eb 46 77   L...p.#..Ro.5.Fw
+0030   b2 e8 2f 4f 41 fe af cd 01 ff ff ff ff 0b 47 6f   ../OA.........Go
+0040   20 74 6f 20 73 6c 65 65 70 01                      to sleep.
+
+# Go to sleep at 11:00PM (GMT+1) with a 20 minutes fade time
+No.     Time           Source                Destination           Protocol Length Info
+    473 62.883342      Google_4f:e4:2d (Pixel 8) cc:37:2f:a3:e5:f7 (Hue white lamp) ATT      74     Sent Write Request, Handle: 0x0072 (Unknown)
+
+Frame 473: Packet, 74 bytes on wire (592 bits), 74 bytes captured (592 bits)
+
+Hex payload with ascii dump
+0000   02 40 00 45 00 41 00 04 00 12 72 00 01 ff ff 00   .@.E.A....r.....
+0010   01 00 60 37 b3 69 00 0e 01 01 00 02 01 01 03 02   ..`7.i..........
+0020   4c 02 05 02 e0 2e 23 01 60 d1 5c 93 3d 51 47 0e   L.....#.`.\.=QG.
+0030   a9 0a 15 2d 67 8d 9f 60 01 ff ff ff ff 0b 47 6f   ...-g..`......Go
+0040   20 74 6f 20 73 6c 65 65 70 01                      to sleep.
+
+# Go to sleep at 11:00PM (GMT+1) with a 30 minutes fade time
+No.     Time           Source                Destination           Protocol Length Info
+    484 83.949954      Google_4f:e4:2d (Pixel 8) cc:37:2f:a3:e5:f7 (Hue white lamp) ATT      74     Sent Write Request, Handle: 0x0072 (Unknown)
+
+Frame 484: Packet, 74 bytes on wire (592 bits), 74 bytes captured (592 bits)
+
+Hex payload with ascii dump
+0000   02 40 00 45 00 41 00 04 00 12 72 00 01 ff ff 00   .@.E.A....r.....
+0010   01 00 60 37 b3 69 00 0e 01 01 00 02 01 01 03 02   ..`7.i..........
+0020   4c 02 05 02 50 46 23 01 3b 42 68 d0 bc 38 4b 21   L...PF#.;Bh..8K!
+0030   87 60 69 e0 2f 6d 97 1e 01 ff ff ff ff 0b 47 6f   .`i./m........Go
+0040   20 74 6f 20 73 6c 65 65 70 01                      to sleep.
+
+# Go to sleep at 10:00PM (GMT+1) with a 30 minutes fade time and custom title "Test go to sleep"
+No.     Time           Source                Destination           Protocol Length Info
+   1112 1755.807672    Google_4f:e4:2d (Pixel 8) cc:37:2f:a3:e5:f7 (Hue white lamp) ATT      79     Sent Write Request, Handle: 0x0072 (Unknown)
+
+Frame 1112: Packet, 79 bytes on wire (632 bits), 79 bytes captured (632 bits)
+
+Hex payload with ascii dump
+0000   02 40 00 4a 00 46 00 04 00 12 72 00 01 ff ff 00   .@.J.F....r.....
+0010   01 00 d0 7a b4 69 00 0e 01 01 00 02 01 01 03 02   ...z.i..........
+0020   4c 02 05 02 50 46 28 01 cd bf 5c 7f 10 d1 45 f4   L...PF(...\...E.
+0030   a4 da 8c 5e 04 ab 43 b0 01 ff ff ff ff 10 54 65   ...^..C.......Te
+0040   73 74 20 67 6f 20 74 6f 20 73 6c 65 65 70 01      st go to sleep.
+
+# Wake up at 07:00AM (GMT+1) with a 10 minutes fade time
+No.     Time           Source                Destination           Protocol Length Info
+   3635 722.708977     Google_4f:e4:2d (Pixel 8) cc:37:2f:a3:e5:f7 (Hue white lamp) ATT      70     Sent Write Request, Handle: 0x0072 (Unknown)
+
+Frame 3635: Packet, 70 bytes on wire (560 bits), 70 bytes captured (560 bits)
+
+Hex payload with ascii dump
+0000   02 41 00 41 00 3d 00 04 00 12 72 00 01 ff ff 00   .A.A.=....r.....
+0010   01 00 88 a5 b3 69 00 0e 01 01 01 02 01 fe 03 02   .....i..........
+0020   bf 01 05 02 70 17 1f 01 88 7e 01 c6 52 e6 4b a8   ....p....~..R.K.
+0030   b4 58 69 b9 09 64 6f 37 00 ff ff ff ff 07 57 61   .Xi..do7......Wa
+0040   6b 65 20 75 70 01                                 ke up.
+
+# Wake up at 07:00AM (GMT+1) with a 10 minutes fade time
+No.     Time           Source                Destination           Protocol Length Info
+   3688 730.554694     Google_4f:e4:2d (Pixel 8) cc:37:2f:a3:e5:f7 (Hue white lamp) ATT      70     Sent Write Request, Handle: 0x0072 (Unknown)
+
+Frame 3688: Packet, 70 bytes on wire (560 bits), 70 bytes captured (560 bits)
+
+Hex payload with ascii dump
+0000   02 41 00 41 00 3d 00 04 00 12 72 00 01 ff ff 00   .A.A.=....r.....
+0010   01 00 88 a5 b3 69 00 0e 01 01 01 02 01 fe 03 02   .....i..........
+0020   bf 01 05 02 70 17 1f 01 c3 1c 25 31 e7 eb 48 2d   ....p.....%1..H-
+0030   94 a4 60 01 f4 f9 d0 1d 00 ff ff ff ff 07 57 61   ..`...........Wa
+0040   6b 65 20 75 70 01                                 ke up.
+
+# Wake up at 07:00AM (GMT+1) with a 10 minutes fade time
+No.     Time           Source                Destination           Protocol Length Info
+   3726 737.006603     Google_4f:e4:2d (Pixel 8) cc:37:2f:a3:e5:f7 (Hue white lamp) ATT      70     Sent Write Request, Handle: 0x0072 (Unknown)
+
+Frame 3726: Packet, 70 bytes on wire (560 bits), 70 bytes captured (560 bits)
+
+Hex payload with ascii dump
+0000   02 41 00 41 00 3d 00 04 00 12 72 00 01 ff ff 00   .A.A.=....r.....
+0010   01 00 88 a5 b3 69 00 0e 01 01 01 02 01 fe 03 02   .....i..........
+0020   bf 01 05 02 70 17 1f 01 22 de a5 ac f3 4d 41 8e   ....p..."....MA.
+0030   a5 66 73 bc 28 87 fb 9a 00 ff ff ff ff 07 57 61   .fs.(.........Wa
+0040   6b 65 20 75 70 01                                 ke up.
+
+# Wake up at 07:00AM (GMT+1) with a 20 minutes fade time
+No.     Time           Source                Destination           Protocol Length Info
+   3759 744.505521     Google_4f:e4:2d (Pixel 8) cc:37:2f:a3:e5:f7 (Hue white lamp) ATT      70     Sent Write Request, Handle: 0x0072 (Unknown)
+
+Frame 3759: Packet, 70 bytes on wire (560 bits), 70 bytes captured (560 bits)
+
+Hex payload with ascii dump
+0000   02 41 00 41 00 3d 00 04 00 12 72 00 01 ff ff 00   .A.A.=....r.....
+0010   01 00 30 a3 b3 69 00 0e 01 01 01 02 01 fe 03 02   ..0..i..........
+0020   bf 01 05 02 e0 2e 1f 01 31 1e 68 36 07 b7 48 5e   ........1.h6..H^
+0030   a8 f5 21 63 51 e1 ff 0d 00 ff ff ff ff 07 57 61   ..!cQ.........Wa
+0040   6b 65 20 75 70 01                                 ke up.
+
+# Wake up at 07:00AM (GMT+1) with a 30 minutes fade time
+No.     Time           Source                Destination           Protocol Length Info
+   3789 751.123881     Google_4f:e4:2d (Pixel 8) cc:37:2f:a3:e5:f7 (Hue white lamp) ATT      70     Sent Write Request, Handle: 0x0072 (Unknown)
+
+Frame 3789: Packet, 70 bytes on wire (560 bits), 70 bytes captured (560 bits)
+
+Hex payload with ascii dump
+0000   02 41 00 41 00 3d 00 04 00 12 72 00 01 ff ff 00   .A.A.=....r.....
+0010   01 00 d8 a0 b3 69 00 0e 01 01 01 02 01 fe 03 02   .....i..........
+0020   bf 01 05 02 50 46 1f 01 5a a3 f9 95 c1 ed 4b 1a   ....PF..Z.....K.
+0030   8d 06 fe bd ce 40 ce 49 00 ff ff ff ff 07 57 61   .....@.I......Wa
+0040   6b 65 20 75 70 01                                 ke up.
+

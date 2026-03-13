@@ -1,0 +1,9 @@
+{
+  "behavior.timeBased.nameStep.label": "Nombre",
+  "behavior.timeBased.nameStep.title": "<emph>Nombrar</emph> tu automatismo",
+  "behavior.timeBased.overview.description": "Crea tu propio automatismo personalizado.",
+  "behavior.timeBased.overview.name": "Personalizado",
+  "behavior.timeBased.selectLights.title": "<emph>Elige</emph> tus luces",
+  "behavior.timeBased.selectScenes.title": "<emph>¿Qué</emph> deben hacer las luces?",
+  "behavior.timeBased.whenExtendedStep.title": "¿<emph>Cuándo</emph> deseas programar este automatismo?"
+}

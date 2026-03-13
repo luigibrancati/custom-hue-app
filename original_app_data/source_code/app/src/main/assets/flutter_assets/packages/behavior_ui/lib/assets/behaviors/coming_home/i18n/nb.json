@@ -1,0 +1,9 @@
+{
+  "behavior.comingHome.card.subtitle": "Aktiver $lights$",
+  "behavior.comingHome.name": "Komme hjem",
+  "behavior.comingHome.overview.description": "Konfigurer lysene dine til å slås på automatisk når du nærmer deg huset.",
+  "behavior.comingHome.overview.name": "Komme hjem",
+  "behavior.comingHome.selectLights.title": "<emph>Velg</emph> lysene dine",
+  "behavior.comingHome.selectScenes.title": "<emph>Hva</emph> skal lysene gjøre <emph>når du kommer hjem</emph>?",
+  "behavior.comingHome.when.title": "<emph>Når</emph> du vil at lysene skal <emph>slås på</emph>?"
+}

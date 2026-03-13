@@ -1,0 +1,8 @@
+{
+  "behavior.leavingHome.card.subtitle": "$lights$ uitschakelen",
+  "behavior.leavingHome.name": "Weg van huis",
+  "behavior.leavingHome.overview.description": "Stel in dat je lampen automatisch uitgaan als je je huis verlaat.",
+  "behavior.leavingHome.overview.name": "Weg van huis",
+  "behavior.leavingHome.selectLights.title": "<emph>Kies</emph> je lampen",
+  "behavior.leavingHome.selectScenes.title": "Deze lampen gaan uit <emph>als je vertrekt</emph>"
+}

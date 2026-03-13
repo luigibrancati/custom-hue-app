@@ -1,0 +1,9 @@
+{
+  "behavior.comingHome.card.subtitle": "$lights$ 활성화",
+  "behavior.comingHome.name": "귀가",
+  "behavior.comingHome.overview.description": "집에 가까워지면 조명이 자동으로 켜지도록 설정해 보세요.",
+  "behavior.comingHome.overview.name": "귀가",
+  "behavior.comingHome.selectLights.title": "조명을 <emph>선택하세요</emph>",
+  "behavior.comingHome.selectScenes.title": "<emph>내가 집에 왔을 때</emph> 조명이 어떤 동작을 <emph>하게 할까요</emph>?",
+  "behavior.comingHome.when.title": "조명이 <emph>언제</emph> <emph>켜지도록</emph> 할까요?"
+}

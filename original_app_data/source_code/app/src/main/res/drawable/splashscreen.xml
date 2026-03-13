@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="fill">
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#1f1f1f"
+                android:endColor="#101010"
+                android:type="radial"
+                android:gradientRadius="100%p"/>
+        </shape>
+    </item>
+    <item
+        android:gravity="center"
+        android:height="266.3984dp"
+        android:width="87.2dp"
+        android:drawable="@drawable/ic_philips_shield"/>
+</layer-list>

@@ -1,0 +1,13 @@
+{
+  "behavior.timer.card.subtitle": "Attiva $lights$",
+  "behavior.timer.controllingDevicesStep.title": "Controllato da",
+  "behavior.timer.nameStep.defaultName": "Timer",
+  "behavior.timer.nameStep.label": "Nome",
+  "behavior.timer.nameStep.title": "<emph>Attribuisci un nome</emph> alle tue automazioni",
+  "behavior.timer.overview.description": "Segnala lo scadere di un periodo di tempo impostato con la luce accesa.",
+  "behavior.timer.overview.name": "Timer",
+  "behavior.timer.selectDuration.invalid.errorMessage": "Assicurati di avere configurato la scadenza del timer",
+  "behavior.timer.selectDuration.title": "<emph>Quanto</emph> dovrebbe durare il timer?",
+  "behavior.timer.selectLights.title": "<emph>Scegli</emph> le luci",
+  "behavior.timer.selectScenes.title": "<emph>Cosa</emph> devono fare le luci?"
+}

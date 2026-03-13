@@ -1,0 +1,18 @@
+{
+  "tvSyncController.controlScreen.areaSelection.empty.create.entertainment.area": "Bir Eğlence alanı oluşturun",
+  "tvSyncController.controlScreen.areaSelection.empty.subtitle": "Hangi ışıkların senkronizasyona katılacağını tanımlamak için bir Eğlence alanı oluşturun.",
+  "tvSyncController.controlScreen.areaSelection.missing": "Seç...",
+  "tvSyncController.controlScreen.areaSelection.subtitle": "Hangi Eğlence alanını kullanmak istiyorsunuz?",
+  "tvSyncController.controlScreen.areaSelection.title": "Eğlence alanı",
+  "tvSyncController.controlScreen.controls.brightness.title": "Parlaklık",
+  "tvSyncController.controlScreen.controls.intensity.title": "Yoğunluk",
+  "tvSyncController.controlScreen.controls.mode.game": "Oyun",
+  "tvSyncController.controlScreen.controls.mode.music": "Müzik",
+  "tvSyncController.controlScreen.controls.mode.title": "Mod",
+  "tvSyncController.controlScreen.controls.mode.video": "Video",
+  "tvSyncController.controlScreen.message.connecting": "Bağlanıyor...",
+  "tvSyncController.productName": "Hue Sync TV",
+  "tvSyncController.settings.device.removePairing.action": "TV'yi kaldır",
+  "tvSyncController.settings.device.removePairing.confirm": "Kaldır",
+  "tvSyncController.settings.device.removePairing.disclaimer": "Bu, TV'yi uygulamadan kaldıracaktır."
+}

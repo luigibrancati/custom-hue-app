@@ -1,0 +1,9 @@
+{
+  "behavior.timeBased.nameStep.label": "名稱",
+  "behavior.timeBased.nameStep.title": "<emph>命名</emph>您的自動功能",
+  "behavior.timeBased.overview.description": "自訂您的自動功能。",
+  "behavior.timeBased.overview.name": "自訂",
+  "behavior.timeBased.selectLights.title": "<emph>選擇</emph>您的燈具",
+  "behavior.timeBased.selectScenes.title": "<emph>您要使用哪種</emph>照明？",
+  "behavior.timeBased.whenExtendedStep.title": "<emph>您想何時</emph>排程此自動功能？"
+}

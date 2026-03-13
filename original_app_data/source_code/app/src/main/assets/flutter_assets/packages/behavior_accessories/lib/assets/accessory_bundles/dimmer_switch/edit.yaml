@@ -1,0 +1,250 @@
+supported_accessories:
+- RWL020
+- RWL021
+- RWL022
+
+edit_steps:
+  - step_type: migration
+    banner_message_body: accessory.behavior.dimmerSwitch.edit.migration.splitBannerWithoutAsf.message.body
+
+  - step_type: name_selection
+  - step_type: location_selection
+  - step_type: control_selection
+    accessory_control_definitions:
+      - control:
+          type: button
+          id: 1
+        # stub image
+        selected_image: images/dimmer_switch_v1_on.svg
+      - control:
+          type: button
+          id: 2
+        # stub image
+        selected_image: images/dimmer_switch_v1_on.svg
+      - control:
+          type: button
+          id: 3
+        # stub image
+        selected_image: images/dimmer_switch_v1_on.svg
+      - control:
+          type: button
+          id: 4
+        # stub image
+        selected_image: images/dimmer_switch_v1_on.svg
+
+  - step_type: control_mode
+    control_mode_translations:
+      - control:
+          type: button
+        translation: accessory.behavior.dimmerSwitch.edit.lightSelection.description.text
+
+  - step_type: light_selection
+    light_selection_translations:
+      - control:
+          type: button
+        translation: accessory.behavior.dimmerSwitch.edit.lightSelection.description.text
+
+  # dimmer switch v1 on button
+  - step_type: action_selection
+    model_ids: [ RWL020, RWL021 ]
+    section_header_text: accessory.behavior.dimmerSwitch.edit.onButton.header.text
+    action_edit_definitions:
+      - control:
+          type: button
+          id: 1
+        action_edit_configurations:
+          - edit_configuration_type: configurable
+            requires_full_screen: true
+            allow_group_scenes_selection: true
+            allow_selecting_smart_scenes_for_action_archetypes:
+              - time_based
+              - scene_cycle_per_group
+              - scene_per_group
+            selectable_action_archetypes:
+              - archetype: time_based
+                control_action_key: on_press
+                is_with_off_selectable: true
+              - archetype: scene_cycle_per_group
+                control_action_key: on_press
+                is_with_off_selectable: true
+              - archetype: scene_per_group
+                control_action_key: on_press
+                is_with_off_selectable: true
+              - archetype: single_scene
+                control_action_key: on_press
+                action:
+                  action_type: off
+          - edit_configuration_type: static
+            requires_full_screen: false
+            header_text: accessory.behavior.dimmerSwitch.edit.onButton.longPress.header.text
+            selectable_action_archetypes:
+              - archetype: single_scene
+                control_action_key: on_long_press
+                action:
+                  action_type: off
+              - archetype: single_scene
+                control_action_key: on_long_press
+                action:
+                  action_type: bridge_off
+              - archetype: single_scene
+                control_action_key: on_long_press
+                action:
+                  action_type: do_nothing
+  # dimmer switch v2 on/off button
+  - step_type: action_selection
+    model_ids: [ RWL022 ]
+    section_header_text: accessory.behavior.dimmerSwitch.edit.onOffButton.header.text
+    action_edit_definitions:
+      - control:
+          type: button
+          id: 1
+        action_edit_configurations:
+          - edit_configuration_type: configurable
+            requires_full_screen: true
+            allow_group_scenes_selection: true
+            allow_selecting_smart_scenes_for_action_archetypes:
+              - time_based
+              - scene_cycle_per_group
+              - scene_per_group
+            selectable_action_archetypes:
+              - archetype: time_based
+                control_action_key: on_press
+                is_with_off_selectable: true
+              - archetype: scene_cycle_per_group
+                control_action_key: on_press
+                is_with_off_selectable: true
+              - archetype: scene_per_group
+                control_action_key: on_press
+                is_with_off_selectable: true
+              - archetype: single_scene
+                control_action_key: on_press
+                action:
+                  action_type: off
+          - edit_configuration_type: static
+            requires_full_screen: false
+            header_text: accessory.behavior.dimmerSwitch.edit.onOffButton.longPress.header.text
+            selectable_action_archetypes:
+              - archetype: single_scene
+                control_action_key: on_long_press
+                action:
+                  action_type: off
+              - archetype: single_scene
+                control_action_key: on_long_press
+                action:
+                  action_type: bridge_off
+              - archetype: single_scene
+                control_action_key: on_long_press
+                action:
+                  action_type: do_nothing
+  # dimmer switch v1 off button
+  - step_type: action_selection
+    model_ids: [ RWL020, RWL021 ]
+    section_header_text: accessory.behavior.dimmerSwitch.edit.offButton.header.text
+    action_edit_definitions:
+      - control:
+          type: button
+          id: 4
+        action_edit_configurations:
+          - edit_configuration_type: configurable
+            requires_full_screen: true
+            allow_group_scenes_selection: true
+            allow_selecting_smart_scenes_for_action_archetypes:
+              - time_based
+              - scene_cycle_per_group
+              - scene_per_group
+            selectable_action_archetypes:
+              - archetype: time_based
+                control_action_key: on_press
+                is_with_off_selectable: true
+              - archetype: scene_cycle_per_group
+                control_action_key: on_press
+                is_with_off_selectable: true
+              - archetype: scene_per_group
+                control_action_key: on_press
+                is_with_off_selectable: true
+              - archetype: single_scene
+                control_action_key: on_press
+                action:
+                  action_type: off
+          - edit_configuration_type: static
+            requires_full_screen: false
+            header_text: accessory.behavior.dimmerSwitch.edit.offButton.longPress.header.text
+            selectable_action_archetypes:
+              - archetype: single_scene
+                control_action_key: on_long_press
+                action:
+                  action_type: off
+              - archetype: single_scene
+                control_action_key: on_long_press
+                action:
+                  action_type: bridge_off
+              - archetype: single_scene
+                control_action_key: on_long_press
+                action:
+                  action_type: do_nothing
+  # dimmer switch v2 hue button
+  - step_type: action_selection
+    model_ids: [ RWL022 ]
+    section_header_text: accessory.behavior.dimmerSwitch.edit.hueButton.header.text
+    action_edit_definitions:
+      - control:
+          type: button
+          id: 4
+        action_edit_configurations:
+          - edit_configuration_type: configurable
+            requires_full_screen: true
+            allow_group_scenes_selection: true
+            allow_selecting_smart_scenes_for_action_archetypes:
+              - time_based
+              - scene_cycle_per_group
+              - scene_per_group
+            selectable_action_archetypes:
+              - archetype: time_based
+                control_action_key: on_press
+                is_with_off_selectable: true
+              - archetype: scene_cycle_per_group
+                control_action_key: on_press
+                is_with_off_selectable: true
+              - archetype: scene_per_group
+                control_action_key: on_press
+                is_with_off_selectable: true
+              - archetype: single_scene
+                control_action_key: on_press
+                action:
+                  action_type: off
+          - edit_configuration_type: static
+            requires_full_screen: false
+            header_text: accessory.behavior.dimmerSwitch.edit.hueButton.longPress.header.text
+            selectable_action_archetypes:
+              - archetype: single_scene
+                control_action_key: on_long_press
+                action:
+                  action_type: off
+              - archetype: single_scene
+                control_action_key: on_long_press
+                action:
+                  action_type: bridge_off
+              - archetype: single_scene
+                control_action_key: on_long_press
+                action:
+                  action_type: do_nothing
+
+  # dimmer switch dim up button
+  - step_type: action_selection
+    model_ids: [ RWL022, RWL020, RWL021 ]
+    section_header_text: accessory.behavior.dimmerSwitch.edit.hueButton.header.text
+    action_edit_definitions:
+      - control:
+          type: button
+          id: 2
+        action_edit_configurations: []
+
+  # dimmer switch dim down button
+  - step_type: action_selection
+    model_ids: [ RWL022, RWL020, RWL021 ]
+    section_header_text: accessory.behavior.dimmerSwitch.edit.hueButton.header.text
+    action_edit_definitions:
+      - control:
+          type: button
+          id: 3
+        action_edit_configurations: []

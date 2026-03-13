@@ -1,0 +1,5 @@
+id: 0x00000002
+name: Bleep
+api_name: bleep
+type: chime
+products: all

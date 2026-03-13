@@ -1,0 +1,17 @@
+{
+  "scenes.categories.defaults": "Scene predefinite",
+  "scenes.new": "Nuova scena",
+  "scenes.recipe.bright": "Luce brillante",
+  "scenes.recipe.concentrate": "Concentrazione",
+  "scenes.recipe.coolBright": "Fredda brillante",
+  "scenes.recipe.dimmed": "Luce soffusa",
+  "scenes.recipe.doze": "Riposo",
+  "scenes.recipe.energize": "Energia",
+  "scenes.recipe.nightLight": "Luce notturna",
+  "scenes.recipe.read": "Lettura",
+  "scenes.recipe.relax": "Relax",
+  "smartScenes.goldenHours": "Ore d'oro",
+  "smartScenes.naturalLight": "Luce naturale",
+  "smartScenes.natureColors": "I colori della natura",
+  "smartScenes.tag24Hours": "24H"
+}

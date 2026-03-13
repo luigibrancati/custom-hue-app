@@ -1,0 +1,23 @@
+{
+  "accessories.sound.alert": "Advarsel",
+  "accessories.sound.bleep": "Blip",
+  "accessories.sound.bounce": "Afvis",
+  "accessories.sound.bright": "Klar",
+  "accessories.sound.bright_modern": "Lysstærk moderne",
+  "accessories.sound.ding_dong_classic": "Ding dong klassiker",
+  "accessories.sound.ding_dong_modern": "Ding dong moderne",
+  "accessories.sound.ding_dong_xylo": "Ding dong xylo",
+  "accessories.sound.echo": "Ekko",
+  "accessories.sound.fairy": "Fe",
+  "accessories.sound.galaxy": "Galaxy",
+  "accessories.sound.glow": "Glød",
+  "accessories.sound.hue_default": "Standard for Hue",
+  "accessories.sound.reveal": "Vis",
+  "accessories.sound.rise": "Opstigning",
+  "accessories.sound.siren": "Sirene",
+  "accessories.sound.sonar": "Sonar",
+  "accessories.sound.swing": "Swing",
+  "accessories.sound.welcome": "Welcome",
+  "accessories.sound.westminster_classic": "Westminster klassiker",
+  "accessories.sound.westminster_modern": "Westminster modern"
+}

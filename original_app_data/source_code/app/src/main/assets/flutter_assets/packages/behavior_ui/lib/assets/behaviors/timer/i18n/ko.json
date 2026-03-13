@@ -1,0 +1,13 @@
+{
+  "behavior.timer.card.subtitle": "$lights$ 활성화",
+  "behavior.timer.controllingDevicesStep.title": "제어 주체",
+  "behavior.timer.nameStep.defaultName": "타이머",
+  "behavior.timer.nameStep.label": "이름",
+  "behavior.timer.nameStep.title": "자동화 <emph>이름을 지정</emph>하세요",
+  "behavior.timer.overview.description": "조명으로 정해진 시간이 종료되었음을 알립니다.",
+  "behavior.timer.overview.name": "타이머",
+  "behavior.timer.selectDuration.invalid.errorMessage": "타이머가 추후에 만료되도록 설정해야 합니다.",
+  "behavior.timer.selectDuration.title": "타이머가 <emph>얼마나 오래</emph> 지속되도록 할까요?",
+  "behavior.timer.selectLights.title": "조명을 <emph>선택하세요</emph>",
+  "behavior.timer.selectScenes.title": "조명이 <emph>어떤</emph> 동작을 해야 하나요?"
+}

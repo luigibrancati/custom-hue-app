@@ -1,0 +1,17 @@
+{
+  "scenes.categories.defaults": "Standard",
+  "scenes.new": "Ny scen",
+  "scenes.recipe.bright": "Klart ljus",
+  "scenes.recipe.concentrate": "Koncentrera dig",
+  "scenes.recipe.coolBright": "Svalt ljus",
+  "scenes.recipe.dimmed": "Dimrad",
+  "scenes.recipe.doze": "Vila",
+  "scenes.recipe.energize": "Få ny energi",
+  "scenes.recipe.nightLight": "Nattlampa",
+  "scenes.recipe.read": "Läs",
+  "scenes.recipe.relax": "Koppla av",
+  "smartScenes.goldenHours": "Golden hours",
+  "smartScenes.naturalLight": "Naturligt ljus",
+  "smartScenes.natureColors": "Naturens färger",
+  "smartScenes.tag24Hours": "24 h"
+}
