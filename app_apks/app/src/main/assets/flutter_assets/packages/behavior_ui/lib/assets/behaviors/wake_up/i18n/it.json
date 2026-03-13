@@ -1,0 +1,18 @@
+{
+  "behavior.wakeup.edit.brightnessItem.title": "Luminosità massima",
+  "behavior.wakeup.edit.styleItem.subtitle": "La routine Alba è consigliata per le luci Gradient.",
+  "behavior.wakeup.edit.styleItem.title": "Stile",
+  "behavior.wakeup.experience.title": "Scegli le tue impostazioni",
+  "behavior.wakeup.generalStep.title": "Disposizioni generali",
+  "behavior.wakeup.nameStep.defaultName": "Risveglio",
+  "behavior.wakeup.nameStep.label": "Nome",
+  "behavior.wakeup.nameStep.title": "<emph>Attribuisci un nome</emph> alle tue automazioni",
+  "behavior.wakeup.overview.description": "Aumenta gradualmente l'intensità delle luci selezionate al mattino.",
+  "behavior.wakeup.overview.name": "Risveglio con la luce",
+  "behavior.wakeup.selectLights.title": "<emph>Scegli</emph> le luci",
+  "behavior.wakeup.style.basic.subtitle": "La luce bianca all'inizio è attenuata e poi si attenua in piena luminosità.",
+  "behavior.wakeup.style.basic.title": "Transizione a luminoso",
+  "behavior.wakeup.style.sunrise.subtitle": "I colori cambiano e si fondono insieme per imitare il cielo mattutino. Consigliato per luci sfumate.",
+  "behavior.wakeup.style.sunrise.title": "Alba",
+  "behavior.wakeup.timeAndRecurrence.title": "A <emph>che ora</emph> vuoi impostare la funzione <emph>risveglio</emph>?"
+}

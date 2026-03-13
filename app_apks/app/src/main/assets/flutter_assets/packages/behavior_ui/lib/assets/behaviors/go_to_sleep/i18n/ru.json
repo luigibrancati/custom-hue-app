@@ -1,0 +1,18 @@
+{
+  "behavior.gotosleep.controllingDevicesStep.title": "Контролируется",
+  "behavior.gotosleep.edit.styleItem.subtitle": "Закат рекомендуется для градиентного освещения.",
+  "behavior.gotosleep.edit.styleItem.title": "Стиль",
+  "behavior.gotosleep.experience.title": "Выберите настройки",
+  "behavior.gotosleep.generalStep.title": "Общие",
+  "behavior.gotosleep.nameStep.defaultName": "Засыпание",
+  "behavior.gotosleep.nameStep.label": "Имя",
+  "behavior.gotosleep.nameStep.title": "<emph>Присвойте имя</emph> вашему автоматическому режиму работы",
+  "behavior.gotosleep.overview.description": "Задать медленное уменьшение яркости выбранных светильников перед выключением.",
+  "behavior.gotosleep.overview.name": "Засыпание",
+  "behavior.gotosleep.selectLights.title": "<emph>Выберите</emph> лампы",
+  "behavior.gotosleep.style.basic.subtitle": "Белый свет включается с полной яркостью, а затем постепенно и полностью гаснет.",
+  "behavior.gotosleep.style.basic.title": "Переход к темноте",
+  "behavior.gotosleep.style.sunset.subtitle": "Цвета изменяются и смешиваются подобно вечернему небу. Рекомендуется для градиентных ламп.",
+  "behavior.gotosleep.style.sunset.title": "Закат",
+  "behavior.gotosleep.timeAndRecurrence.title": "<emph>Когда</emph> следует начать <emph>медленно уменьшать яркость</emph> светильников?"
+}

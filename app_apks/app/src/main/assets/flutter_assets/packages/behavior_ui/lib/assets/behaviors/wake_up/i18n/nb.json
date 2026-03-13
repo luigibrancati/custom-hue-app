@@ -1,0 +1,18 @@
+{
+  "behavior.wakeup.edit.brightnessItem.title": "Maksimal lysstyrke",
+  "behavior.wakeup.edit.styleItem.subtitle": "Soloppgangsvekking anbefales for graderingslys.",
+  "behavior.wakeup.edit.styleItem.title": "Stil",
+  "behavior.wakeup.experience.title": "Velg innstillingene dine",
+  "behavior.wakeup.generalStep.title": "Generelt",
+  "behavior.wakeup.nameStep.defaultName": "Vekking",
+  "behavior.wakeup.nameStep.label": "Navn",
+  "behavior.wakeup.nameStep.title": "<emph>Navngi</emph> automatiseringen din",
+  "behavior.wakeup.overview.description": "Øk lysstyrken til utvalgte lys gradvis om morgenen.",
+  "behavior.wakeup.overview.name": "Vekking med lys",
+  "behavior.wakeup.selectLights.title": "<emph>Velg</emph> lysene dine",
+  "behavior.wakeup.style.basic.subtitle": "Hvitt lys som er dimmet i starten, og som deretter dimmes mot full lysstyrke.",
+  "behavior.wakeup.style.basic.title": "Overgang til lysere",
+  "behavior.wakeup.style.sunrise.subtitle": "Fargene endres og blandes sammen for å etterligne morgenhimmelen. Anbefalt for gradientlys.",
+  "behavior.wakeup.style.sunrise.title": "Soloppgang",
+  "behavior.wakeup.timeAndRecurrence.title": "På <emph>hvilket tidspunkt</emph> vil du <emph>våkne opp</emph>?"
+}

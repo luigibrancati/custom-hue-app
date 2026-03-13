@@ -1,0 +1,8 @@
+{
+  "behavior.leavingHome.card.subtitle": "Sluk $lights$",
+  "behavior.leavingHome.name": "Forlader hjemmet",
+  "behavior.leavingHome.overview.description": "Indstil lyskilderne til at blive slukket automatisk, når du forlader din bolig.",
+  "behavior.leavingHome.overview.name": "Forlader hjemmet",
+  "behavior.leavingHome.selectLights.title": "<emph>Vælg</emph> dine lyskilder",
+  "behavior.leavingHome.selectScenes.title": "Disse lyskilder slukkes, <emph>når du tager af sted</emph>"
+}

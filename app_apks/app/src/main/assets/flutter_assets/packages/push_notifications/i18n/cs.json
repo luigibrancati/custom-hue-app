@@ -1,0 +1,13 @@
+{
+  "pushnotification.mainScreen.noAccount.error": "Buď nejste přihlášeni, nebo není k dispozici zařízení Hue Bridge",
+  "pushnotification.mainScreen.overlay.subscribingToNotifications": "Odběr oznámení",
+  "pushnotification.mainScreen.overlay.subscriptionStatus": "Kontrola stavu předplatného",
+  "pushnotification.mainScreen.overlay.unSubscribingToNotifications": "Zrušit odběr oznámení",
+  "pushnotification.mainScreen.refresh.option": "Aktualizovat",
+  "pushnotification.mainScreen.refreshStatus.title": "Obnovit stav",
+  "pushnotification.mainScreen.status": "Stav",
+  "pushnotification.mainScreen.subscribeOption": "Objednat si předplatné",
+  "pushnotification.mainScreen.subscribeToPushNotifications.title": "Odběr nabízených oznámení",
+  "pushnotification.mainScreen.title": "Další: „Push“ oznámení",
+  "pushnotification.mainScreen.unSubscribeOption": "Odhlásit"
+}

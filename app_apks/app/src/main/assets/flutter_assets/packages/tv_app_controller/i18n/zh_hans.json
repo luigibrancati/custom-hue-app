@@ -1,0 +1,18 @@
+{
+  "tvSyncController.controlScreen.areaSelection.empty.create.entertainment.area": "创建娱乐区域",
+  "tvSyncController.controlScreen.areaSelection.empty.subtitle": "创建娱乐区域以确定哪些灯具应加入同步。",
+  "tvSyncController.controlScreen.areaSelection.missing": "选择...",
+  "tvSyncController.controlScreen.areaSelection.subtitle": "您想使用哪个娱乐区域？",
+  "tvSyncController.controlScreen.areaSelection.title": "娱乐区域",
+  "tvSyncController.controlScreen.controls.brightness.title": "亮度",
+  "tvSyncController.controlScreen.controls.intensity.title": "强度",
+  "tvSyncController.controlScreen.controls.mode.game": "游戏",
+  "tvSyncController.controlScreen.controls.mode.music": "音乐区",
+  "tvSyncController.controlScreen.controls.mode.title": "模式",
+  "tvSyncController.controlScreen.controls.mode.video": "视频",
+  "tvSyncController.controlScreen.message.connecting": "正在连接...",
+  "tvSyncController.productName": "Hue Sync 电视",
+  "tvSyncController.settings.device.removePairing.action": "移除电视",
+  "tvSyncController.settings.device.removePairing.confirm": "删除",
+  "tvSyncController.settings.device.removePairing.disclaimer": "这将从应用程序中删除电视。"
+}

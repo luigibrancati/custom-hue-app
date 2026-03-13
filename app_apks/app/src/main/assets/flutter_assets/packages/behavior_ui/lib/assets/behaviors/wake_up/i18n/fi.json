@@ -1,0 +1,18 @@
+{
+  "behavior.wakeup.edit.brightnessItem.title": "Korkein kirkkaustaso",
+  "behavior.wakeup.edit.styleItem.subtitle": "Auringonnousua suositellaan gradienttivalaisimille.",
+  "behavior.wakeup.edit.styleItem.title": "Tyyli",
+  "behavior.wakeup.experience.title": "Valitse asetuksesi",
+  "behavior.wakeup.generalStep.title": "Yleiset",
+  "behavior.wakeup.nameStep.defaultName": "Herää",
+  "behavior.wakeup.nameStep.label": "Nimi",
+  "behavior.wakeup.nameStep.title": "<emph>Nimeä</emph> automaatio",
+  "behavior.wakeup.overview.description": "Kirkasta valittuja valoja asteittain aamulla.",
+  "behavior.wakeup.overview.name": "Herätä valon avulla",
+  "behavior.wakeup.selectLights.title": "<emph>Valitse</emph> valot",
+  "behavior.wakeup.style.basic.subtitle": "Valkoinen valo syttyy himmeänä ja kirkastuu täyteen tehoon.",
+  "behavior.wakeup.style.basic.title": "Vaiheittainen kirkastuminen",
+  "behavior.wakeup.style.sunrise.subtitle": "Värit vaihtuvat ja sekoittuvat auringonnousua jäljitellen. Suositellaan gradient-valoille.",
+  "behavior.wakeup.style.sunrise.title": "Auringonnousu",
+  "behavior.wakeup.timeAndRecurrence.title": "<emph>Mihin aikaan</emph> haluat<emph>herätä</emph>?"
+}

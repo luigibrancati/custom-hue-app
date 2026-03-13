@@ -1,0 +1,18 @@
+{
+  "behavior.wakeup.edit.brightnessItem.title": "Maximale helderheid",
+  "behavior.wakeup.edit.styleItem.subtitle": "Zonsopkomst wordt aanbevolen voor gradient lampen.",
+  "behavior.wakeup.edit.styleItem.title": "Stijl",
+  "behavior.wakeup.experience.title": "Kies je instellingen",
+  "behavior.wakeup.generalStep.title": "Algemeen",
+  "behavior.wakeup.nameStep.defaultName": "Ontwaken",
+  "behavior.wakeup.nameStep.label": "Naam",
+  "behavior.wakeup.nameStep.title": "Geef je automatisering een <emph>naam</emph>",
+  "behavior.wakeup.overview.description": "Laat geselecteerde lampen 's ochtends geleidelijk feller branden.",
+  "behavior.wakeup.overview.name": "Ontwaken met licht",
+  "behavior.wakeup.selectLights.title": "<emph>Kies</emph> je lampen",
+  "behavior.wakeup.style.basic.subtitle": "Gedimd wit licht dat geleidelijk naar volledige helderheid gaat.",
+  "behavior.wakeup.style.basic.title": "Transitie naar helder",
+  "behavior.wakeup.style.sunrise.subtitle": "De kleuren veranderen en vermengen zich om de ochtendlucht na te bootsen. Aanbevolen voor gradient lampen.",
+  "behavior.wakeup.style.sunrise.title": "Zonsopkomst",
+  "behavior.wakeup.timeAndRecurrence.title": "<emph>Hoe laat</emph> wil je <emph>wakker worden</emph>?"
+}

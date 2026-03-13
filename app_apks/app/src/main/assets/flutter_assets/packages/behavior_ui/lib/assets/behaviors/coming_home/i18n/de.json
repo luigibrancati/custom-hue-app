@@ -1,0 +1,9 @@
+{
+  "behavior.comingHome.card.subtitle": "Aktiviere $lights$",
+  "behavior.comingHome.name": "Nach Hause kommen",
+  "behavior.comingHome.overview.description": "Stelle Deine Lampen so ein, dass sie automatisch angehen, wenn Du nach Hause kommst.",
+  "behavior.comingHome.overview.name": "Nach Hause kommen",
+  "behavior.comingHome.selectLights.title": "<emph>Wähle</emph> Deine Lampen aus",
+  "behavior.comingHome.selectScenes.title": "<emph>Wie</emph> sollen sich Deine Lampen verhalten, <emph>wenn Du nach Hause kommst</emph>?",
+  "behavior.comingHome.when.title": "<emph>Wann</emph> sollen sich Deine Lampen <emph>einschalten</emph>?"
+}

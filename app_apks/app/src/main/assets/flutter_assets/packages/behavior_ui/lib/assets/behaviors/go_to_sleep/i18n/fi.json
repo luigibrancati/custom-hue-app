@@ -1,0 +1,18 @@
+{
+  "behavior.gotosleep.controllingDevicesStep.title": "Ohjaava laite",
+  "behavior.gotosleep.edit.styleItem.subtitle": "Sunset-asetusta suositellaan gradient-valaisimille.",
+  "behavior.gotosleep.edit.styleItem.title": "Tyyli",
+  "behavior.gotosleep.experience.title": "Valitse asetuksesi",
+  "behavior.gotosleep.generalStep.title": "Yleiset",
+  "behavior.gotosleep.nameStep.defaultName": "Käy nukkumaan",
+  "behavior.gotosleep.nameStep.label": "Nimi",
+  "behavior.gotosleep.nameStep.title": "<emph>Nimeä</emph> automaatio",
+  "behavior.gotosleep.overview.description": "Himmennä valitut valot hitaasti sammuksiin.",
+  "behavior.gotosleep.overview.name": "Käy nukkumaan",
+  "behavior.gotosleep.selectLights.title": "<emph>Valitse</emph> valot",
+  "behavior.gotosleep.style.basic.subtitle": "Valkoinen valo syttyy täydellä kirkkaudella ja himmentyy sitten sammuakseen kokonaan.",
+  "behavior.gotosleep.style.basic.title": "Vaiheittainen himmentyminen",
+  "behavior.gotosleep.style.sunset.subtitle": "Värit muuttuvat ja sulautuvat yhteen iltataivasta esittäen. Suositellaan gradient-valaisimille.",
+  "behavior.gotosleep.style.sunset.title": "Auringonlasku",
+  "behavior.gotosleep.timeAndRecurrence.title": "<emph>Milloin</emph> haluat valojesi alkavan <emph>himmentyä</emph>?"
+}

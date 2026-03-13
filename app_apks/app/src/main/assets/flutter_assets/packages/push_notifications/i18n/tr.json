@@ -1,0 +1,13 @@
+{
+  "pushnotification.mainScreen.noAccount.error": "Oturum açmadınız veya Hue Bridge'iniz yok",
+  "pushnotification.mainScreen.overlay.subscribingToNotifications": "Bildirimlere abone olma",
+  "pushnotification.mainScreen.overlay.subscriptionStatus": "Abonelik durumu kontrol etme",
+  "pushnotification.mainScreen.overlay.unSubscribingToNotifications": "Bildirimlere abonelikten ayrılma",
+  "pushnotification.mainScreen.refresh.option": "Yenile",
+  "pushnotification.mainScreen.refreshStatus.title": "Durumu yenile",
+  "pushnotification.mainScreen.status": "Durum",
+  "pushnotification.mainScreen.subscribeOption": "Abone ol",
+  "pushnotification.mainScreen.subscribeToPushNotifications.title": "Anlık bildirimlere abone ol",
+  "pushnotification.mainScreen.title": "Anlık bildirimler",
+  "pushnotification.mainScreen.unSubscribeOption": "Abonelikten çık"
+}

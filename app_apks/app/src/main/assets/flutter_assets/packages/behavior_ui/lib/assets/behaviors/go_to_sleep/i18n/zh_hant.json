@@ -1,0 +1,18 @@
+{
+  "behavior.gotosleep.controllingDevicesStep.title": "控制者",
+  "behavior.gotosleep.edit.styleItem.subtitle": "建議日落功能用於漸層型燈光。",
+  "behavior.gotosleep.edit.styleItem.title": "風格",
+  "behavior.gotosleep.experience.title": "選擇您的設定",
+  "behavior.gotosleep.generalStep.title": "一般規定",
+  "behavior.gotosleep.nameStep.defaultName": "睡眠",
+  "behavior.gotosleep.nameStep.label": "名稱",
+  "behavior.gotosleep.nameStep.title": "<emph>命名</emph>您的自動功能",
+  "behavior.gotosleep.overview.description": "讓選擇的燈光逐漸調暗，直到完全熄滅。",
+  "behavior.gotosleep.overview.name": "睡眠",
+  "behavior.gotosleep.selectLights.title": "<emph>選擇</emph>您的燈具",
+  "behavior.gotosleep.style.basic.subtitle": "白光開始調亮，接著慢慢轉到全暗。",
+  "behavior.gotosleep.style.basic.title": "轉變為暗色",
+  "behavior.gotosleep.style.sunset.subtitle": "色彩變更與同時融合，模擬傍晚天空。 建議漸層色燈管使用。",
+  "behavior.gotosleep.style.sunset.title": "日落",
+  "behavior.gotosleep.timeAndRecurrence.title": "您希望您的燈光<emph>何時</emph>開始<emph>調暗</emph>？"
+}

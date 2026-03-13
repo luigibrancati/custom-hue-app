@@ -1,0 +1,17 @@
+{
+  "scenes.categories.defaults": "Standarder",
+  "scenes.new": "Ny scene",
+  "scenes.recipe.bright": "Klar",
+  "scenes.recipe.concentrate": "Koncentrer dig",
+  "scenes.recipe.coolBright": "Kølig klar",
+  "scenes.recipe.dimmed": "Dæmpet",
+  "scenes.recipe.doze": "Slap af",
+  "scenes.recipe.energize": "Få ny energi",
+  "scenes.recipe.nightLight": "Natlys",
+  "scenes.recipe.read": "Læs",
+  "scenes.recipe.relax": "Slap af",
+  "smartScenes.goldenHours": "Gyldne timer",
+  "smartScenes.naturalLight": "Naturligt lys",
+  "smartScenes.natureColors": "Naturens farver",
+  "smartScenes.tag24Hours": "24 timer"
+}

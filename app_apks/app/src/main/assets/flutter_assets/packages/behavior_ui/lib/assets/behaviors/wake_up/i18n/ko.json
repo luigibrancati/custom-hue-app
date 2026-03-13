@@ -1,0 +1,18 @@
+{
+  "behavior.wakeup.edit.brightnessItem.title": "최대 밝기",
+  "behavior.wakeup.edit.styleItem.subtitle": "일출은 Gradient 조명에 추천합니다.",
+  "behavior.wakeup.edit.styleItem.title": "스타일",
+  "behavior.wakeup.experience.title": "설정을 선택하세요",
+  "behavior.wakeup.generalStep.title": "일반",
+  "behavior.wakeup.nameStep.defaultName": "기상",
+  "behavior.wakeup.nameStep.label": "이름",
+  "behavior.wakeup.nameStep.title": "자동화 <emph>이름을 지정</emph>하세요",
+  "behavior.wakeup.overview.description": "선택한 조명이 아침에 점차 밝아지도록 합니다.",
+  "behavior.wakeup.overview.name": "조명 켜고 기상",
+  "behavior.wakeup.selectLights.title": "조명을 <emph>선택하세요</emph>",
+  "behavior.wakeup.style.basic.subtitle": "조명이 처음에는 어둡게 시작해서 천천히 전체 밝기로 밝아집니다.",
+  "behavior.wakeup.style.basic.title": "밝게 전환",
+  "behavior.wakeup.style.sunrise.subtitle": "색이 바뀌고 섞이면서 아침 하늘 느낌을 줍니다. 그라디언트 조명에 추천합니다.",
+  "behavior.wakeup.style.sunrise.title": "일출",
+  "behavior.wakeup.timeAndRecurrence.title": "<emph>어떤 시간</emph>에 <emph>기상</emph>하시겠습니까?"
+}

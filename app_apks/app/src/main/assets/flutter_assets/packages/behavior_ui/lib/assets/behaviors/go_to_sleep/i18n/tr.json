@@ -1,0 +1,18 @@
+{
+  "behavior.gotosleep.controllingDevicesStep.title": "Tarafından kontrol ediliyor",
+  "behavior.gotosleep.edit.styleItem.subtitle": "Gradient ışıklar için Gün Batımı önerilir.",
+  "behavior.gotosleep.edit.styleItem.title": "Stil",
+  "behavior.gotosleep.experience.title": "Ayarlarınızı seçin",
+  "behavior.gotosleep.generalStep.title": "Genel",
+  "behavior.gotosleep.nameStep.defaultName": "Uykuya geçiş",
+  "behavior.gotosleep.nameStep.label": "İsim",
+  "behavior.gotosleep.nameStep.title": "Otomasyonunuzu <emph>adlandırın</emph>",
+  "behavior.gotosleep.overview.description": "Seçilen ışıkların kapanana kadar yavaşça kararmasını bekleyin.",
+  "behavior.gotosleep.overview.name": "Uykuya geçiş",
+  "behavior.gotosleep.selectLights.title": "Işıklarınızı <emph>seçin</emph>",
+  "behavior.gotosleep.style.basic.subtitle": "Beyaz ışık yanar şekilde başlar ve aşamalı olarak tamamen söner.",
+  "behavior.gotosleep.style.basic.title": "Karanlığa geçiş",
+  "behavior.gotosleep.style.sunset.subtitle": "Renkler akşam gökyüzüne benzer şekilde değişir ve birbirine karışır. Gradient ışıklar için önerilir.",
+  "behavior.gotosleep.style.sunset.title": "Gün batımı",
+  "behavior.gotosleep.timeAndRecurrence.title": "Işıklarınızın <emph>ne zaman</emph> <emph>kısılmaya başlamasını</emph> istersiniz?"
+}

@@ -1,0 +1,18 @@
+{
+  "behavior.gotosleep.controllingDevicesStep.title": "Controlado por",
+  "behavior.gotosleep.edit.styleItem.subtitle": "Se recomienda Sunset si se quieren luces degradadas.",
+  "behavior.gotosleep.edit.styleItem.title": "Estilo",
+  "behavior.gotosleep.experience.title": "Elige tu configuración",
+  "behavior.gotosleep.generalStep.title": "General",
+  "behavior.gotosleep.nameStep.defaultName": "Ir a dormir",
+  "behavior.gotosleep.nameStep.label": "Nombre",
+  "behavior.gotosleep.nameStep.title": "<emph>Nombrar</emph> tu automatismo",
+  "behavior.gotosleep.overview.description": "Haz que las luces seleccionadas se atenúen lentamente hasta apagarse.",
+  "behavior.gotosleep.overview.name": "Ir a dormir",
+  "behavior.gotosleep.selectLights.title": "<emph>Elige</emph> tus luces",
+  "behavior.gotosleep.style.basic.subtitle": "Comienza con Luz blanca y luego se desvanece por completo.",
+  "behavior.gotosleep.style.basic.title": "Transición a la oscuridad",
+  "behavior.gotosleep.style.sunset.subtitle": "Los colores cambian y se mezclan para imitar el cielo nocturno. Recomendado si se quieren luces degradadas.",
+  "behavior.gotosleep.style.sunset.title": "Atardecer",
+  "behavior.gotosleep.timeAndRecurrence.title": "¿<emph>Cuándo</emph> quieres empezar a <emph>atenuar</emph> las luces?"
+}

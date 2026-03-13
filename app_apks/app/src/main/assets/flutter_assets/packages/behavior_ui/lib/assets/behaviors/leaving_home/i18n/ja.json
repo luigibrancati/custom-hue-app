@@ -1,0 +1,8 @@
+{
+  "behavior.leavingHome.card.subtitle": "$lights$ をオフにする",
+  "behavior.leavingHome.name": "外出",
+  "behavior.leavingHome.overview.description": "家を出るときに照明が自動的にオフになるよう設定します。",
+  "behavior.leavingHome.overview.name": "外出",
+  "behavior.leavingHome.selectLights.title": "照明を<emph>選択する</emph>",
+  "behavior.leavingHome.selectScenes.title": "<emph>外出する時</emph>、照明をオフにします"
+}

@@ -1,0 +1,13 @@
+{
+  "behavior.timer.card.subtitle": "Activar $lights$",
+  "behavior.timer.controllingDevicesStep.title": "Controlado por",
+  "behavior.timer.nameStep.defaultName": "Temporizador",
+  "behavior.timer.nameStep.label": "Nombre",
+  "behavior.timer.nameStep.title": "<emph>Nombrar</emph> tu automatismo",
+  "behavior.timer.overview.description": "Señala el final de un intervalo de tiempo establecido con luz.",
+  "behavior.timer.overview.name": "Temporizador",
+  "behavior.timer.selectDuration.invalid.errorMessage": "Asegúrate de configurar el temporizador de forma que expire en el futuro.",
+  "behavior.timer.selectDuration.title": "<emph>¿Cuánto tiempo</emph> debe durar el temporizador?",
+  "behavior.timer.selectLights.title": "<emph>Elige</emph> tus luces",
+  "behavior.timer.selectScenes.title": "<emph>¿Qué</emph> deben hacer las luces?"
+}

@@ -1,0 +1,16 @@
+{
+  "iosWidgetsGuidance.add.subtitle": "Håll intryckt på hemskärmen på iPhone eller iPad. Tryck sedan på +-ikonen längst upp till vänster. Välj Hue på nästa skärm och välj widgetstorlek.",
+  "iosWidgetsGuidance.add.title": "Lägg till widgeten",
+  "iosWidgetsGuidance.main.actionFooterMessage": "Besök <link:apple_support>Apples supportsida</link:apple_support> för mer information om widgets.",
+  "iosWidgetsGuidance.main.headerTitle": "Widgetar",
+  "iosWidgetsGuidance.main.learnMoreButton.title": "Läs mer",
+  "iosWidgetsGuidance.main.subtitle": "Ställ in scenarier direkt från hemskärmen, låsskärmen och viloläget utan att öppna appen.",
+  "iosWidgetsGuidance.main.title": "Styr lampor med widgets",
+  "iosWidgetsGuidance.selectAction.title": "Välj åtgärder",
+  "iosWidgetsGuidance.selectionAction.subtitle": "I redigeringsläget trycker du på widgeten för att välja hur widgeten ska styra dina lampor.\n\nTips: Visste du att du kan lägga till en widget på låsskärmen? Håll intryckt på den skärmen och tryck sedan på Anpassa.",
+  "siriShortcutsGuidance.createSiriShortcutsButton.title": "Skapa genvägar",
+  "siriShortcutsGuidance.header.title": "Genvägar",
+  "siriShortcutsGuidance.learnMoreButton.title": "Läs mer om genvägar",
+  "siriShortcutsGuidance.subtitle": "Skapa anpassade röstkommandon eller genvägar som du kan använda i widgetarna på enhetens startskärm eller i Apple Watch. \n \n Lägg till genvägar till dina widgets i appen Genvägar. Sök \"Hue\" och skapa dina egna funktioner.",
+  "siriShortcutsGuidance.title": "Skapa genvägar för Hue"
+}

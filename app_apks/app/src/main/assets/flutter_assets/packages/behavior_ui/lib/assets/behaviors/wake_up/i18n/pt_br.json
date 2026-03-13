@@ -1,0 +1,18 @@
+{
+  "behavior.wakeup.edit.brightnessItem.title": "Brilho máximo",
+  "behavior.wakeup.edit.styleItem.subtitle": "O nascer do sol é recomendável para luzes degradê.",
+  "behavior.wakeup.edit.styleItem.title": "Estilo",
+  "behavior.wakeup.experience.title": "Escolha suas configurações",
+  "behavior.wakeup.generalStep.title": "Disposições gerais",
+  "behavior.wakeup.nameStep.defaultName": "Acordar",
+  "behavior.wakeup.nameStep.label": "Nome",
+  "behavior.wakeup.nameStep.title": "<emph>Dê um nome</emph> para a sua automação",
+  "behavior.wakeup.overview.description": "Aumente gradualmente o brilho de luzes selecionadas pela manhã.",
+  "behavior.wakeup.overview.name": "Acordar com luz",
+  "behavior.wakeup.selectLights.title": "<emph>Escolher</emph> suas luzes",
+  "behavior.wakeup.style.basic.subtitle": "A luz branca começa reduzida, chegando gradualmente ao brilho completo.",
+  "behavior.wakeup.style.basic.title": "Transição para brilhante",
+  "behavior.wakeup.style.sunrise.subtitle": "As cores mudam e se misturam para imitar o sol da manhã. Recomendável para luzes de gradiente.",
+  "behavior.wakeup.style.sunrise.title": "Nascer do sol",
+  "behavior.wakeup.timeAndRecurrence.title": "A <emph>que horas</emph> você deseja <emph>acordar</emph>?"
+}

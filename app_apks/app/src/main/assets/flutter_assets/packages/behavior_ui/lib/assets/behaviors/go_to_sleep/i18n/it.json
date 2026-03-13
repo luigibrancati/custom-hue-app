@@ -1,0 +1,18 @@
+{
+  "behavior.gotosleep.controllingDevicesStep.title": "Controllato da",
+  "behavior.gotosleep.edit.styleItem.subtitle": "Tramonto è consigliato per le lampade gradient.",
+  "behavior.gotosleep.edit.styleItem.title": "Stile",
+  "behavior.gotosleep.experience.title": "Scegli le tue impostazioni",
+  "behavior.gotosleep.generalStep.title": "Disposizioni generali",
+  "behavior.gotosleep.nameStep.defaultName": "Addormentarsi",
+  "behavior.gotosleep.nameStep.label": "Nome",
+  "behavior.gotosleep.nameStep.title": "<emph>Attribuisci un nome</emph> alle tue automazioni",
+  "behavior.gotosleep.overview.description": "Lascia che le luci selezionate si abbassino lentamente finché non si spengono.",
+  "behavior.gotosleep.overview.name": "Addormentarsi",
+  "behavior.gotosleep.selectLights.title": "<emph>Scegli</emph> le luci",
+  "behavior.gotosleep.style.basic.subtitle": "La luce bianca si accende e gradualmente riduce l'intensità fino a spegnersi del tutto.",
+  "behavior.gotosleep.style.basic.title": "Transizione alla modalità notturna",
+  "behavior.gotosleep.style.sunset.subtitle": "I colori cambiano e si mescolano per riprodurre il cielo della sera. Consigliato per le lampade gradient.",
+  "behavior.gotosleep.style.sunset.title": "Tramonto",
+  "behavior.gotosleep.timeAndRecurrence.title": "<emph>Quando</emph> vuoi che le tue luci inizino ad <emph>attenuarsi</emph>?"
+}

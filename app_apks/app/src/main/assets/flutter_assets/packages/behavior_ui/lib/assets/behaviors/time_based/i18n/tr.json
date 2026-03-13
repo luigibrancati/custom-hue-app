@@ -1,0 +1,9 @@
+{
+  "behavior.timeBased.nameStep.label": "İsim",
+  "behavior.timeBased.nameStep.title": "Otomasyonunuzu <emph>adlandırın</emph>",
+  "behavior.timeBased.overview.description": "Kendi özel otomasyonunuzu oluşturun.",
+  "behavior.timeBased.overview.name": "Özel",
+  "behavior.timeBased.selectLights.title": "Işıklarınızı <emph>seçin</emph>",
+  "behavior.timeBased.selectScenes.title": "Işıklarınızın <emph>ne</emph> yapmasını istersiniz?",
+  "behavior.timeBased.whenExtendedStep.title": "<emph>Ne zaman</emph> bu otomasyonu programlamak istiyorsunuz?"
+}

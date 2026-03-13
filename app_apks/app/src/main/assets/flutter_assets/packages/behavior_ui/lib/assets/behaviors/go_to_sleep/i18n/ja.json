@@ -1,0 +1,18 @@
+{
+  "behavior.gotosleep.controllingDevicesStep.title": "制御元",
+  "behavior.gotosleep.edit.styleItem.subtitle": "グラデーションライトには Sunset (夕日) が推奨されます。",
+  "behavior.gotosleep.edit.styleItem.title": "スタイル",
+  "behavior.gotosleep.experience.title": "設定を選択してください",
+  "behavior.gotosleep.generalStep.title": "概要",
+  "behavior.gotosleep.nameStep.defaultName": "就寝",
+  "behavior.gotosleep.nameStep.label": "名前",
+  "behavior.gotosleep.nameStep.title": "オートメーションに<emph>名前</emph>をつける",
+  "behavior.gotosleep.overview.description": "選択した照明がオフになるまで徐々に暗くします。",
+  "behavior.gotosleep.overview.name": "就寝",
+  "behavior.gotosleep.selectLights.title": "照明を<emph>選択する</emph>",
+  "behavior.gotosleep.style.basic.subtitle": "白色光が点灯し始め、その後完全に消えます。",
+  "behavior.gotosleep.style.basic.title": "徐々に暗くなる",
+  "behavior.gotosleep.style.sunset.subtitle": "色が変化して混ざり合い、夕方の空を再現します。 グラデーションライトにおすすめです。",
+  "behavior.gotosleep.style.sunset.title": "日の入り",
+  "behavior.gotosleep.timeAndRecurrence.title": "<emph>いつ</emph> 照明を <emph>暗く</emph> し始めますか?"
+}

@@ -1,0 +1,13 @@
+{
+  "pushnotification.mainScreen.noAccount.error": "您尚未登录或者您尚无 Hue Bridge",
+  "pushnotification.mainScreen.overlay.subscribingToNotifications": "订阅通知",
+  "pushnotification.mainScreen.overlay.subscriptionStatus": "检查订阅状态",
+  "pushnotification.mainScreen.overlay.unSubscribingToNotifications": "取消订阅通知",
+  "pushnotification.mainScreen.refresh.option": "刷新",
+  "pushnotification.mainScreen.refreshStatus.title": "刷新状态",
+  "pushnotification.mainScreen.status": "状态",
+  "pushnotification.mainScreen.subscribeOption": "订阅",
+  "pushnotification.mainScreen.subscribeToPushNotifications.title": "订阅推送通知",
+  "pushnotification.mainScreen.title": "推送消息通知",
+  "pushnotification.mainScreen.unSubscribeOption": "取消订阅"
+}

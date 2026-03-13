@@ -1,0 +1,18 @@
+{
+  "behavior.gotosleep.controllingDevicesStep.title": "Gesteuert durch",
+  "behavior.gotosleep.edit.styleItem.subtitle": "Sunset wird empfohlen für Lampen mit Farbverlauf.",
+  "behavior.gotosleep.edit.styleItem.title": "Stil",
+  "behavior.gotosleep.experience.title": "Wähle Deine Einstellungen",
+  "behavior.gotosleep.generalStep.title": "Allgemeines",
+  "behavior.gotosleep.nameStep.defaultName": "Schlafen gehen",
+  "behavior.gotosleep.nameStep.label": "Name",
+  "behavior.gotosleep.nameStep.title": "<emph>Benenne</emph> Deine Automatisierungen",
+  "behavior.gotosleep.overview.description": "Lege fest, dass die ausgewählten Lampen sich langsam dimmen, bis sie aus sind.",
+  "behavior.gotosleep.overview.name": "Schlafen gehen",
+  "behavior.gotosleep.selectLights.title": "<emph>Wähle</emph> Deine Lampen aus",
+  "behavior.gotosleep.style.basic.subtitle": "Am Anfang ist das weiße Licht eingeschaltet, dann wird es nach und nach bis auf Null ausgeblendet.",
+  "behavior.gotosleep.style.basic.title": "Übergang zu Dunkelheit",
+  "behavior.gotosleep.style.sunset.subtitle": "Die Farben ändern und vermischen sich ähnlich wie am Abendhimmel. Empfohlen für Lampen mit Farbverlauf.",
+  "behavior.gotosleep.style.sunset.title": "Sonnenuntergang",
+  "behavior.gotosleep.timeAndRecurrence.title": "<emph>Wann</emph> soll das <emph>Dimmen</emph> Deiner Lampen beginnen?"
+}

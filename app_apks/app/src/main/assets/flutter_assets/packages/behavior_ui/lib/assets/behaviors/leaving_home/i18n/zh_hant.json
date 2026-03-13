@@ -1,0 +1,8 @@
+{
+  "behavior.leavingHome.card.subtitle": "關閉 $lights$",
+  "behavior.leavingHome.name": "離家",
+  "behavior.leavingHome.overview.description": "將燈光設定為在您離開自家房屋時自動關閉。",
+  "behavior.leavingHome.overview.name": "離家",
+  "behavior.leavingHome.selectLights.title": "<emph>選擇</emph>您的燈具",
+  "behavior.leavingHome.selectScenes.title": "這些燈光將在您離開時<emph>關閉</emph>"
+}

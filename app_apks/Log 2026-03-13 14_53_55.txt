@@ -1,0 +1,139 @@
+nRF Connect, 2026-03-13
+Hue white lamp (E1:E8:B8:8E:49:2D)
+V	14:53:55.643	Connecting to E1:E8:B8:8E:49:2D...
+D	14:53:55.643	gatt = device.connectGatt(autoConnect = false, TRANSPORT_LE, preferred PHY = LE 1M)
+D	14:53:56.037	[Callback] Connection state changed with status: 0 and new state: CONNECTED (2)
+I	14:53:56.037	Connected to E1:E8:B8:8E:49:2D
+V	14:53:56.050	Discovering services...
+D	14:53:56.050	gatt.discoverServices()
+D	14:53:56.052	[Broadcast] Action received: android.bluetooth.device.action.ACL_CONNECTED
+D	14:53:56.108	[Callback] Services discovered with status: 0
+I	14:53:56.108	Services discovered
+V	14:53:56.117	Generic Attribute (0x1801)
+- Service Changed [I] (0x2A05)
+   Client Characteristic Configuration (0x2902)
+- Database Hash [R] (0x2B2A)
+- Client Supported Features [R W] (0x2B29)
+Generic Access (0x1800)
+- Device Name [R] (0x2A00)
+- Appearance [R] (0x2A01)
+Device Information (0x180A)
+- Manufacturer Name String [R] (0x2A29)
+- Model Number String [R] (0x2A24)
+- Software Revision String [R] (0x2A28)
+Device Config Service (0000fe0f-0000-1000-8000-00805f9b34fb)
+- Unknown Characteristic [R] (97fe6561-0001-4f62-86e9-b71ee2da3d22)
+- Device Name Characteristics [R W WNR] (97fe6561-0003-4f62-86e9-b71ee2da3d22)
+- Unknown Characteristic [W WNR] (97fe6561-0004-4f62-86e9-b71ee2da3d22)
+- Unknown Characteristic [I W WNR] (97fe6561-0005-4f62-86e9-b71ee2da3d22)
+   Client Characteristic Configuration (0x2902)
+- Unknown Characteristic [R W WNR] (97fe6561-0006-4f62-86e9-b71ee2da3d22)
+- Unknown Characteristic [I N W WNR] (97fe6561-0008-4f62-86e9-b71ee2da3d22)
+   Client Characteristic Configuration (0x2902)
+- Unknown Characteristic [I N R W WNR] (97fe6561-1001-4f62-86e9-b71ee2da3d22)
+   Client Characteristic Configuration (0x2902)
+- Unknown Characteristic [R W WNR] (97fe6561-2001-4f62-86e9-b71ee2da3d22)
+- Unknown Characteristic [W WNR] (97fe6561-2002-4f62-86e9-b71ee2da3d22)
+- Unknown Characteristic [W WNR] (97fe6561-2004-4f62-86e9-b71ee2da3d22)
+- Unknown Characteristic [W WNR] (97fe6561-a001-4f62-86e9-b71ee2da3d22)
+- Unknown Characteristic [R] (97fe6561-a002-4f62-86e9-b71ee2da3d22)
+- Unknown Characteristic [R W WNR] (97fe6561-a003-4f62-86e9-b71ee2da3d22)
+- Unknown Characteristic [R W WNR] (97fe6561-2005-4f62-86e9-b71ee2da3d22)
+Unknown Service (0000fff6-0000-1000-8000-00805f9b34fb)
+- Unknown Characteristic [W] (18ee2ef5-263d-4559-959f-4f9c429f9d11)
+- Unknown Characteristic [I] (18ee2ef5-263d-4559-959f-4f9c429f9d12)
+   Client Characteristic Configuration (0x2902)
+- Unknown Characteristic [R] (64630238-8772-45f2-b87d-748a83218f04)
+Light Control Service (932c32bd-0000-47a2-835a-a8d455b859dd)
+- Unknown Characteristic [R] (932c32bd-0001-47a2-835a-a8d455b859dd)
+- On/Off Characteristics [N R W WNR] (932c32bd-0002-47a2-835a-a8d455b859dd)
+   Client Characteristic Configuration (0x2902)
+- Brightness Characteristics [N R W WNR] (932c32bd-0003-47a2-835a-a8d455b859dd)
+   Client Characteristic Configuration (0x2902)
+- Unknown Characteristic [W WNR] (932c32bd-0006-47a2-835a-a8d455b859dd)
+- Combined Control Characteristics [N R W WNR] (932c32bd-0007-47a2-835a-a8d455b859dd)
+   Client Characteristic Configuration (0x2902)
+- Unknown Characteristic [R W WNR] (932c32bd-1005-47a2-835a-a8d455b859dd)
+Unknown Service (b8843add-0000-4aa1-8794-c3f462030bda)
+- Unknown Characteristic [R] (b8843add-0001-4aa1-8794-c3f462030bda)
+- Unknown Characteristic [I N W WNR] (b8843add-0002-4aa1-8794-c3f462030bda)
+   Client Characteristic Configuration (0x2902)
+- Unknown Characteristic [W WNR] (b8843add-0003-4aa1-8794-c3f462030bda)
+- Unknown Characteristic [R] (b8843add-0004-4aa1-8794-c3f462030bda)
+Unknown Service (9da2ddf1-0000-44d0-909c-3f3d3cb34a7b)
+- Suspected Schedule [N W WNR] (9da2ddf1-0001-44d0-909c-3f3d3cb34a7b)
+   Client Characteristic Configuration (0x2902)
+Unknown Service (29144af4-0000-4481-bfe9-6d0299b429e3)
+- Unknown Characteristic [I W WNR] (89e6c2bd-0001-4f1e-aee0-2fa77c87cf7c)
+   Client Characteristic Configuration (0x2902)
+- Unknown Characteristic [I W WNR] (29144af4-0002-4481-bfe9-6d0299b429e3)
+   Client Characteristic Configuration (0x2902)
+D	14:53:56.117	gatt.setCharacteristicNotification(00002a05-0000-1000-8000-00805f9b34fb, true)
+D	14:53:56.119	gatt.setCharacteristicNotification(97fe6561-0005-4f62-86e9-b71ee2da3d22, true)
+D	14:53:56.121	gatt.setCharacteristicNotification(97fe6561-0008-4f62-86e9-b71ee2da3d22, true)
+D	14:53:56.122	gatt.setCharacteristicNotification(97fe6561-1001-4f62-86e9-b71ee2da3d22, true)
+D	14:53:56.124	gatt.setCharacteristicNotification(18ee2ef5-263d-4559-959f-4f9c429f9d12, true)
+D	14:53:56.125	gatt.setCharacteristicNotification(932c32bd-0002-47a2-835a-a8d455b859dd, true)
+D	14:53:56.126	gatt.setCharacteristicNotification(932c32bd-0003-47a2-835a-a8d455b859dd, true)
+D	14:53:56.127	gatt.setCharacteristicNotification(932c32bd-0007-47a2-835a-a8d455b859dd, true)
+D	14:53:56.128	gatt.setCharacteristicNotification(b8843add-0002-4aa1-8794-c3f462030bda, true)
+D	14:53:56.129	gatt.setCharacteristicNotification(9da2ddf1-0001-44d0-909c-3f3d3cb34a7b, true)
+D	14:53:56.130	gatt.setCharacteristicNotification(89e6c2bd-0001-4f1e-aee0-2fa77c87cf7c, true)
+D	14:53:56.131	gatt.setCharacteristicNotification(29144af4-0002-4481-bfe9-6d0299b429e3, true)
+I	14:53:56.281	Connection parameters updated (interval: 48.75ms, latency: 0, timeout: 5000ms)
+V	14:54:02.294	Writing request to characteristic 932c32bd-0002-47a2-835a-a8d455b859dd
+D	14:54:02.294	gatt.writeCharacteristic(932c32bd-0002-47a2-835a-a8d455b859dd, value=0x00)
+D	14:54:02.690	[Broadcast] Action received: android.bluetooth.device.action.BOND_STATE_CHANGED, bond state changed to: BONDING (11)
+D	14:54:02.703	[Broadcast] Action received: android.bluetooth.device.extra.PAIRING_VARIANT, pairing variant: CONSENT
+D	14:54:06.623	[Broadcast] Action received: android.bluetooth.device.action.ENCRYPTION_CHANGE, encryption: ENABLED, algorithm: AES (16 bytes), transport: TRANSPORT_LE, status: 0
+I	14:54:07.354	Data written to 932c32bd-0002-47a2-835a-a8d455b859dd, value: (0x) 00
+A	14:54:07.354	"(0x) 00" sent
+D	14:54:10.227	[Broadcast] Action received: android.bluetooth.device.action.BOND_STATE_CHANGED, bond state changed to: BONDED (12)
+I	14:54:10.227	Device bonded
+V	14:54:12.482	Writing request to characteristic 932c32bd-0002-47a2-835a-a8d455b859dd
+D	14:54:12.482	gatt.writeCharacteristic(932c32bd-0002-47a2-835a-a8d455b859dd, value=0x01)
+I	14:54:12.562	Data written to 932c32bd-0002-47a2-835a-a8d455b859dd, value: (0x) 01
+A	14:54:12.562	"(0x) 01" sent
+I	14:54:28.133	Indication received from b8843add-0002-4aa1-8794-c3f462030bda, value: (0x) 80-00-08-0D-00-01-29-01-0B-10-00-00
+A	14:54:28.133	"(0x) 80-00-08-0D-00-01-29-01-0B-10-00-00" received
+I	14:54:28.418	Notification received from 9da2ddf1-0001-44d0-909c-3f3d3cb34a7b, value: (0x) 00-00-09-00
+A	14:54:28.418	"(0x) 00-00-09-00" received
+I	14:54:45.768	Notification received from 9da2ddf1-0001-44d0-909c-3f3d3cb34a7b, value: (0x) 01-00-FF-FF-01-00
+A	14:54:45.768	"(0x) 01-00-FF-FF-01-00" received
+I	14:54:45.771	Notification received from 9da2ddf1-0001-44d0-909c-3f3d3cb34a7b, value: (0x) 04-FF-FF-01-00
+A	14:54:45.771	"(0x) 04-FF-FF-01-00" received
+I	14:54:49.472	Notification received from 9da2ddf1-0001-44d0-909c-3f3d3cb34a7b, value: (0x) 01-00-01-00-02-00
+A	14:54:49.472	"(0x) 01-00-01-00-02-00" received
+I	14:54:49.477	Notification received from 9da2ddf1-0001-44d0-909c-3f3d3cb34a7b, value: (0x) 04-01-00-02-00
+A	14:54:49.477	"(0x) 04-01-00-02-00" received
+I	14:54:50.497	Notification received from 9da2ddf1-0001-44d0-909c-3f3d3cb34a7b, value: (0x) 01-00-02-00-03-00
+A	14:54:50.497	"(0x) 01-00-02-00-03-00" received
+I	14:54:50.498	Notification received from 9da2ddf1-0001-44d0-909c-3f3d3cb34a7b, value: (0x) 04-02-00-03-00
+A	14:54:50.498	"(0x) 04-02-00-03-00" received
+I	14:54:59.811	Notification received from 9da2ddf1-0001-44d0-909c-3f3d3cb34a7b, value: (0x) 01-00-FF-FF-04-00
+A	14:54:59.811	"(0x) 01-00-FF-FF-04-00" received
+I	14:54:59.814	Notification received from 9da2ddf1-0001-44d0-909c-3f3d3cb34a7b, value: (0x) 04-FF-FF-04-00
+A	14:54:59.815	"(0x) 04-FF-FF-04-00" received
+I	14:55:16.334	Notification received from 9da2ddf1-0001-44d0-909c-3f3d3cb34a7b, value: (0x) 01-00-FF-FF-05-00
+A	14:55:16.334	"(0x) 01-00-FF-FF-05-00" received
+I	14:55:16.334	Notification received from 9da2ddf1-0001-44d0-909c-3f3d3cb34a7b, value: (0x) 04-FF-FF-05-00
+A	14:55:16.334	"(0x) 04-FF-FF-05-00" received
+I	14:55:26.431	Notification received from 9da2ddf1-0001-44d0-909c-3f3d3cb34a7b, value: (0x) 01-00-FF-FF-06-00
+A	14:55:26.431	"(0x) 01-00-FF-FF-06-00" received
+I	14:55:26.432	Notification received from 9da2ddf1-0001-44d0-909c-3f3d3cb34a7b, value: (0x) 04-FF-FF-06-00
+A	14:55:26.432	"(0x) 04-FF-FF-06-00" received
+I	14:55:39.100	Notification received from 9da2ddf1-0001-44d0-909c-3f3d3cb34a7b, value: (0x) 01-00-FF-FF-07-00
+A	14:55:39.100	"(0x) 01-00-FF-FF-07-00" received
+I	14:55:39.101	Notification received from 9da2ddf1-0001-44d0-909c-3f3d3cb34a7b, value: (0x) 04-FF-FF-07-00
+A	14:55:39.101	"(0x) 04-FF-FF-07-00" received
+I	14:55:57.052	Notification received from 9da2ddf1-0001-44d0-909c-3f3d3cb34a7b, value: (0x) 01-00-FF-FF-08-00
+A	14:55:57.052	"(0x) 01-00-FF-FF-08-00" received
+I	14:55:57.053	Notification received from 9da2ddf1-0001-44d0-909c-3f3d3cb34a7b, value: (0x) 04-FF-FF-08-00
+A	14:55:57.053	"(0x) 04-FF-FF-08-00" received
+D	14:56:07.691	[Callback] Connection state changed with status: 22 and new state: DISCONNECTED (0)
+E	14:56:07.691	Error 22 (0x16): GATT CONN TERMINATE LOCAL HOST
+I	14:56:07.691	Disconnected
+D	14:56:08.128	[Broadcast] Action received: android.bluetooth.adapter.action.STATE_CHANGED, state changed to TURNING OFF
+D	14:56:08.128	gatt.close()
+D	14:56:08.128	wait(200)
+D	14:56:08.333	[Broadcast] Action received: android.bluetooth.adapter.action.STATE_CHANGED, state changed to OFF

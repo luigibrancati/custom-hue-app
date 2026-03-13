@@ -1,0 +1,18 @@
+alarm:
+  id: 0x00000006 # sound id for Siren
+  volume: 100
+  duration: 120
+  mutable: false
+  end_condition: time
+
+alert:
+  id: 0x00000001 # sound id for Alert
+  volume: 70
+  mutable: true
+  end_condition: eof
+
+chime:
+  id: 0x0000000A # sound id for Hue default
+  volume: 90
+  mutable: true
+  end_condition: eof

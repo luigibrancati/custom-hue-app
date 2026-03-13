@@ -1,0 +1,453 @@
+control_defaults:
+  - defaults:
+  # Top left
+    - control:
+        type: button
+        id: 1
+      action_key: on_press
+      preferred_action_archetypes:
+        - light_capability: on_off
+          action_archetype: time_based
+      default_actions_per_archetype:
+        - action_archetype: single_scene
+          actions: 
+            - light_capability: on_off
+              default_action:
+                action_archetype: single_scene
+                action:
+                  action_type: off
+        - action_archetype: scene_per_group
+          actions: 
+            - light_capability: dimmable
+              default_action:
+                action_archetype: scene_per_group
+                action:
+                  action_type: recipe
+                  recipe: bright
+            - light_capability: on_off
+              default_action:
+                action_archetype: scene_per_group
+                action:
+                  action_type: on
+        - action_archetype: scene_cycle_per_group
+          actions: 
+            - light_capability: white_ambiance
+              default_action:
+                action_archetype: scene_cycle_per_group
+                name: wca
+            - light_capability: dimmable
+              default_action:
+                action_archetype: scene_cycle_per_group
+                name: dimmable
+            - light_capability: on_off
+              default_action:
+                action_archetype: scene_cycle_per_group
+                name: on_off
+        - action_archetype: time_based
+          actions: 
+            - light_capability: white_ambiance
+              default_action:
+                action_archetype: time_based
+                name: wca
+            - light_capability: dimmable
+              default_action:
+                action_archetype: time_based
+                name: dimmable
+            - light_capability: on_off
+              default_action:
+                action_archetype: time_based
+                name: on_off
+      with_off:
+        enabled: false
+    - control:
+        type: button
+        id: 1
+      action_key: on_repeat
+      preferred_action_archetypes:
+        - light_capability: on_off
+          action_archetype: single_scene
+      default_actions_per_archetype:
+        - action_archetype: single_scene
+          actions: 
+            - light_capability: on_off
+              default_action:
+                action_archetype: single_scene
+                action:
+                  action_type: dim_up
+  # Bottom left
+    - control:
+        type: button
+        id: 2
+      action_key: on_press
+      preferred_action_archetypes:
+        - light_capability: on_off
+          action_archetype: single_scene
+      default_actions_per_archetype:
+        - action_archetype: single_scene
+          actions: 
+            - light_capability: on_off
+              default_action:
+                action_archetype: single_scene
+                action:
+                  action_type: off
+        - action_archetype: scene_per_group
+          actions: 
+            - light_capability: dimmable
+              default_action:
+                action_archetype: scene_per_group
+                action:
+                  action_type: recipe
+                  recipe: bright
+            - light_capability: on_off
+              default_action:
+                action_archetype: scene_per_group
+                action:
+                  action_type: on
+        - action_archetype: scene_cycle_per_group
+          actions: 
+            - light_capability: white_ambiance
+              default_action:
+                action_archetype: scene_cycle_per_group
+                name: wca
+            - light_capability: dimmable
+              default_action:
+                action_archetype: scene_cycle_per_group
+                name: dimmable
+            - light_capability: on_off
+              default_action:
+                action_archetype: scene_cycle_per_group
+                name: on_off
+        - action_archetype: time_based
+          actions: 
+            - light_capability: white_ambiance
+              default_action:
+                action_archetype: time_based
+                name: wca
+            - light_capability: dimmable
+              default_action:
+                action_archetype: time_based
+                name: dimmable
+            - light_capability: on_off
+              default_action:
+                action_archetype: time_based
+                name: on_off
+      with_off:
+        enabled: false
+    - control:
+        type: button
+        id: 2
+      action_key: on_repeat
+      preferred_action_archetypes:
+        - light_capability: on_off
+          action_archetype: single_scene
+      default_actions_per_archetype:
+        - action_archetype: single_scene
+          actions: 
+            - light_capability: on_off
+              default_action:
+                action_archetype: single_scene
+                action:
+                  action_type: dim_down
+  # Top right
+    - control:
+        type: button
+        id: 3
+      action_key: on_press
+      preferred_action_archetypes:
+        - light_capability: on_off
+          action_archetype: scene_cycle_per_group
+      default_actions_per_archetype:
+        - action_archetype: single_scene
+          actions: 
+            - light_capability: on_off
+              default_action:
+                action_archetype: single_scene
+                action:
+                  action_type: off
+        - action_archetype: scene_per_group
+          actions: 
+            - light_capability: dimmable
+              default_action:
+                action_archetype: scene_per_group
+                action:
+                  action_type: recipe
+                  recipe: bright
+            - light_capability: on_off
+              default_action:
+                action_archetype: scene_per_group
+                action:
+                  action_type: on
+        - action_archetype: scene_cycle_per_group
+          actions: 
+            - light_capability: white_ambiance
+              default_action:
+                action_archetype: scene_cycle_per_group
+                name: wca
+            - light_capability: dimmable
+              default_action:
+                action_archetype: scene_cycle_per_group
+                name: dimmable
+            - light_capability: on_off
+              default_action:
+                action_archetype: scene_cycle_per_group
+                name: on_off
+        - action_archetype: time_based
+          actions: 
+            - light_capability: white_ambiance
+              default_action:
+                action_archetype: time_based
+                name: wca
+            - light_capability: dimmable
+              default_action:
+                action_archetype: time_based
+                name: dimmable
+            - light_capability: on_off
+              default_action:
+                action_archetype: time_based
+                name: on_off
+      with_off:
+        enabled: false
+    - control:
+        type: button
+        id: 3
+      action_key: on_repeat
+      preferred_action_archetypes:
+        - light_capability: on_off
+          action_archetype: single_scene
+      default_actions_per_archetype:
+        - action_archetype: single_scene
+          actions: 
+            - light_capability: on_off
+              default_action:
+                action_archetype: single_scene
+                action:
+                  action_type: dim_up
+  # Bottom right
+    - control:
+        type: button
+        id: 4
+      action_key: on_press
+      preferred_action_archetypes:
+        - light_capability: on_off
+          action_archetype: single_scene
+      default_actions_per_archetype:
+        - action_archetype: single_scene
+          actions: 
+            - light_capability: on_off
+              default_action:
+                action_archetype: single_scene
+                action:
+                  action_type: off
+        - action_archetype: scene_per_group
+          actions: 
+            - light_capability: dimmable
+              default_action:
+                action_archetype: scene_per_group
+                action:
+                  action_type: recipe
+                  recipe: bright
+            - light_capability: on_off
+              default_action:
+                action_archetype: scene_per_group
+                action:
+                  action_type: on
+        - action_archetype: scene_cycle_per_group
+          actions: 
+            - light_capability: white_ambiance
+              default_action:
+                action_archetype: scene_cycle_per_group
+                name: wca
+            - light_capability: dimmable
+              default_action:
+                action_archetype: scene_cycle_per_group
+                name: dimmable
+            - light_capability: on_off
+              default_action:
+                action_archetype: scene_cycle_per_group
+                name: on_off
+        - action_archetype: time_based
+          actions: 
+            - light_capability: white_ambiance
+              default_action:
+                action_archetype: time_based
+                name: wca
+            - light_capability: dimmable
+              default_action:
+                action_archetype: time_based
+                name: dimmable
+            - light_capability: on_off
+              default_action:
+                action_archetype: time_based
+                name: on_off
+      with_off:
+       enabled: false
+    - control:
+        type: button
+        id: 4
+      action_key: on_repeat
+      preferred_action_archetypes:
+        - light_capability: on_off
+          action_archetype: single_scene
+      default_actions_per_archetype:
+        - action_archetype: single_scene
+          actions: 
+            - light_capability: on_off
+              default_action:
+                action_archetype: single_scene
+                action:
+                  action_type: dim_down
+
+named_control_defaults:
+  scene_cycle:
+    - name: wca
+      defaults:
+        slots:
+          - action_type: recipe
+            recipe: energize
+          - action_type: recipe
+            recipe: concentrate
+          - action_type: recipe
+            recipe: read
+          - action_type: recipe
+            recipe: relax
+          - action_type: recipe
+            recipe: night_light
+        scene_suggestions:
+          - action_type: recipe
+            recipe: bright
+          - action_type: recipe
+            recipe: concentrate
+          - action_type: recipe
+            recipe: dimmed
+          - action_type: on
+          - action_type: off
+          - action_type: do_nothing
+        new_slot_action:
+          action_type: recipe
+          recipe: bright
+    - name: dimmable
+      defaults:
+        slots:
+          - action_type: recipe
+            recipe: read
+          - action_type: recipe
+            recipe: relax
+          - action_type: recipe
+            recipe: dimmed
+          - action_type: recipe
+            recipe: night_light
+          - action_type: recipe
+            recipe: read
+        scene_suggestions:
+          - action_type: recipe
+            recipe: bright
+          - action_type: recipe
+            recipe: relax
+          - action_type: recipe
+            recipe: dimmed
+          - action_type: on
+          - action_type: off
+          - action_type: do_nothing
+        new_slot_action:
+          action_type: recipe
+          recipe: bright
+    - name: on_off
+      defaults:
+        slots:
+          - action_type: on
+          - action_type: on
+          - action_type: on
+          - action_type: on
+          - action_type: on
+        scene_suggestions:
+          - action_type: on
+          - action_type: off
+          - action_type: do_nothing
+        new_slot_action:
+          action_type: on
+  time_based:
+    - name: wca
+      defaults:
+        time_slots:
+          - start_time: 07:00
+            action: 
+              action_type: recipe
+              recipe: energize
+          - start_time: 10:00
+            action: 
+              action_type: recipe
+              recipe: concentrate
+          - start_time: 17:00
+            action: 
+              action_type: recipe
+              recipe: read
+          - start_time: 20:00
+            action: 
+              action_type: recipe
+              recipe: relax
+          - start_time: 23:00
+            action: 
+              action_type: recipe
+              recipe: night_light
+        scene_suggestions:
+          - start_time: 00:00
+            suggestions:
+            - action_type: recipe
+              recipe: bright
+            - action_type: recipe
+              recipe: concentrate
+            - action_type: recipe
+              recipe: night_light
+            - action_type: on
+            - action_type: off
+            - action_type: do_nothing
+        new_slot_action:
+          action_type: recipe
+          recipe: bright
+    - name: dimmable
+      defaults:
+        time_slots:
+          - start_time: 07:00
+            action: 
+              action_type: recipe
+              recipe: bright
+          - start_time: 17:00
+            action: 
+              action_type: recipe
+              recipe: dimmed
+          - start_time: 23:00
+            action: 
+              action_type: recipe
+              recipe: night_light
+        scene_suggestions:
+          - start_time: 00:00
+            suggestions:
+            - action_type: recipe
+              recipe: bright
+            - action_type: recipe
+              recipe: relax
+            - action_type: recipe
+              recipe: night_light
+            - action_type: on
+            - action_type: off
+            - action_type: do_nothing
+        new_slot_action:
+          action_type: recipe
+          recipe: bright
+    - name: on_off
+      defaults:
+        time_slots:
+          - start_time: 07:00
+            action: 
+              action_type: on
+          - start_time: 23:00
+            action: 
+              action_type: on
+        scene_suggestions:
+          - start_time: 00:00
+            suggestions:
+            - action_type: on
+            - action_type: off
+            - action_type: do_nothing
+        new_slot_action:
+          action_type: on

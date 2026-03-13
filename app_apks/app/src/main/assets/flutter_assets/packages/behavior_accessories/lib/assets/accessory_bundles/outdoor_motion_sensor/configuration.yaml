@@ -1,0 +1,88 @@
+control_defaults:
+  - defaults:
+    - control:
+        type: motion
+      action_key: on_motion
+      preferred_action_archetypes:
+        - light_capability: on_off
+          action_archetype: time_based
+      default_actions_per_archetype:
+        - action_archetype: time_based
+          actions: 
+            - light_capability: on_off
+              default_action:
+                action_archetype: time_based
+                action:
+                  time_slots:
+                    - start_time: 08:00
+                      action: 
+                        action_type: on
+                    - start_time: 23:00
+                      action: 
+                        action_type: on
+                  scene_suggestions:
+                    - start_time: 00:00
+                      suggestions:
+                      - action_type: on
+                      - action_type: do_nothing
+                  new_slot_action:
+                    action_type: on
+                  after:
+                    action:
+                      action_type: off
+                    suggestions:
+                      - action_type: off
+                      - action_type: previous_state
+                      - action_type: do_nothing
+                    activate_after:
+                      - start_time: 08:00
+                        duration_in_seconds: 600 
+                      - start_time: 23:00
+                        duration_in_seconds: 300
+
+            - light_capability: dimmable
+              default_action:
+                action_archetype: time_based
+                action:
+                  time_slots:
+                    - start_time: 08:00
+                      action: 
+                        action_type: recipe
+                        recipe: bright
+                    - start_time: 23:00
+                      action: 
+                        action_type: recipe
+                        recipe: dimmed
+                  scene_suggestions:
+                    - start_time: 08:00
+                      suggestions:
+                      - action_type: on
+                      - action_type: do_nothing
+                      - action_type: recipe
+                        recipe: bright
+                    - start_time: 23:00
+                      suggestions:
+                      - action_type: on
+                      - action_type: do_nothing
+                      - action_type: recipe
+                        recipe: dimmed
+                  new_slot_action:
+                    action_type: recipe
+                    recipe: bright
+                  after:
+                    action:
+                      action_type: off
+                    suggestions:
+                      - action_type: off
+                      - action_type: previous_state
+                      - action_type: do_nothing
+                    activate_after:
+                      - start_time: 08:00
+                        duration_in_seconds: 600 
+                      - start_time: 23:00
+                        duration_in_seconds: 300
+
+setting_defaults:
+  daylight_sensitivity:
+    dark_threshold: 65534
+    offset: 7000

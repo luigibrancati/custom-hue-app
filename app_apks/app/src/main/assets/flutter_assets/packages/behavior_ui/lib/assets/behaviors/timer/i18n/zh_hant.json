@@ -1,0 +1,13 @@
+{
+  "behavior.timer.card.subtitle": "啟動 $lights$",
+  "behavior.timer.controllingDevicesStep.title": "控制者",
+  "behavior.timer.nameStep.defaultName": "計時器",
+  "behavior.timer.nameStep.label": "名稱",
+  "behavior.timer.nameStep.title": "<emph>命名</emph>您的自動功能",
+  "behavior.timer.overview.description": "使用燈光警示計時結束。",
+  "behavior.timer.overview.name": "計時器",
+  "behavior.timer.selectDuration.invalid.errorMessage": "確定計時器設定的中止時間是在未來。",
+  "behavior.timer.selectDuration.title": "計時器時間<emph>多長</emph>？",
+  "behavior.timer.selectLights.title": "<emph>選擇</emph>您的燈具",
+  "behavior.timer.selectScenes.title": "<emph>您要使用哪種</emph>照明？"
+}

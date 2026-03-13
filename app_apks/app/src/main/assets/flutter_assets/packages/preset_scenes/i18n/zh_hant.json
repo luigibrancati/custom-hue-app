@@ -1,0 +1,17 @@
+{
+  "scenes.categories.defaults": "預設值",
+  "scenes.new": "新增場景",
+  "scenes.recipe.bright": "明亮",
+  "scenes.recipe.concentrate": "專注精神",
+  "scenes.recipe.coolBright": "冷白光",
+  "scenes.recipe.dimmed": "黯淡",
+  "scenes.recipe.doze": "待用",
+  "scenes.recipe.energize": "活力充沛",
+  "scenes.recipe.nightLight": "夜燈",
+  "scenes.recipe.read": "閱讀",
+  "scenes.recipe.relax": "放鬆休息",
+  "smartScenes.goldenHours": "黃金時段",
+  "smartScenes.naturalLight": "自然光",
+  "smartScenes.natureColors": "大自然的色彩",
+  "smartScenes.tag24Hours": "24H"
+}

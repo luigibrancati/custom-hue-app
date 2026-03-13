@@ -1,0 +1,258 @@
+supported_accessories:
+- RDM002
+
+edit_steps:
+  - step_type: name_selection
+  - step_type: location_selection
+  - step_type: control_selection
+    accessory_control_definitions:
+      - control:
+          type: button
+          id: 1
+        selected_image: images/htds_button_1.svg
+      - control:
+          type: button
+          id: 2
+        selected_image: images/htds_button_2.svg
+      - control:
+          type: button
+          id: 3
+        selected_image: images/htds_button_3.svg
+      - control:
+          type: button
+          id: 4
+        selected_image: images/htds_button_4.svg
+      - control:
+          type: rotary
+        selected_image: images/htds_rotary.svg
+  - step_type: control_mode
+    control_mode_translations:
+      - control:
+          type: button
+          id: 1
+        translation: accessory.behavior.htds.edit.lightSelection.firstButton.description.text
+      - control:
+          type: button
+          id: 2
+        translation: accessory.behavior.htds.edit.lightSelection.secondButton.description.text
+      - control:
+          type: button
+          id: 3
+        translation: accessory.behavior.htds.edit.lightSelection.thirdButton.description.text
+      - control:
+          type: button
+          id: 4
+        translation: accessory.behavior.htds.edit.lightSelection.fourthButton.description.text
+      - control:
+          type: rotary
+        translation: accessory.behavior.htds.edit.lightSelection.rotary.description.text
+  - step_type: light_selection
+    light_selection_translations:
+      - control:
+          type: button
+          id: 1
+        translation: accessory.behavior.htds.edit.lightSelection.firstButton.description.text
+      - control:
+          type: button
+          id: 2
+        translation: accessory.behavior.htds.edit.lightSelection.secondButton.description.text
+      - control:
+          type: button
+          id: 3
+        translation: accessory.behavior.htds.edit.lightSelection.thirdButton.description.text
+      - control:
+          type: button
+          id: 4
+        translation: accessory.behavior.htds.edit.lightSelection.fourthButton.description.text
+      - control:
+          type: rotary
+        translation: accessory.behavior.htds.edit.lightSelection.rotary.description.text
+  - step_type: action_selection
+    action_edit_definitions:
+      - control:
+          type: button
+          id: 1
+        action_edit_configurations:
+          - edit_configuration_type: configurable
+            requires_full_screen: true
+            allow_group_scenes_selection: true
+            allow_selecting_smart_scenes_for_action_archetypes:
+              - time_based
+              - scene_per_group
+              - scene_cycle_per_group
+            selectable_action_archetypes:
+              - archetype: time_based
+                control_action_key: on_press
+                is_with_off_selectable: true
+              - archetype: scene_cycle_per_group
+                control_action_key: on_press
+                is_with_off_selectable: true
+              - archetype: scene_per_group
+                control_action_key: on_press
+                is_with_off_selectable: true
+              - archetype: single_scene
+                control_action_key: on_press
+                action:
+                  action_type: off
+          - edit_configuration_type: static
+            requires_full_screen: false
+            header_text: accessory.behavior.smartButton.edit.button.longPress.header.text
+            selectable_action_archetypes:
+              - archetype: single_scene
+                control_action_key: on_long_press
+                action:
+                  action_type: off
+              - archetype: single_scene
+                control_action_key: on_long_press
+                action:
+                  action_type: bridge_off
+              - archetype: single_scene
+                control_action_key: on_long_press
+                action:
+                  action_type: do_nothing
+      - control:
+          type: button
+          id: 2
+        action_edit_configurations:
+          - edit_configuration_type: configurable
+            requires_full_screen: true
+            allow_group_scenes_selection: true
+            allow_selecting_smart_scenes_for_action_archetypes:
+              - time_based
+              - scene_per_group
+              - scene_cycle_per_group
+            selectable_action_archetypes:
+              - archetype: time_based
+                control_action_key: on_press
+                is_with_off_selectable: true
+              - archetype: scene_cycle_per_group
+                control_action_key: on_press
+                is_with_off_selectable: true
+              - archetype: scene_per_group
+                control_action_key: on_press
+                is_with_off_selectable: true
+              - archetype: single_scene
+                control_action_key: on_press
+                action:
+                  action_type: off
+          - edit_configuration_type: static
+            requires_full_screen: false
+            header_text: accessory.behavior.smartButton.edit.button.longPress.header.text
+            selectable_action_archetypes:
+              - archetype: single_scene
+                control_action_key: on_long_press
+                action:
+                  action_type: off
+              - archetype: single_scene
+                control_action_key: on_long_press
+                action:
+                  action_type: bridge_off
+              - archetype: single_scene
+                control_action_key: on_long_press
+                action:
+                  action_type: do_nothing
+      - control:
+          type: button
+          id: 3
+        action_edit_configurations:
+          - edit_configuration_type: configurable
+            requires_full_screen: true
+            allow_group_scenes_selection: true
+            allow_selecting_smart_scenes_for_action_archetypes:
+              - time_based
+              - scene_per_group
+              - scene_cycle_per_group
+            selectable_action_archetypes:
+              - archetype: time_based
+                control_action_key: on_press
+                is_with_off_selectable: true
+              - archetype: scene_cycle_per_group
+                control_action_key: on_press
+                is_with_off_selectable: true
+              - archetype: scene_per_group
+                control_action_key: on_press
+                is_with_off_selectable: true
+              - archetype: single_scene
+                control_action_key: on_press
+                action:
+                  action_type: off
+          - edit_configuration_type: static
+            requires_full_screen: false
+            header_text: accessory.behavior.smartButton.edit.button.longPress.header.text
+            selectable_action_archetypes:
+              - archetype: single_scene
+                control_action_key: on_long_press
+                action:
+                  action_type: off
+              - archetype: single_scene
+                control_action_key: on_long_press
+                action:
+                  action_type: bridge_off
+              - archetype: single_scene
+                control_action_key: on_long_press
+                action:
+                  action_type: do_nothing
+      - control:
+          type: button
+          id: 4
+        action_edit_configurations:
+          - edit_configuration_type: configurable
+            requires_full_screen: true
+            allow_group_scenes_selection: true
+            allow_selecting_smart_scenes_for_action_archetypes:
+              - time_based
+              - scene_per_group
+              - scene_cycle_per_group
+            selectable_action_archetypes:
+              - archetype: time_based
+                control_action_key: on_press
+                is_with_off_selectable: true
+              - archetype: scene_cycle_per_group
+                control_action_key: on_press
+                is_with_off_selectable: true
+              - archetype: scene_per_group
+                control_action_key: on_press
+                is_with_off_selectable: true
+              - archetype: single_scene
+                control_action_key: on_press
+                action:
+                  action_type: off
+          - edit_configuration_type: static
+            requires_full_screen: false
+            header_text: accessory.behavior.smartButton.edit.button.longPress.header.text
+            selectable_action_archetypes:
+              - archetype: single_scene
+                control_action_key: on_long_press
+                action:
+                  action_type: off
+              - archetype: single_scene
+                control_action_key: on_long_press
+                action:
+                  action_type: bridge_off
+              - archetype: single_scene
+                control_action_key: on_long_press
+                action:
+                  action_type: do_nothing
+      - control:
+          type: rotary
+        action_edit_configurations:
+          - edit_configuration_type: configurable
+            header_text: accessory.behavior.htds.edit.onDimOn.header.text
+            footer_text: accessory.behavior.htds.edit.onDimOn.footer.text
+            requires_full_screen: true
+            allow_group_scenes_selection: false
+            selectable_action_archetypes:
+              - archetype: scene_per_group
+                control_action_key: on_dim_on
+                is_with_off_selectable: false
+          - edit_configuration_type: static
+            requires_full_screen: false
+            selectable_action_archetypes:
+              - archetype: single_scene
+                control_action_key: on_dim_off
+                action:
+                  action_type: minimum_brightness
+              - archetype: single_scene
+                control_action_key: on_dim_off
+                action:
+                  action_type: off  

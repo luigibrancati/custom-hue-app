@@ -1,0 +1,18 @@
+{
+  "behavior.wakeup.edit.brightnessItem.title": "Максимальная яркость",
+  "behavior.wakeup.edit.styleItem.subtitle": "Имитация восхода солнца рекомендуется для градиентных ламп.",
+  "behavior.wakeup.edit.styleItem.title": "Стиль",
+  "behavior.wakeup.experience.title": "Выберите настройки",
+  "behavior.wakeup.generalStep.title": "Общие",
+  "behavior.wakeup.nameStep.defaultName": "Пробуждение",
+  "behavior.wakeup.nameStep.label": "Имя",
+  "behavior.wakeup.nameStep.title": "<emph>Присвойте имя</emph> вашему автоматическому режиму работы",
+  "behavior.wakeup.overview.description": "Постепенное увеличение яркости выбранных светильников утром.",
+  "behavior.wakeup.overview.name": "Пробуждение со светом",
+  "behavior.wakeup.selectLights.title": "<emph>Выберите</emph> лампы",
+  "behavior.wakeup.style.basic.subtitle": "Белый свет включается приглушенным, а затем его яркость увеличивается до полной.",
+  "behavior.wakeup.style.basic.title": "Переход к яркому освещению",
+  "behavior.wakeup.style.sunrise.subtitle": "Цвета изменяются и смешиваются подобно утреннему небу. Рекомендуется для градиентных ламп.",
+  "behavior.wakeup.style.sunrise.title": "Рассвет",
+  "behavior.wakeup.timeAndRecurrence.title": "Во <emph>сколько</emph> вы хотите <emph>просыпаться</emph>?"
+}

@@ -1,0 +1,13 @@
+{
+  "pushnotification.mainScreen.noAccount.error": "Du er ikke logget ind, eller du har ikke en Hue Bridge",
+  "pushnotification.mainScreen.overlay.subscribingToNotifications": "Giver tilladelse til notifikationer",
+  "pushnotification.mainScreen.overlay.subscriptionStatus": "Kontrollerer abonnementsstatus",
+  "pushnotification.mainScreen.overlay.unSubscribingToNotifications": "Fjerner tilladelse til notifikationer",
+  "pushnotification.mainScreen.refresh.option": "Opdater",
+  "pushnotification.mainScreen.refreshStatus.title": "Opdater status",
+  "pushnotification.mainScreen.status": "Status",
+  "pushnotification.mainScreen.subscribeOption": "Abonner",
+  "pushnotification.mainScreen.subscribeToPushNotifications.title": "Giv tilladelse til push-meddelelser",
+  "pushnotification.mainScreen.title": "Push-meddelelser",
+  "pushnotification.mainScreen.unSubscribeOption": "Afmeld"
+}

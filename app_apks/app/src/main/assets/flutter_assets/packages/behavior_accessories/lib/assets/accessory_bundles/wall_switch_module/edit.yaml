@@ -1,0 +1,375 @@
+supported_accessories:
+- RDM001 # v1
+- RDM004 # v2
+- ROM002 # wired zero channel
+- LOM013 # single channel on/off
+- LOM014 # dual channel on/off
+- LWM007 # single channel dimmer
+
+edit_steps:
+  - step_type: migration
+    banner_message_body: accessory.behavior.wallSwitchModule.edit.migration.splitBannerWithoutAsf.message.body
+
+  - step_type: name_selection
+  - step_type: location_selection
+  # single mode
+  - step_type: control_selection
+    device_modes: [ wall_switch_module_single_rocker, wall_switch_module_single_pushbutton ]
+    accessory_control_definitions:
+      - control:
+          type: button
+          id: 1
+        selected_image: images/single_button.svg
+        deselected_image: images/single_button.svg
+  - step_type: control_mode
+    device_modes: [ wall_switch_module_single_rocker, wall_switch_module_single_pushbutton ]
+    control_mode_translations:
+      - control:
+          type: button
+          id: 1
+        translation: accessory.behavior.wallSwitchModule.edit.lightSelection.singleButton.description.text
+  - step_type: light_selection
+    device_modes: [ wall_switch_module_single_rocker, wall_switch_module_single_pushbutton ]
+    light_selection_translations:
+      - control:
+          type: button
+          id: 1
+        translation: accessory.behavior.wallSwitchModule.edit.lightSelection.singleButton.description.text
+  # dual mode
+  - step_type: control_selection
+    device_modes: [ wall_switch_module_dual_rocker, wall_switch_module_dual_pushbutton ]
+    accessory_control_definitions:
+      - control:
+          type: button
+          id: 1
+        selected_image: images/left_button.svg
+      - control:
+          type: button
+          id: 2
+        selected_image: images/right_button.svg
+  - step_type: control_mode
+    device_modes: [ wall_switch_module_dual_rocker, wall_switch_module_dual_pushbutton ]
+    control_mode_translations:
+      - control:
+          type: button
+          id: 1
+        translation: accessory.behavior.wallSwitchModule.edit.lightSelection.dualButton.leftButton.description.text
+      - control:
+          type: button
+          id: 2
+        translation: accessory.behavior.wallSwitchModule.edit.lightSelection.dualButton.rightButton.description.text
+  - step_type: light_selection
+    device_modes: [ wall_switch_module_dual_rocker, wall_switch_module_dual_pushbutton ]
+    light_selection_translations:
+      - control:
+          type: button
+          id: 1
+        translation: accessory.behavior.wallSwitchModule.edit.lightSelection.dualButton.leftButton.description.text
+      - control:
+          type: button
+          id: 2
+        translation: accessory.behavior.wallSwitchModule.edit.lightSelection.dualButton.rightButton.description.text
+  # single rocker
+  - step_type: action_selection
+    device_modes: [ wall_switch_module_single_rocker ]
+    action_edit_definitions:
+      - control:
+          type: button
+          id: 1
+        action_edit_configurations:
+          - edit_configuration_type: configurable
+            requires_full_screen: true
+            action_selection_header_text: accessory.behavior.wallSwitchModule.edit.singleRocker.button.press.header.text
+            allow_group_scenes_selection: true
+            allow_selecting_smart_scenes_for_action_archetypes:
+              - time_based
+              - scene_per_group
+              - scene_cycle_per_group
+            selectable_action_archetypes:
+              - archetype: time_based
+                control_action_key: on_press
+                is_with_off_selectable: true
+                slot_description: accessory.behavior.wallSwitchModule.edit.singleRocker.button.timeBasedSlot.description
+              - archetype: scene_cycle_per_group
+                control_action_key: on_press
+                is_with_off_selectable: true
+                slot_descriptions:
+                  - accessory.behavior.wallSwitchModule.edit.singleRocker.button.sceneCycleSlot.first.description
+                  - accessory.behavior.wallSwitchModule.edit.singleRocker.button.sceneCycleSlot.second.description
+                  - accessory.behavior.wallSwitchModule.edit.singleRocker.button.sceneCycleSlot.third.description
+                  - accessory.behavior.wallSwitchModule.edit.singleRocker.button.sceneCycleSlot.fourth.description
+                  - accessory.behavior.wallSwitchModule.edit.singleRocker.button.sceneCycleSlot.fifth.description
+                  - accessory.behavior.wallSwitchModule.edit.singleRocker.button.sceneCycleSlot.sixth.description
+                  - accessory.behavior.wallSwitchModule.edit.singleRocker.button.sceneCycleSlot.seventh.description
+                  - accessory.behavior.wallSwitchModule.edit.singleRocker.button.sceneCycleSlot.eighth.description
+                  - accessory.behavior.wallSwitchModule.edit.singleRocker.button.sceneCycleSlot.nineth.description
+                  - accessory.behavior.wallSwitchModule.edit.singleRocker.button.sceneCycleSlot.tenth.description
+              - archetype: scene_per_group
+                control_action_key: on_press
+                is_with_off_selectable: true
+              - archetype: single_scene
+                control_action_key: on_press
+                action:
+                  action_type: off
+  # dual rocker
+  - step_type: action_selection
+    device_modes: [ wall_switch_module_dual_rocker ]
+    action_edit_definitions:
+      - control:
+          type: button
+          id: 1
+        action_edit_configurations:
+          - edit_configuration_type: configurable
+            requires_full_screen: true
+            action_selection_header_text: accessory.behavior.wallSwitchModule.edit.dualRocker.leftButton.press.header.text
+            allow_group_scenes_selection: true
+            allow_selecting_smart_scenes_for_action_archetypes:
+              - time_based
+              - scene_per_group
+              - scene_cycle_per_group
+            selectable_action_archetypes:
+              - archetype: time_based
+                control_action_key: on_press
+                is_with_off_selectable: true
+                slot_description: accessory.behavior.wallSwitchModule.edit.dualRocker.leftButton.timeBasedSlot.description
+              - archetype: scene_cycle_per_group
+                control_action_key: on_press
+                is_with_off_selectable: true
+                slot_descriptions:
+                  - accessory.behavior.wallSwitchModule.edit.dualRocker.leftButton.sceneCycleSlot.first.description
+                  - accessory.behavior.wallSwitchModule.edit.dualRocker.leftButton.sceneCycleSlot.second.description
+                  - accessory.behavior.wallSwitchModule.edit.dualRocker.leftButton.sceneCycleSlot.third.description
+                  - accessory.behavior.wallSwitchModule.edit.dualRocker.leftButton.sceneCycleSlot.fourth.description
+                  - accessory.behavior.wallSwitchModule.edit.dualRocker.leftButton.sceneCycleSlot.fifth.description
+                  - accessory.behavior.wallSwitchModule.edit.dualRocker.leftButton.sceneCycleSlot.sixth.description
+                  - accessory.behavior.wallSwitchModule.edit.dualRocker.leftButton.sceneCycleSlot.seventh.description
+                  - accessory.behavior.wallSwitchModule.edit.dualRocker.leftButton.sceneCycleSlot.eighth.description
+                  - accessory.behavior.wallSwitchModule.edit.dualRocker.leftButton.sceneCycleSlot.nineth.description
+                  - accessory.behavior.wallSwitchModule.edit.dualRocker.leftButton.sceneCycleSlot.tenth.description
+              - archetype: scene_per_group
+                control_action_key: on_press
+                is_with_off_selectable: true
+              - archetype: single_scene
+                control_action_key: on_press
+                action:
+                  action_type: off
+      - control:
+          type: button
+          id: 2
+        action_edit_configurations:
+          - edit_configuration_type: configurable
+            requires_full_screen: true
+            action_selection_header_text: accessory.behavior.wallSwitchModule.edit.dualRocker.rightButton.press.header.text
+            allow_group_scenes_selection: true
+            allow_selecting_smart_scenes_for_action_archetypes:
+              - time_based
+              - scene_per_group
+              - scene_cycle_per_group
+            selectable_action_archetypes:
+              - archetype: time_based
+                control_action_key: on_press
+                is_with_off_selectable: true
+                slot_description: accessory.behavior.wallSwitchModule.edit.dualRocker.rightButton.timeBasedSlot.description
+              - archetype: scene_cycle_per_group
+                control_action_key: on_press
+                is_with_off_selectable: true
+                slot_descriptions:
+                  - accessory.behavior.wallSwitchModule.edit.dualRocker.rightButton.sceneCycleSlot.first.description
+                  - accessory.behavior.wallSwitchModule.edit.dualRocker.rightButton.sceneCycleSlot.second.description
+                  - accessory.behavior.wallSwitchModule.edit.dualRocker.rightButton.sceneCycleSlot.third.description
+                  - accessory.behavior.wallSwitchModule.edit.dualRocker.rightButton.sceneCycleSlot.fourth.description
+                  - accessory.behavior.wallSwitchModule.edit.dualRocker.rightButton.sceneCycleSlot.fifth.description
+                  - accessory.behavior.wallSwitchModule.edit.dualRocker.rightButton.sceneCycleSlot.sixth.description
+                  - accessory.behavior.wallSwitchModule.edit.dualRocker.rightButton.sceneCycleSlot.seventh.description
+                  - accessory.behavior.wallSwitchModule.edit.dualRocker.rightButton.sceneCycleSlot.eighth.description
+                  - accessory.behavior.wallSwitchModule.edit.dualRocker.rightButton.sceneCycleSlot.nineth.description
+                  - accessory.behavior.wallSwitchModule.edit.dualRocker.rightButton.sceneCycleSlot.tenth.description
+              - archetype: scene_per_group
+                control_action_key: on_press
+                is_with_off_selectable: true
+              - archetype: single_scene
+                control_action_key: on_press
+                action:
+                  action_type: off
+  # single pushbutton
+  - step_type: action_selection
+    device_modes: [ wall_switch_module_single_pushbutton ]
+    action_edit_definitions:
+      - control:
+          type: button
+          id: 1
+        action_edit_configurations:
+          - edit_configuration_type: configurable
+            requires_full_screen: true
+            action_selection_header_text: accessory.behavior.wallSwitchModule.edit.singlePushbutton.button.press.header.text
+            allow_group_scenes_selection: true
+            allow_selecting_smart_scenes_for_action_archetypes:
+              - time_based
+              - scene_per_group
+              - scene_cycle_per_group
+            selectable_action_archetypes:
+              - archetype: time_based
+                control_action_key: on_press
+                is_with_off_selectable: true
+                slot_description: accessory.behavior.wallSwitchModule.edit.singlePushButton.button.timeBasedSlot.description
+              - archetype: scene_cycle_per_group
+                control_action_key: on_press
+                is_with_off_selectable: true
+                slot_descriptions:
+                  - accessory.behavior.wallSwitchModule.edit.singlePushbutton.button.sceneCycleSlot.first.description
+                  - accessory.behavior.wallSwitchModule.edit.singlePushbutton.button.sceneCycleSlot.second.description
+                  - accessory.behavior.wallSwitchModule.edit.singlePushbutton.button.sceneCycleSlot.third.description
+                  - accessory.behavior.wallSwitchModule.edit.singlePushbutton.button.sceneCycleSlot.fourth.description
+                  - accessory.behavior.wallSwitchModule.edit.singlePushbutton.button.sceneCycleSlot.fifth.description
+                  - accessory.behavior.wallSwitchModule.edit.singlePushbutton.button.sceneCycleSlot.sixth.description
+                  - accessory.behavior.wallSwitchModule.edit.singlePushbutton.button.sceneCycleSlot.seventh.description
+                  - accessory.behavior.wallSwitchModule.edit.singlePushbutton.button.sceneCycleSlot.eighth.description
+                  - accessory.behavior.wallSwitchModule.edit.singlePushbutton.button.sceneCycleSlot.nineth.description
+                  - accessory.behavior.wallSwitchModule.edit.singlePushbutton.button.sceneCycleSlot.tenth.description
+              - archetype: scene_per_group
+                control_action_key: on_press
+                is_with_off_selectable: true
+              - archetype: single_scene
+                control_action_key: on_press
+                action:
+                  action_type: off
+          - edit_configuration_type: static
+            requires_full_screen: true
+            header_text: accessory.behavior.wallSwitchModule.edit.singlePushbutton.button.longPress.header.text
+            selectable_action_archetypes:
+              - archetype: single_scene
+                control_action_key: on_repeat
+                action:
+                  action_type: dim_alternate
+              - archetype: single_scene
+                control_action_key: on_long_press
+                action:
+                  action_type: off
+              - archetype: single_scene
+                control_action_key: on_long_press
+                action:
+                  action_type: bridge_off
+              - archetype: single_scene
+                control_action_key: on_long_press
+                action:
+                  action_type: do_nothing
+  # dual pushbutton
+  - step_type: action_selection
+    device_modes: [ wall_switch_module_dual_pushbutton ]
+    action_edit_definitions:
+      - control:
+          type: button
+          id: 1
+        action_edit_configurations:
+          - edit_configuration_type: configurable
+            requires_full_screen: true
+            action_selection_header_text: accessory.behavior.wallSwitchModule.edit.dualPushbutton.leftButton.press.header.text
+            allow_group_scenes_selection: true
+            allow_selecting_smart_scenes_for_action_archetypes:
+              - time_based
+              - scene_per_group
+              - scene_cycle_per_group
+            selectable_action_archetypes:
+              - archetype: time_based
+                control_action_key: on_press
+                is_with_off_selectable: true
+                slot_description: accessory.behavior.wallSwitchModule.edit.dualPushbutton.leftButton.timeBasedSlot.description
+              - archetype: scene_cycle_per_group
+                control_action_key: on_press
+                is_with_off_selectable: true
+                slot_descriptions:
+                  - accessory.behavior.wallSwitchModule.edit.dualPushbutton.leftButton.sceneCycleSlot.first.description
+                  - accessory.behavior.wallSwitchModule.edit.dualPushbutton.leftButton.sceneCycleSlot.second.description
+                  - accessory.behavior.wallSwitchModule.edit.dualPushbutton.leftButton.sceneCycleSlot.third.description
+                  - accessory.behavior.wallSwitchModule.edit.dualPushbutton.leftButton.sceneCycleSlot.fourth.description
+                  - accessory.behavior.wallSwitchModule.edit.dualPushbutton.leftButton.sceneCycleSlot.fifth.description
+                  - accessory.behavior.wallSwitchModule.edit.dualPushbutton.leftButton.sceneCycleSlot.sixth.description
+                  - accessory.behavior.wallSwitchModule.edit.dualPushbutton.leftButton.sceneCycleSlot.seventh.description
+                  - accessory.behavior.wallSwitchModule.edit.dualPushbutton.leftButton.sceneCycleSlot.eighth.description
+                  - accessory.behavior.wallSwitchModule.edit.dualPushbutton.leftButton.sceneCycleSlot.nineth.description
+                  - accessory.behavior.wallSwitchModule.edit.dualPushbutton.leftButton.sceneCycleSlot.tenth.description
+              - archetype: scene_per_group
+                control_action_key: on_press
+                is_with_off_selectable: true
+              - archetype: single_scene
+                control_action_key: on_press
+                action:
+                  action_type: off
+          - edit_configuration_type: static
+            requires_full_screen: true
+            header_text: accessory.behavior.wallSwitchModule.edit.dualPushbutton.leftButton.longPress.header.text
+            selectable_action_archetypes:
+              - archetype: single_scene
+                control_action_key: on_repeat
+                action:
+                  action_type: dim_alternate
+              - archetype: single_scene
+                control_action_key: on_long_press
+                action:
+                  action_type: off
+              - archetype: single_scene
+                control_action_key: on_long_press
+                action:
+                  action_type: bridge_off
+              - archetype: single_scene
+                control_action_key: on_long_press
+                action:
+                  action_type: do_nothing
+      - control:
+          type: button
+          id: 2
+        action_edit_configurations:
+          - edit_configuration_type: configurable
+            requires_full_screen: true
+            action_selection_header_text: accessory.behavior.wallSwitchModule.edit.dualPushbutton.rightButton.press.header.text
+            allow_group_scenes_selection: true
+            allow_selecting_smart_scenes_for_action_archetypes:
+              - time_based
+              - scene_per_group
+              - scene_cycle_per_group
+            selectable_action_archetypes:
+              - archetype: time_based
+                control_action_key: on_press
+                is_with_off_selectable: true
+                slot_description: accessory.behavior.wallSwitchModule.edit.dualPushbutton.rightButton.timeBasedSlot.description
+              - archetype: scene_cycle_per_group
+                control_action_key: on_press
+                is_with_off_selectable: true
+                slot_descriptions:
+                  - accessory.behavior.wallSwitchModule.edit.dualPushbutton.rightButton.sceneCycleSlot.first.description
+                  - accessory.behavior.wallSwitchModule.edit.dualPushbutton.rightButton.sceneCycleSlot.second.description
+                  - accessory.behavior.wallSwitchModule.edit.dualPushbutton.rightButton.sceneCycleSlot.third.description
+                  - accessory.behavior.wallSwitchModule.edit.dualPushbutton.rightButton.sceneCycleSlot.fourth.description
+                  - accessory.behavior.wallSwitchModule.edit.dualPushbutton.rightButton.sceneCycleSlot.fifth.description
+                  - accessory.behavior.wallSwitchModule.edit.dualPushbutton.rightButton.sceneCycleSlot.sixth.description
+                  - accessory.behavior.wallSwitchModule.edit.dualPushbutton.rightButton.sceneCycleSlot.seventh.description
+                  - accessory.behavior.wallSwitchModule.edit.dualPushbutton.rightButton.sceneCycleSlot.eighth.description
+                  - accessory.behavior.wallSwitchModule.edit.dualPushbutton.rightButton.sceneCycleSlot.nineth.description
+                  - accessory.behavior.wallSwitchModule.edit.dualPushbutton.rightButton.sceneCycleSlot.tenth.description
+              - archetype: scene_per_group
+                control_action_key: on_press
+                is_with_off_selectable: true
+              - archetype: single_scene
+                control_action_key: on_press
+                action:
+                  action_type: off
+          - edit_configuration_type: static
+            requires_full_screen: true
+            header_text: accessory.behavior.wallSwitchModule.edit.dualPushbutton.rightButton.longPress.header.text
+            selectable_action_archetypes:
+              - archetype: single_scene
+                control_action_key: on_repeat
+                action:
+                  action_type: dim_alternate
+              - archetype: single_scene
+                control_action_key: on_long_press
+                action:
+                  action_type: off
+              - archetype: single_scene
+                control_action_key: on_long_press
+                action:
+                  action_type: bridge_off
+              - archetype: single_scene
+                control_action_key: on_long_press
+                action:
+                  action_type: do_nothing  

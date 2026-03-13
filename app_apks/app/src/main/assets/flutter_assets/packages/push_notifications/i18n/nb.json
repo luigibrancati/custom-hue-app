@@ -1,0 +1,13 @@
+{
+  "pushnotification.mainScreen.noAccount.error": "Du er ikke pålogget eller du har ikke en Hue Bridge",
+  "pushnotification.mainScreen.overlay.subscribingToNotifications": "Abonnere på varslene",
+  "pushnotification.mainScreen.overlay.subscriptionStatus": "Kontrollerer abonnementsstatus",
+  "pushnotification.mainScreen.overlay.unSubscribingToNotifications": "Stoppe abonnement på varslene",
+  "pushnotification.mainScreen.refresh.option": "Oppdater",
+  "pushnotification.mainScreen.refreshStatus.title": "Oppdater status",
+  "pushnotification.mainScreen.status": "Status",
+  "pushnotification.mainScreen.subscribeOption": "Abonner",
+  "pushnotification.mainScreen.subscribeToPushNotifications.title": "Abonner på push-varsler",
+  "pushnotification.mainScreen.title": "Push-varslinger",
+  "pushnotification.mainScreen.unSubscribeOption": "Stopp abonnement"
+}

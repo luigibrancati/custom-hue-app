@@ -1,0 +1,13 @@
+{
+  "behavior.timer.card.subtitle": "激活 $lights$",
+  "behavior.timer.controllingDevicesStep.title": "由...控制",
+  "behavior.timer.nameStep.defaultName": "计时器",
+  "behavior.timer.nameStep.label": "名称",
+  "behavior.timer.nameStep.title": "为自动操作<emph>命名</emph>",
+  "behavior.timer.overview.description": "用灯光表示一段时间结束。",
+  "behavior.timer.overview.name": "计时器",
+  "behavior.timer.selectDuration.invalid.errorMessage": "确保将计时器设置为在未来某个时间点结束。",
+  "behavior.timer.selectDuration.title": "计时器应持续<emph>多久</emph>？",
+  "behavior.timer.selectLights.title": "<emph>选择</emph>您的灯具",
+  "behavior.timer.selectScenes.title": "您的灯具应执行<emph>什么操作</emph>？"
+}

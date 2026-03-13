@@ -1,0 +1,17 @@
+{
+  "scenes.categories.defaults": "デフォルト",
+  "scenes.new": "新規シーン",
+  "scenes.recipe.bright": "明るめ",
+  "scenes.recipe.concentrate": "集中する",
+  "scenes.recipe.coolBright": "昼白色",
+  "scenes.recipe.dimmed": "暗め",
+  "scenes.recipe.doze": "休息",
+  "scenes.recipe.energize": "やる気を出す",
+  "scenes.recipe.nightLight": "夜間照明",
+  "scenes.recipe.read": "読書をする",
+  "scenes.recipe.relax": "くつろぐ",
+  "smartScenes.goldenHours": "ゴールデンアワー",
+  "smartScenes.naturalLight": "自然光",
+  "smartScenes.natureColors": "自然の色彩",
+  "smartScenes.tag24Hours": "24 時間"
+}

@@ -1,0 +1,13 @@
+{
+  "behavior.timer.card.subtitle": "$lights$ activeren",
+  "behavior.timer.controllingDevicesStep.title": "Geregeld door",
+  "behavior.timer.nameStep.defaultName": "Timer",
+  "behavior.timer.nameStep.label": "Naam",
+  "behavior.timer.nameStep.title": "Geef je automatisering een <emph>naam</emph>",
+  "behavior.timer.overview.description": "Signaal met licht aan het eind van een bepaalde hoeveelheid tijd.",
+  "behavior.timer.overview.name": "Timer",
+  "behavior.timer.selectDuration.invalid.errorMessage": "Zorg dat je timer op een toekomstig tijdstip afloopt.",
+  "behavior.timer.selectDuration.title": "<emph>Voor welke</emph> periode wil je de timer instellen?",
+  "behavior.timer.selectLights.title": "<emph>Kies</emph> je lampen",
+  "behavior.timer.selectScenes.title": "<emph>Wat</emph> moeten je lampen doen?"
+}

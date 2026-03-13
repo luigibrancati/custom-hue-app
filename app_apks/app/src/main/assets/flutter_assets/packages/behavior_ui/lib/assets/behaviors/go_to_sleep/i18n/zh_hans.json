@@ -1,0 +1,18 @@
+{
+  "behavior.gotosleep.controllingDevicesStep.title": "由...控制",
+  "behavior.gotosleep.edit.styleItem.subtitle": "渐变光灯具建议选择“日落”场景。",
+  "behavior.gotosleep.edit.styleItem.title": "风格",
+  "behavior.gotosleep.experience.title": "选择您的设置",
+  "behavior.gotosleep.generalStep.title": "综述",
+  "behavior.gotosleep.nameStep.defaultName": "入睡",
+  "behavior.gotosleep.nameStep.label": "名称",
+  "behavior.gotosleep.nameStep.title": "为自动操作<emph>命名</emph>",
+  "behavior.gotosleep.overview.description": "让所选灯具缓慢调暗直至熄灯。",
+  "behavior.gotosleep.overview.name": "入睡",
+  "behavior.gotosleep.selectLights.title": "<emph>选择</emph>您的灯具",
+  "behavior.gotosleep.style.basic.subtitle": "最初为白光，随后灯光渐暗，直至完全熄灭。",
+  "behavior.gotosleep.style.basic.title": "过渡到昏暗",
+  "behavior.gotosleep.style.sunset.subtitle": "通过色彩变幻混合模拟夜晚的天空。 建议用于渐变光灯具。",
+  "behavior.gotosleep.style.sunset.title": "日落",
+  "behavior.gotosleep.timeAndRecurrence.title": "<emph>您希望灯具在</emph>什么时间<emph>开始调暗</emph>？"
+}

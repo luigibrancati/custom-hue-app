@@ -1,0 +1,18 @@
+{
+  "behavior.gotosleep.controllingDevicesStep.title": "Ovládáno",
+  "behavior.gotosleep.edit.styleItem.subtitle": "Západ slunce se doporučuje pro světla s přechodem.",
+  "behavior.gotosleep.edit.styleItem.title": "Styl",
+  "behavior.gotosleep.experience.title": "Vyberte nastavení",
+  "behavior.gotosleep.generalStep.title": "Obecné",
+  "behavior.gotosleep.nameStep.defaultName": "Usínání",
+  "behavior.gotosleep.nameStep.label": "Název",
+  "behavior.gotosleep.nameStep.title": "<emph>Pojmenujte</emph> svoji automatizaci",
+  "behavior.gotosleep.overview.description": "Nechte vybraná světla pomalu tlumit, dokud se nevypnou.",
+  "behavior.gotosleep.overview.name": "Usínání",
+  "behavior.gotosleep.selectLights.title": "<emph>Vyberte</emph> svoje světla",
+  "behavior.gotosleep.style.basic.subtitle": "Bílé světlo se začne rozsvěcovat a poté úplně zhasne.",
+  "behavior.gotosleep.style.basic.title": "Přechod do tmy",
+  "behavior.gotosleep.style.sunset.subtitle": "Barvy se mění a prolínají, aby napodobovaly večerní oblohu. Doporučeno pro gradientní světla.",
+  "behavior.gotosleep.style.sunset.title": "Západ slunce",
+  "behavior.gotosleep.timeAndRecurrence.title": "<emph>Kdy</emph> se mají světla začít <emph>tlumit</emph>?"
+}

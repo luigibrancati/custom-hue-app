@@ -1,0 +1,17 @@
+{
+  "scenes.categories.defaults": "Параметры по умолчанию",
+  "scenes.new": "Новый вариант",
+  "scenes.recipe.bright": "Яркий свет",
+  "scenes.recipe.concentrate": "Концентрация",
+  "scenes.recipe.coolBright": "Яркий холодный",
+  "scenes.recipe.dimmed": "Приглушенный свет",
+  "scenes.recipe.doze": "Отдых",
+  "scenes.recipe.energize": "Заряд энергии",
+  "scenes.recipe.nightLight": "Ночное освещение",
+  "scenes.recipe.read": "Чтение",
+  "scenes.recipe.relax": "Отдых",
+  "smartScenes.goldenHours": "Предзакатное время",
+  "smartScenes.naturalLight": "Дневной свет",
+  "smartScenes.natureColors": "Краски природы",
+  "smartScenes.tag24Hours": "24 h"
+}

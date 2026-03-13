@@ -1,0 +1,16 @@
+{
+  "iosWidgetsGuidance.add.subtitle": "На iPhone или iPad коснитесь и удерживайте главный экран. Затем нажмите значок + в верхнем левом углу. На следующем экране выберите Hue и выберите размер виджета.",
+  "iosWidgetsGuidance.add.title": "Добавить виджет",
+  "iosWidgetsGuidance.main.actionFooterMessage": "Посетите <link:apple_support>страницу поддержки Apple</link:apple_support> для получения дополнительной информации о виджетах.",
+  "iosWidgetsGuidance.main.headerTitle": "Виджеты",
+  "iosWidgetsGuidance.main.learnMoreButton.title": "Подробнее",
+  "iosWidgetsGuidance.main.subtitle": "Устанавливайте сцены прямо с главного экрана, экрана блокировки и режима ожидания, не открывая приложение.",
+  "iosWidgetsGuidance.main.title": "Управляйте освещением с помощью виджетов",
+  "iosWidgetsGuidance.selectAction.title": "Выберите свои действия",
+  "iosWidgetsGuidance.selectionAction.subtitle": "В режиме редактирования коснитесь виджета, чтобы выбрать, как виджет будет управлять освещением.\n\nСовет: Знаете ли вы, что на экран блокировки можно добавить виджет? На этом экране нажмите и удерживайте, а затем нажмите «Настроить».",
+  "siriShortcutsGuidance.createSiriShortcutsButton.title": "Создать команды",
+  "siriShortcutsGuidance.header.title": "Команды",
+  "siriShortcutsGuidance.learnMoreButton.title": "Подробнее о командах",
+  "siriShortcutsGuidance.subtitle": "Создайте собственные голосовые команды или ярлыки для использования в виджетах на главном экране или на Apple Watch. \n \n Добавьте команды в свои виджеты в приложении «Команды». Выполните поиск по слову \"«Hue»\" и создайте свои собственные действия.",
+  "siriShortcutsGuidance.title": "Создать команды для Hue"
+}

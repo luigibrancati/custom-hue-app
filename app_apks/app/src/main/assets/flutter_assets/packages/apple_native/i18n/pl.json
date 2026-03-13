@@ -1,0 +1,16 @@
+{
+  "iosWidgetsGuidance.add.subtitle": "Na iPhonie lub iPadzie dotknij i przytrzymaj ekran główny. Następnie dotknij ikony + w lewym górnym rogu. Na następnym ekranie wybierz Hue i wybierz rozmiar widżetu.",
+  "iosWidgetsGuidance.add.title": "Dodaj widżet",
+  "iosWidgetsGuidance.main.actionFooterMessage": "Odwiedź <link:apple_support>stronę pomocy Apple</link:apple_support> , aby uzyskać więcej informacji o widżetach.",
+  "iosWidgetsGuidance.main.headerTitle": "Widżety",
+  "iosWidgetsGuidance.main.learnMoreButton.title": "Dowiedz się więcej",
+  "iosWidgetsGuidance.main.subtitle": "Ustaw sceny bezpośrednio na ekranie głównym, ekranie blokady i w trybie gotowości — bez otwierania aplikacji.",
+  "iosWidgetsGuidance.main.title": "Kontroluj światła za pomocą widżetów",
+  "iosWidgetsGuidance.selectAction.title": "Wybierz swoje działania",
+  "iosWidgetsGuidance.selectionAction.subtitle": "W trybie edycji dotknij widżetu, aby wybrać sposób, w jaki widżet powinien sterować oświetleniem.\n\nWskazówka: Czy wiesz, że możesz dodać widżet do ekranu blokady? Na tym ekranie dotknij i przytrzymaj, a następnie dotknij Dostosuj.",
+  "siriShortcutsGuidance.createSiriShortcutsButton.title": "Utwórz skróty",
+  "siriShortcutsGuidance.header.title": "Skróty",
+  "siriShortcutsGuidance.learnMoreButton.title": "Dowiedz się więcej o skrótach",
+  "siriShortcutsGuidance.subtitle": "Utwórz niestandardowe polecenia głosowe lub skróty, których będziesz używać w widżetach na ekranie głównym lub na zegarku Apple Watch. \n \n Dodaj skróty do widgetów w aplikacji Shortcuts. Wyszukaj \"Hue\" i utwórz własne akcje.",
+  "siriShortcutsGuidance.title": "Utwórz skróty Siri dla Hue"
+}

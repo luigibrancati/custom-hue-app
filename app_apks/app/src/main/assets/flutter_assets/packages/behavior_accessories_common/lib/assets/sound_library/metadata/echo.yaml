@@ -1,0 +1,5 @@
+id: 0x00000015
+name: Echo
+api_name: echo
+type: chime # can be chime, alarm, alert, other (for things like onboarding voices)
+products: all # can be 'all' or one/many of: camera, chime, etc

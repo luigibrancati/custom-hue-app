@@ -1,0 +1,192 @@
+id: 0994b07c-3cd5-41e6-89ac-b964a37de1df
+script_id: db06cabc-c752-4904-9e8f-4ebe98feaa1a
+revision: '123'
+category: pm_automation
+priority: 1
+
+overview:
+  translation_keys:
+    name: behavior.pmAutomation.overview.name
+    description: behavior.pmAutomation.overview.description
+  image: images/pm_automation.webp
+
+dashboard:
+  card:
+    title:
+      - value_name: name
+        value_formatter: plain_text
+    subtitle:
+      value_name: where
+      value_formatter: lights_action_in_groups
+      formatter_translation_key: behavior.pmAutomation.card.subtitle
+
+configuration:
+  light_capabilities: [any]
+  max_instance_count: 1
+
+creation:
+  - step_type: information
+    images: [
+      images/automations_presence-mimic_07-00.svg,
+      images/automations_presence-mimic_08-00.svg,
+      images/automations_presence-mimic_09-00.svg,
+      images/automations_presence-mimic_11-00.svg,
+      images/automations_presence-mimic_13-00.svg,
+      images/automations_presence-mimic_15-00.svg,
+      images/automations_presence-mimic_18-00.svg,
+      images/automations_presence-mimic_21-00.svg,
+      images/automations_presence-mimic_22-00.svg,
+      images/automations_presence-mimic_23-00.svg
+    ]
+    translation_keys:
+      title: behavior.pmAutomation.overview.name
+      subtitle: behavior.pmAutomation.description
+  - step_type: lights_selection
+    result_name: where
+    configuration:
+      allow_home: false
+      allow_individual_lights: true
+      allow_zones: false
+      warn_plugs_selected: true
+    translation_keys:
+      title: behavior.pmAutomation.selectLights.title
+  - step_type: option_selection_step
+    result_name: mode
+    translation_keys:
+      title: behavior.pmAutomation.selectMode.title
+    options:
+      - value: 24h
+        translation_keys:
+          title: behavior.pmAutomation.mode.always.title
+          subtitle: behavior.pmAutomation.mode.always.subtitle
+        thumbnail:
+          icon: routines_daytime
+      - value: nighttime
+        preconditions: [location_services_enabled, location_permission_granted, home_location_set]
+        translation_keys:
+          title: behavior.pmAutomation.mode.nighttime.title
+          subtitle: behavior.pmAutomation.mode.nighttime.subtitle
+        thumbnail:
+          icon: routines_sunset
+  - step_type: name_setting
+    is_hidden: true
+    translation_keys:
+      default_name: behavior.pmAutomation.nameStep.defaultName
+  - step_type: state_selection
+    is_hidden: true
+    default_value: enabled
+  - step_type: option_selection_step
+    result_name: excluded_lights
+    default_value_when_missing: turn_off
+    default_value_when_creating: turn_off
+    is_hidden: true
+  - step_type: option_selection_step
+    result_name: end_state
+    default_value_when_missing: do_nothing
+    default_value_when_creating: do_nothing
+    translation_keys:
+      title: behavior.pmAutomation.edit.endStateItem.title
+      subtitle: behavior.pmAutomation.edit.endStateItem.subtitle
+    options:
+      - value: turn_off
+        translation_keys:
+          title: behavior.pmAutomation.endState.turnOff.title
+        thumbnail:
+          icon: ui_controls_switch_off
+      - value: do_nothing
+        translation_keys:
+          title: behavior.pmAutomation.endState.doNothing.title
+        thumbnail:
+          icon: ui_controls_do_nothing
+    is_hidden: true
+  - step_type: action
+    action_type: enable_presence_mimic_for_arm_away
+  - step_type: summary
+    summary:
+      - result_name: where
+        translation_keys:
+          title: behavior.pmAutomation.where.title
+      - result_name: mode
+        translation_keys:
+          title: behavior.pmAutomation.edit.modeItem.title
+      - result_name: end_state
+        translation_keys:
+          title: behavior.pmAutomation.edit.endStateItem.title
+    translation_keys:
+      title: behavior.pmAutomation.summary.title
+      subtitle: behavior.pmAutomation.summary.description
+    should_save: true
+  - step_type: trigger_explanation
+
+editing:
+  - step_type: name_setting
+    is_editable: false
+  - step_type: lights_selection
+    result_name: where
+    configuration:
+      allow_home: false
+      allow_individual_lights: true
+      allow_zones: false
+      warn_plugs_selected: true
+    translation_keys:
+      title: behavior.pmAutomation.selectLights.title
+  - step_type: composite
+    steps:
+    - step_type: option_selection_step
+      result_name: excluded_lights
+      translation_keys:
+        title: behavior.pmAutomation.edit.excludedLightsItem.title
+        subtitle: behavior.pmAutomation.edit.excludedLightsItem.subtitle
+      options:
+        - value: turn_off
+          translation_keys:
+            title: behavior.pmAutomation.excludedLights.turnOff.title
+          thumbnail:
+            icon: ui_controls_switch_off
+        - value: do_nothing
+          translation_keys:
+            title: behavior.pmAutomation.excludedLights.doNothing.title
+          thumbnail:
+            icon: ui_controls_do_nothing
+    - step_type: option_selection_step
+      result_name: mode
+      translation_keys:
+        title: behavior.pmAutomation.edit.modeItem.title
+        subtitle: behavior.pmAutomation.edit.modeItem.subtitle
+      options:
+        - value: 24h
+          translation_keys:
+            title: behavior.pmAutomation.mode.always.title
+          thumbnail:
+            icon: routines_daytime
+        - value: nighttime
+          preconditions: [location_services_enabled, location_permission_granted, home_location_set]
+          translation_keys:
+            title: behavior.pmAutomation.mode.nighttime.title
+          thumbnail:
+            icon: routines_sunset
+    - step_type: option_selection_step
+      result_name: end_state
+      translation_keys:
+        title: behavior.pmAutomation.edit.endStateItem.title
+        subtitle: behavior.pmAutomation.edit.endStateItem.subtitle
+      options:
+        - value: turn_off
+          translation_keys:
+            title: behavior.pmAutomation.endState.turnOff.title
+          thumbnail:
+            icon: ui_controls_switch_off
+        - value: do_nothing
+          translation_keys:
+            title: behavior.pmAutomation.endState.doNothing.title
+          thumbnail:
+            icon: ui_controls_do_nothing
+    translation_keys:
+      title: behavior.pmAutomation.generalStep.title
+  - step_type: state_selection
+    default_value: enabled
+  - step_type: composite
+    steps:
+      - step_type: controlling_devices
+    translation_keys:
+      title: behavior.pmAutomation.controllingDevicesStep.title
