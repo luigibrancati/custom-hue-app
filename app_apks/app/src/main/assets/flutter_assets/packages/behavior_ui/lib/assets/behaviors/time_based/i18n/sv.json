@@ -1,9 +1,0 @@
-{
-  "behavior.timeBased.nameStep.label": "Namn",
-  "behavior.timeBased.nameStep.title": "<emph>Namnge</emph> din automatisering",
-  "behavior.timeBased.overview.description": "Skapa din egen anpassade automatisering.",
-  "behavior.timeBased.overview.name": "Anpassad",
-  "behavior.timeBased.selectLights.title": "<emph>Välj</emph> dina lampor",
-  "behavior.timeBased.selectScenes.title": "<emph>Vad</emph> ska dina lampor göra?",
-  "behavior.timeBased.whenExtendedStep.title": "<emph>När</emph> vill du schemalägga den här automatiseringen?"
-}

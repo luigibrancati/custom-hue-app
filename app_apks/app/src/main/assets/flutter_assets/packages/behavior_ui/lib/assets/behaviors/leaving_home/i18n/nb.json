@@ -1,8 +1,0 @@
-{
-  "behavior.leavingHome.card.subtitle": "Slå av $lights$",
-  "behavior.leavingHome.name": "Drar hjemmefra",
-  "behavior.leavingHome.overview.description": "Konfigurer lysene dine til å slås av automatisk når du forlater huset.",
-  "behavior.leavingHome.overview.name": "Drar hjemmefra",
-  "behavior.leavingHome.selectLights.title": "<emph>Velg</emph> lysene dine",
-  "behavior.leavingHome.selectScenes.title": "Disse lysene slås av <emph>når du drar</emph>"
-}

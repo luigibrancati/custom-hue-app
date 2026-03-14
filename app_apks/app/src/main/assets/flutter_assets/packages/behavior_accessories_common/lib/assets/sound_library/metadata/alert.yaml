@@ -1,5 +1,0 @@
-id: 0x00000001
-name: Alert
-api_name: alert
-type: alert # can be chime, alarm, alert, other (for things like onboarding voices)
-products: all # can be 'all' or one/many of: camera, chime, etc

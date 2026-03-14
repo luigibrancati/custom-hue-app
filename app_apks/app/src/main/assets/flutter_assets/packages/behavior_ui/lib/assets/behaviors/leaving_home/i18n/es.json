@@ -1,8 +1,0 @@
-{
-  "behavior.leavingHome.card.subtitle": "Apagar $lights$",
-  "behavior.leavingHome.name": "Salir de casa",
-  "behavior.leavingHome.overview.description": "Configura las luces para que se apaguen automáticamente al salir de tu casa.",
-  "behavior.leavingHome.overview.name": "Salir de casa",
-  "behavior.leavingHome.selectLights.title": "<emph>Elige</emph> tus luces",
-  "behavior.leavingHome.selectScenes.title": "Estas luces se apagarán <emph>cuando salgas</emph>"
-}

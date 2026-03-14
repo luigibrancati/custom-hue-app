@@ -1,8 +1,0 @@
-{
-  "behavior.leavingHome.card.subtitle": "Zhasnout $lights$",
-  "behavior.leavingHome.name": "Odchod z domova",
-  "behavior.leavingHome.overview.description": "Nastavte si světla, aby se automaticky zhasla, když odejdete z domu.",
-  "behavior.leavingHome.overview.name": "Odchod z domova",
-  "behavior.leavingHome.selectLights.title": "<emph>Vyberte</emph> svoje světla",
-  "behavior.leavingHome.selectScenes.title": "Tato světla se vypnou <emph>po vašem odchodu</emph>"
-}

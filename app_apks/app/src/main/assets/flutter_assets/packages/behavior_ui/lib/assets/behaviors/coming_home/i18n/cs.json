@@ -1,9 +1,0 @@
-{
-  "behavior.comingHome.card.subtitle": "Aktivovat $lights$",
-  "behavior.comingHome.name": "Příchod domů",
-  "behavior.comingHome.overview.description": "Nastavte si světla, aby se automaticky rozsvítila, když jste u domu.",
-  "behavior.comingHome.overview.name": "Příchod domů",
-  "behavior.comingHome.selectLights.title": "<emph>Vyberte</emph> svoje světla",
-  "behavior.comingHome.selectScenes.title": "<emph>Co</emph> mají světla udělat, <emph>když přijdete domů</emph>?",
-  "behavior.comingHome.when.title": "<emph>Kdy</emph> se mají světla <emph>zapnout</emph>?"
-}

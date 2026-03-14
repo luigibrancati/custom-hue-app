@@ -1,9 +1,0 @@
-{
-  "behavior.timeBased.nameStep.label": "Nimi",
-  "behavior.timeBased.nameStep.title": "<emph>Nimeä</emph> automaatio",
-  "behavior.timeBased.overview.description": "Luo mukautettu automaatio.",
-  "behavior.timeBased.overview.name": "Mukautettu",
-  "behavior.timeBased.selectLights.title": "<emph>Valitse</emph> valot",
-  "behavior.timeBased.selectScenes.title": "<emph>Mitä</emph> valojen tulisi tehdä?",
-  "behavior.timeBased.whenExtendedStep.title": "<emph>Miksi</emph> ajankohdaksi haluat määrittää tämän automaation?"
-}

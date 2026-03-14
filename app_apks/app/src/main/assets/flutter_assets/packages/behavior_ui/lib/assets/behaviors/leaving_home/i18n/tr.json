@@ -1,8 +1,0 @@
-{
-  "behavior.leavingHome.card.subtitle": "Kapat $lights$",
-  "behavior.leavingHome.name": "Evden çıkış",
-  "behavior.leavingHome.overview.description": "Işıklarınızı, siz evinizden ayrılırken otomatik olarak kapanacak şekilde ayarlayın.",
-  "behavior.leavingHome.overview.name": "Evden çıkış",
-  "behavior.leavingHome.selectLights.title": "Işıklarınızı <emph>seçin</emph>",
-  "behavior.leavingHome.selectScenes.title": "Bu ışıklar <emph>siz dışarıya çıkınca</emph> kapanacak"
-}

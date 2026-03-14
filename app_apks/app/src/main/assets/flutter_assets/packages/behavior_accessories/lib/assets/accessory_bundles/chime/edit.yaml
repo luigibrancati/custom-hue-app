@@ -1,9 +1,0 @@
-supported_accessories:
-- COM001
-
-can_configure_accessory_in_another_app: false
-
-edit_steps:
-  - step_type: name_selection
-  - step_type: location_selection
-  - step_type: linked_doorbells  

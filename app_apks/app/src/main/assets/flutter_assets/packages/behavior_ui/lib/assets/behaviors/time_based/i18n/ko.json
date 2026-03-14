@@ -1,9 +1,0 @@
-{
-  "behavior.timeBased.nameStep.label": "이름",
-  "behavior.timeBased.nameStep.title": "자동화 <emph>이름을 지정</emph>하세요",
-  "behavior.timeBased.overview.description": "나만의 맞춤 자동화를 생성하세요.",
-  "behavior.timeBased.overview.name": "맞춤",
-  "behavior.timeBased.selectLights.title": "조명을 <emph>선택하세요</emph>",
-  "behavior.timeBased.selectScenes.title": "조명이 <emph>어떤</emph> 동작을 해야 하나요?",
-  "behavior.timeBased.whenExtendedStep.title": "이 자동화가 <emph>언제</emph> 실행되도록 설정할까요?"
-}

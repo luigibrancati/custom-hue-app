@@ -1,9 +1,0 @@
-{
-  "behavior.timeBased.nameStep.label": "名称",
-  "behavior.timeBased.nameStep.title": "为自动操作<emph>命名</emph>",
-  "behavior.timeBased.overview.description": "创建您自己的自定义自动操作。",
-  "behavior.timeBased.overview.name": "定制",
-  "behavior.timeBased.selectLights.title": "<emph>选择</emph>您的灯具",
-  "behavior.timeBased.selectScenes.title": "您的灯具应执行<emph>什么操作</emph>？",
-  "behavior.timeBased.whenExtendedStep.title": "您想要<emph>何时</emph>安排此自动操作？"
-}

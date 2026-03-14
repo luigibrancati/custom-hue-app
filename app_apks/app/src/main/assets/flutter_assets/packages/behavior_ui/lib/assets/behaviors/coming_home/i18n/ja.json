@@ -1,9 +1,0 @@
-{
-  "behavior.comingHome.card.subtitle": "$lights$ を起動する",
-  "behavior.comingHome.name": "帰宅",
-  "behavior.comingHome.overview.description": "家の近くにいるときに照明が自動的にオンになるよう設定します。",
-  "behavior.comingHome.overview.name": "帰宅",
-  "behavior.comingHome.selectLights.title": "照明を<emph>選択する</emph>",
-  "behavior.comingHome.selectScenes.title": "帰宅時に<emph>照明を</emph>どう<emph>しますか</emph>?",
-  "behavior.comingHome.when.title": "<emph>いつ</emph> 照明を <emph>オン</emph> にしますか?"
-}

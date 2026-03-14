@@ -1,9 +1,0 @@
-{
-  "behavior.timeBased.nameStep.label": "名前",
-  "behavior.timeBased.nameStep.title": "オートメーションに<emph>名前</emph>をつける",
-  "behavior.timeBased.overview.description": "カスタム オートメーションを作成する。",
-  "behavior.timeBased.overview.name": "カスタム",
-  "behavior.timeBased.selectLights.title": "照明を<emph>選択する</emph>",
-  "behavior.timeBased.selectScenes.title": "照明の<emph>動作</emph>を選択してください。",
-  "behavior.timeBased.whenExtendedStep.title": "<emph>いつ</emph>このオートメーションを設定しますか?"
-}

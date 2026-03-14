@@ -1,8 +1,0 @@
-{
-  "behavior.leavingHome.card.subtitle": "Sammuta $lights$",
-  "behavior.leavingHome.name": "Kotoa poistuminen",
-  "behavior.leavingHome.overview.description": "Aseta valosi sammumaan automaattisesti, kun poistut kotoasi.",
-  "behavior.leavingHome.overview.name": "Kotoa poistuminen",
-  "behavior.leavingHome.selectLights.title": "<emph>Valitse</emph> valot",
-  "behavior.leavingHome.selectScenes.title": "Nämä valot sammutetaan, <emph>kun lähdet kotoa</emph>"
-}

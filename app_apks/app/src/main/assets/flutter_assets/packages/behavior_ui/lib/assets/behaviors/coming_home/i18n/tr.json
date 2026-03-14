@@ -1,9 +1,0 @@
-{
-  "behavior.comingHome.card.subtitle": "Etkinleştir $lights$",
-  "behavior.comingHome.name": "Eve geliş",
-  "behavior.comingHome.overview.description": "Işıklarınızı, siz evinizin yakınındayken otomatik olarak açılacak şekilde ayarlayın.",
-  "behavior.comingHome.overview.name": "Eve geliş",
-  "behavior.comingHome.selectLights.title": "Işıklarınızı <emph>seçin</emph>",
-  "behavior.comingHome.selectScenes.title": "<emph>eve geldiğinizde</emph> ışıklarınız <emph>ne</emph> yapmalı?",
-  "behavior.comingHome.when.title": "Işıklarınızın <emph>ne zaman</emph> <emph>açılmasını</emph> istersiniz?"
-}

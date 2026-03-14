@@ -1,9 +1,0 @@
-{
-  "behavior.comingHome.card.subtitle": "Ota käyttöön $lights$",
-  "behavior.comingHome.name": "Kotiin saapuminen",
-  "behavior.comingHome.overview.description": "Aseta valosi syttymään automaattisesti, kun lähestyt kotiasi.",
-  "behavior.comingHome.overview.name": "Kotiin saapuminen",
-  "behavior.comingHome.selectLights.title": "<emph>Valitse</emph> valot",
-  "behavior.comingHome.selectScenes.title": "<emph>Mitä</emph> valojesi pitäisi tehdä, <emph>kun saavut kotiin</emph>?",
-  "behavior.comingHome.when.title": "<emph>Milloin</emph> haluat valojesi <emph>syttyvän</emph>?"
-}

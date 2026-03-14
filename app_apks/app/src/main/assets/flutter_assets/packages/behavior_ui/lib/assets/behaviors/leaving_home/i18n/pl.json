@@ -1,8 +1,0 @@
-{
-  "behavior.leavingHome.card.subtitle": "Wyłącz $lights$",
-  "behavior.leavingHome.name": "Wyjście z domu",
-  "behavior.leavingHome.overview.description": "Ustaw światła tak, aby wyłączyły się automatycznie, gdy wychodzisz z domu.",
-  "behavior.leavingHome.overview.name": "Wyjście z domu",
-  "behavior.leavingHome.selectLights.title": "<emph>Wybierz</emph> światła",
-  "behavior.leavingHome.selectScenes.title": "Te światła zgasną <emph>po opuszczeniu</emph>"
-}

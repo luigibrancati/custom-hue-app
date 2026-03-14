@@ -1,9 +1,0 @@
-{
-  "behavior.timeBased.nameStep.label": "Name",
-  "behavior.timeBased.nameStep.title": "<emph>Name</emph> your automation",
-  "behavior.timeBased.overview.description": "Create your own customised automation.",
-  "behavior.timeBased.overview.name": "Custom",
-  "behavior.timeBased.selectLights.title": "<emph>Choose</emph> your lights",
-  "behavior.timeBased.selectScenes.title": "<emph>What</emph> should your lights do?",
-  "behavior.timeBased.whenExtendedStep.title": "<emph>When</emph> do you want to schedule this automation?"
-}
