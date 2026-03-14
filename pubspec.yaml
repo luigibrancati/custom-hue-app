@@ -14,7 +14,6 @@ dependencies:
   provider: ^6.1.2
   hive: ^2.2.3
   hive_flutter: ^1.1.0
-  android_alarm_manager_plus: ^5.0.0
   flutter_colorpicker: ^1.1.0
   permission_handler: ^12.0.0
   uuid: ^4.5.1

@@ -5,6 +5,9 @@ class AppConstants {
   static const bleScanTimeout = Duration(seconds: 15);
   static const bleConnectionTimeout = Duration(seconds: 10);
   static const bleWriteThrottleMs = 80;
+  static const bleScheduleQueryDelay = Duration(milliseconds: 500);
+  static const bleSchedulePostWriteWait = Duration(milliseconds: 1500);
+  static const bleScheduleConnectTimeout = Duration(seconds: 15);
 
   // Brightness range
   static const minBrightness = 1;
@@ -32,4 +35,5 @@ class AppConstants {
   static const scenesBox = 'scenes';
   static const schedulesBox = 'schedules';
   static const favoritesBox = 'favorites';
+  static const appMetaBox = 'app_meta';
 }

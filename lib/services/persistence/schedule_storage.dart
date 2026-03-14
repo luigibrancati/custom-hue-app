@@ -10,10 +10,14 @@ class ScheduleStorage {
     await HiveService.schedulesBox.put(schedule.id, schedule);
   }
 
+  Future<void> replaceAll(List<Schedule> schedules) async {
+    await HiveService.schedulesBox.clear();
+    await HiveService.schedulesBox.putAll({
+      for (final schedule in schedules) schedule.id: schedule,
+    });
+  }
+
   Future<void> deleteSchedule(String id) async {
     await HiveService.schedulesBox.delete(id);
   }
-
-  List<Schedule> getEnabledSchedules() =>
-      HiveService.schedulesBox.values.where((s) => s.isEnabled).toList();
 }

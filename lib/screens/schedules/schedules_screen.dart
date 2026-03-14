@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../../providers/schedule_provider.dart';
+import '../../providers/room_provider.dart';
 import '../../widgets/empty_state.dart';
 import 'schedule_editor_screen.dart';
-import 'weekly_view_screen.dart';
 import 'widgets/schedule_tile.dart';
 
 class SchedulesScreen extends StatelessWidget {
@@ -13,6 +13,7 @@ class SchedulesScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final scheduleProvider = context.watch<ScheduleProvider>();
     final schedules = scheduleProvider.schedules;
+    final allLights = context.watch<RoomProvider>().allLights;
 
     return SafeArea(
       child: Column(
@@ -25,13 +26,13 @@ class SchedulesScreen extends StatelessWidget {
                     style: Theme.of(context).textTheme.headlineMedium),
                 const Spacer(),
                 IconButton(
-                  icon: const Icon(Icons.calendar_view_week),
-                  onPressed: () => Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (_) => const WeeklyViewScreen()),
-                  ),
-                  tooltip: 'Weekly View',
+                  icon: const Icon(Icons.download),
+                  onPressed: scheduleProvider.isBusy
+                      ? null
+                      : () => scheduleProvider.importSchedules(
+                          allLights.map((light) => light.id),
+                        ),
+                  tooltip: 'Import from bulbs',
                 ),
                 IconButton(
                   icon: const Icon(Icons.add),
@@ -40,13 +41,21 @@ class SchedulesScreen extends StatelessWidget {
               ],
             ),
           ),
+          if (scheduleProvider.lastError != null)
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
+              child: Text(
+                scheduleProvider.lastError!,
+                style: TextStyle(color: Theme.of(context).colorScheme.error),
+              ),
+            ),
           Expanded(
             child: schedules.isEmpty
                 ? EmptyState(
                     icon: Icons.schedule,
                     title: 'No schedules',
                     subtitle:
-                        'Create a schedule to automate your lights',
+                        'Import or create a wake or sleep schedule stored on your bulbs',
                     action: ElevatedButton.icon(
                       onPressed: () => _createSchedule(context),
                       icon: const Icon(Icons.add),
@@ -68,7 +77,9 @@ class SchedulesScreen extends StatelessWidget {
                           ),
                         ),
                         onToggle: (_) =>
-                            scheduleProvider.toggleEnabled(schedule.id),
+                            scheduleProvider.isBusy
+                                ? null
+                                : scheduleProvider.toggleEnabled(schedule.id),
                       );
                     },
                   ),

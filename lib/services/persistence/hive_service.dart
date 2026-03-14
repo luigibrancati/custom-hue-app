@@ -22,7 +22,15 @@ class HiveService {
       Hive.openBox<Scene>(AppConstants.scenesBox),
       Hive.openBox<Schedule>(AppConstants.schedulesBox),
       Hive.openBox<FavoriteColor>(AppConstants.favoritesBox),
+      Hive.openBox(AppConstants.appMetaBox),
     ]);
+
+    final meta = metadataBox;
+    final migrated = meta.get('ble_schedule_migrated_v1', defaultValue: false);
+    if (migrated != true) {
+      await schedulesBox.clear();
+      await meta.put('ble_schedule_migrated_v1', true);
+    }
   }
 
   static Box<HueLight> get lightsBox => Hive.box<HueLight>(AppConstants.lightsBox);
@@ -30,4 +38,5 @@ class HiveService {
   static Box<Scene> get scenesBox => Hive.box<Scene>(AppConstants.scenesBox);
   static Box<Schedule> get schedulesBox => Hive.box<Schedule>(AppConstants.schedulesBox);
   static Box<FavoriteColor> get favoritesBox => Hive.box<FavoriteColor>(AppConstants.favoritesBox);
+  static Box get metadataBox => Hive.box(AppConstants.appMetaBox);
 }

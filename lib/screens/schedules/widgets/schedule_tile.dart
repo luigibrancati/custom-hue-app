@@ -13,25 +13,24 @@ class ScheduleTile extends StatelessWidget {
     required this.onToggle,
   });
 
-  static const _dayNames = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
-
   @override
   Widget build(BuildContext context) {
-    final timeStr =
-        '${schedule.hour.toString().padLeft(2, '0')}:${schedule.minute.toString().padLeft(2, '0')}';
-    final daysStr = schedule.daysOfWeek.isEmpty
-        ? 'No days selected'
-        : schedule.daysOfWeek.map((d) => _dayNames[d - 1]).join(', ');
+    final scheduledFor = schedule.scheduledForLocal;
+    final dateLabel = MaterialLocalizations.of(context).formatMediumDate(scheduledFor);
+    final timeLabel = TimeOfDay.fromDateTime(scheduledFor).format(context);
+    final syncLabel = schedule.isSynced
+        ? '${schedule.lightIds.length} bulb${schedule.lightIds.length == 1 ? '' : 's'}'
+        : '${schedule.pendingLightCount} pending';
 
     return Card(
       child: ListTile(
         onTap: onTap,
         leading: Icon(
-          schedule.turnOn ? Icons.wb_sunny : Icons.nightlight,
+          schedule.isWake ? Icons.wb_sunny : Icons.nightlight,
           color: schedule.isEnabled ? Colors.amber : Colors.grey,
         ),
-        title: Text(schedule.name),
-        subtitle: Text('$timeStr  $daysStr'),
+        title: Text(schedule.title),
+        subtitle: Text('$dateLabel  $timeLabel  $syncLabel'),
         trailing: Switch(
           value: schedule.isEnabled,
           onChanged: onToggle,

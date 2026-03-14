@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import '../../core/constants/app_constants.dart';
 import '../../models/schedule.dart';
 import '../../providers/schedule_provider.dart';
 import '../../providers/room_provider.dart';
+import '../../services/ble/ble_schedule_codec.dart';
 import '../../widgets/hue_app_bar.dart';
-import 'widgets/day_selector.dart';
 
 class ScheduleEditorScreen extends StatefulWidget {
   final Schedule schedule;
@@ -18,25 +17,19 @@ class ScheduleEditorScreen extends StatefulWidget {
 
 class _ScheduleEditorScreenState extends State<ScheduleEditorScreen> {
   late final TextEditingController _nameController;
-  late int _hour;
-  late int _minute;
-  late List<int> _daysOfWeek;
-  late bool _turnOn;
-  late int _brightness;
-  late int _colorTempMireds;
+  late DateTime _scheduledFor;
+  late ScheduleKind _kind;
+  late bool _isEnabled;
   late List<String> _selectedLightIds;
-  late int? _fadeDuration;
+  late int _fadeDuration;
 
   @override
   void initState() {
     super.initState();
-    _nameController = TextEditingController(text: widget.schedule.name);
-    _hour = widget.schedule.hour;
-    _minute = widget.schedule.minute;
-    _daysOfWeek = List.from(widget.schedule.daysOfWeek);
-    _turnOn = widget.schedule.turnOn;
-    _brightness = widget.schedule.brightness ?? 254;
-    _colorTempMireds = widget.schedule.colorTempMireds ?? 300;
+    _nameController = TextEditingController(text: widget.schedule.title);
+    _scheduledFor = widget.schedule.scheduledForLocal;
+    _kind = widget.schedule.kind;
+    _isEnabled = widget.schedule.isEnabled;
     _selectedLightIds = List.from(widget.schedule.lightIds);
     _fadeDuration = widget.schedule.fadeDurationSeconds;
   }
@@ -50,6 +43,12 @@ class _ScheduleEditorScreenState extends State<ScheduleEditorScreen> {
   @override
   Widget build(BuildContext context) {
     final allLights = context.watch<RoomProvider>().allLights;
+    final scheduleProvider = context.watch<ScheduleProvider>();
+    final kindOptions = ScheduleKind.values;
+    final scheduledDateLabel = MaterialLocalizations.of(context)
+        .formatFullDate(_scheduledFor);
+    final scheduledTimeLabel = TimeOfDay.fromDateTime(_scheduledFor)
+        .format(context);
 
     return Scaffold(
       appBar: HueAppBar(
@@ -57,137 +56,164 @@ class _ScheduleEditorScreenState extends State<ScheduleEditorScreen> {
         actions: [
           IconButton(
             icon: const Icon(Icons.delete),
-            onPressed: _deleteSchedule,
+            onPressed: scheduleProvider.isBusy ? null : _deleteSchedule,
           ),
         ],
       ),
       body: SafeArea(
         top: false,
         child: ListView(
-        padding: const EdgeInsets.all(16),
-        children: [
-          TextField(
-            controller: _nameController,
-            decoration: const InputDecoration(
-              labelText: 'Schedule Name',
-              border: OutlineInputBorder(),
+          padding: const EdgeInsets.all(16),
+          children: [
+            DropdownButtonFormField<ScheduleKind>(
+              initialValue: _kind,
+              decoration: const InputDecoration(
+                labelText: 'Schedule Type',
+                border: OutlineInputBorder(),
+              ),
+              items: kindOptions
+                  .map(
+                    (kind) => DropdownMenuItem(
+                      value: kind,
+                      child: Text(kind == ScheduleKind.wake ? 'Wake up' : 'Go to sleep'),
+                    ),
+                  )
+                  .toList(),
+              onChanged: (value) {
+                if (value == null) {
+                  return;
+                }
+                setState(() {
+                  final previousKind = _kind;
+                  _kind = value;
+                  final previousDefault = _defaultTitle(previousKind);
+                  if (_nameController.text.trim().isEmpty ||
+                      _nameController.text.trim() == previousDefault) {
+                    _nameController.text = _defaultTitle(value);
+                  }
+                  final previousFade = BleScheduleCodec.defaultFadeForKind(
+                    previousKind == ScheduleKind.wake
+                        ? BleScheduleKind.wake
+                        : BleScheduleKind.sleep,
+                  );
+                  if (_fadeDuration == previousFade) {
+                    _fadeDuration = BleScheduleCodec.defaultFadeForKind(
+                      value == ScheduleKind.wake
+                          ? BleScheduleKind.wake
+                          : BleScheduleKind.sleep,
+                    );
+                  }
+                });
+              },
             ),
-          ),
-          const SizedBox(height: 24),
-          // Time picker
-          ListTile(
-            leading: const Icon(Icons.access_time),
-            title: Text(
-              '${_hour.toString().padLeft(2, '0')}:${_minute.toString().padLeft(2, '0')}',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-            onTap: _pickTime,
-          ),
-          const SizedBox(height: 16),
-          Text('Repeat on', style: Theme.of(context).textTheme.titleSmall),
-          const SizedBox(height: 8),
-          DaySelector(
-            selectedDays: _daysOfWeek,
-            onChanged: (days) => setState(() => _daysOfWeek = days),
-          ),
-          const SizedBox(height: 24),
-          SwitchListTile(
-            title: const Text('Turn lights on'),
-            subtitle: Text(_turnOn ? 'Lights will turn on' : 'Lights will turn off'),
-            value: _turnOn,
-            onChanged: (v) => setState(() => _turnOn = v),
-          ),
-          if (_turnOn) ...[
             const SizedBox(height: 16),
-            Text('Brightness: ${(_brightness / 254 * 100).round()}%'),
-            Slider(
-              value: _brightness.toDouble(),
-              min: 1,
-              max: 254,
-              onChanged: (v) => setState(() => _brightness = v.round()),
+            TextField(
+              controller: _nameController,
+              decoration: const InputDecoration(
+                labelText: 'Schedule Title',
+                border: OutlineInputBorder(),
+              ),
+            ),
+            const SizedBox(height: 24),
+            ListTile(
+              contentPadding: EdgeInsets.zero,
+              leading: const Icon(Icons.event),
+              title: Text(scheduledDateLabel),
+              subtitle: Text(scheduledTimeLabel),
+              onTap: _pickDateTime,
             ),
             const SizedBox(height: 8),
+            SwitchListTile(
+              contentPadding: EdgeInsets.zero,
+              title: const Text('Enabled'),
+              subtitle: const Text('Disabled schedules stay stored on the bulb'),
+              value: _isEnabled,
+              onChanged: (value) => setState(() => _isEnabled = value),
+            ),
+            const SizedBox(height: 16),
             Text(
-                'Color Temperature: ${(1000000 / _colorTempMireds).round()}K'),
-            Slider(
-              value: _colorTempMireds.toDouble(),
-              min: AppConstants.minMireds.toDouble(),
-              max: AppConstants.maxMireds.toDouble(),
-              onChanged: (v) =>
-                  setState(() => _colorTempMireds = v.round()),
+              _kind == ScheduleKind.wake
+                  ? 'Fade in: ${_fadeDuration ~/ 60}m ${_fadeDuration % 60}s'
+                  : 'Fade out: ${_fadeDuration ~/ 60}m ${_fadeDuration % 60}s',
             ),
-          ],
-          const SizedBox(height: 16),
-          SwitchListTile(
-            title: const Text('Fade transition'),
-            subtitle: _fadeDuration != null
-                ? Text('${_fadeDuration! ~/ 60} min ${_fadeDuration! % 60} sec')
-                : null,
-            value: _fadeDuration != null,
-            onChanged: (v) =>
-                setState(() => _fadeDuration = v ? 30 : null),
-          ),
-          if (_fadeDuration != null) ...[
             Slider(
-              value: _fadeDuration!.toDouble(),
-              min: 10,
+              value: _fadeDuration.toDouble(),
+              min: 0,
               max: 1800,
-              divisions: 35,
-              label: '${_fadeDuration! ~/ 60}m ${_fadeDuration! % 60}s',
-              onChanged: (v) =>
-                  setState(() => _fadeDuration = v.round()),
+              divisions: 36,
+              label: '${_fadeDuration ~/ 60}m ${_fadeDuration % 60}s',
+              onChanged: (value) => setState(() => _fadeDuration = value.round()),
             ),
-          ],
-          const SizedBox(height: 24),
-          Text('Lights', style: Theme.of(context).textTheme.titleSmall),
-          const SizedBox(height: 8),
-          ...allLights.map((light) => CheckboxListTile(
+            const SizedBox(height: 24),
+            Text('Bulbs', style: Theme.of(context).textTheme.titleSmall),
+            const SizedBox(height: 8),
+            ...allLights.map(
+              (light) => CheckboxListTile(
                 title: Text(light.name),
+                subtitle: Text(light.id),
                 value: _selectedLightIds.contains(light.id),
-                onChanged: (v) {
+                onChanged: (selected) {
                   setState(() {
-                    if (v == true) {
+                    if (selected == true) {
                       _selectedLightIds.add(light.id);
                     } else {
                       _selectedLightIds.remove(light.id);
                     }
                   });
                 },
-              )),
-          const SizedBox(height: 24),
-          FilledButton(
-            onPressed: _saveSchedule,
-            child: const Text('Save Schedule'),
-          ),
-        ],
+              ),
+            ),
+            const SizedBox(height: 24),
+            FilledButton(
+              onPressed: scheduleProvider.isBusy ? null : _saveSchedule,
+              child: Text(scheduleProvider.isBusy ? 'Saving...' : 'Save Schedule'),
+            ),
+          ],
         ),
       ),
     );
   }
 
-  Future<void> _pickTime() async {
+  Future<void> _pickDateTime() async {
+    final date = await showDatePicker(
+      context: context,
+      initialDate: _scheduledFor,
+      firstDate: DateTime.now().subtract(const Duration(days: 1)),
+      lastDate: DateTime.now().add(const Duration(days: 365)),
+    );
+    if (date == null || !mounted) {
+      return;
+    }
+
     final time = await showTimePicker(
       context: context,
-      initialTime: TimeOfDay(hour: _hour, minute: _minute),
+      initialTime: TimeOfDay.fromDateTime(_scheduledFor),
     );
     if (time != null) {
       setState(() {
-        _hour = time.hour;
-        _minute = time.minute;
+        _scheduledFor = DateTime(
+          date.year,
+          date.month,
+          date.day,
+          time.hour,
+          time.minute,
+        );
       });
     }
   }
 
   Future<void> _saveSchedule() async {
-    widget.schedule.name = _nameController.text.trim();
-    widget.schedule.hour = _hour;
-    widget.schedule.minute = _minute;
-    widget.schedule.daysOfWeek = _daysOfWeek;
-    widget.schedule.turnOn = _turnOn;
-    widget.schedule.brightness = _turnOn ? _brightness : null;
-    widget.schedule.colorTempMireds = _turnOn ? _colorTempMireds : null;
-    widget.schedule.lightIds = _selectedLightIds;
+    final title = _nameController.text.trim();
+    if (title.isEmpty || _selectedLightIds.isEmpty) {
+      return;
+    }
+
+    widget.schedule.title = title;
+    widget.schedule.scheduledForLocal = _scheduledFor;
+    widget.schedule.kind = _kind;
+    widget.schedule.isEnabled = _isEnabled;
     widget.schedule.fadeDurationSeconds = _fadeDuration;
+    widget.schedule.lightIds = _selectedLightIds;
 
     final provider = context.read<ScheduleProvider>();
     final isExisting =
@@ -198,6 +224,12 @@ class _ScheduleEditorScreenState extends State<ScheduleEditorScreen> {
       await provider.createSchedule(widget.schedule);
     }
     if (mounted) Navigator.pop(context);
+  }
+
+  String _defaultTitle(ScheduleKind kind) {
+    return BleScheduleCodec.defaultTitleForKind(
+      kind == ScheduleKind.wake ? BleScheduleKind.wake : BleScheduleKind.sleep,
+    );
   }
 
   void _deleteSchedule() {
