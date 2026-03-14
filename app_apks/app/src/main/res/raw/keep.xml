@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:tools="http://schemas.android.com/tools"
-    tools:keep="@mipmap/bridge_system,@mipmap/bridge_pro_system,@mipmap/ble_system,@mipmap/home,@drawable/ic_notification,@raw/*" />
