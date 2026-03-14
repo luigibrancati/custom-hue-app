@@ -133,15 +133,15 @@ class _ScheduleEditorScreenState extends State<ScheduleEditorScreen> {
             const SizedBox(height: 16),
             Text(
               _kind == ScheduleKind.wake
-                  ? 'Fade in: ${_fadeDuration ~/ 60}m ${_fadeDuration % 60}s'
-                  : 'Fade out: ${_fadeDuration ~/ 60}m ${_fadeDuration % 60}s',
+                  ? 'Fade in: ${_fadeDuration ~/ 60}m'
+                  : 'Fade out: ${_fadeDuration ~/ 60}m',
             ),
             Slider(
               value: _fadeDuration.toDouble(),
               min: 0,
               max: 1800,
-              divisions: 36,
-              label: '${_fadeDuration ~/ 60}m ${_fadeDuration % 60}s',
+              divisions: 30,
+              label: '${_fadeDuration ~/ 60}m',
               onChanged: (value) => setState(() => _fadeDuration = value.round()),
             ),
             const SizedBox(height: 24),
